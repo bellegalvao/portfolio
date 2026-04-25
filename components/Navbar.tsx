@@ -10,6 +10,7 @@ export function Navbar() {
   const t = siteContent[lang].nav;
   const availableForWork = siteContent[lang].hero.availableForWork;
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <>
@@ -40,12 +41,44 @@ export function Navbar() {
             <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
               {t.about}
             </Link>
-            <a
-              href={`mailto:${contact.email}`}
-              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-            >
-              {t.contact}
-            </a>
+            <div className="relative">
+              <button
+                onClick={() => setContactOpen((v) => !v)}
+                className="flex items-center gap-1 text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+              >
+                {t.contact}
+                <svg
+                  width="12" height="12" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                  className={`transition-transform duration-200 ${contactOpen ? "rotate-180" : ""}`}
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              {contactOpen && (
+                <div className="absolute top-full right-0 mt-3 w-44 bg-[var(--surface)] border border-[var(--border)] rounded-lg overflow-hidden shadow-xl z-50">
+                  <a
+                    href={contact.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setContactOpen(false)}
+                    className="flex items-center justify-between px-4 py-3 text-sm text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface-2)] transition-colors"
+                  >
+                    LinkedIn
+                    <span className="text-xs">↗</span>
+                  </a>
+                  <div className="border-t border-[var(--border)]" />
+                  <a
+                    href={`mailto:${contact.email}`}
+                    onClick={() => setContactOpen(false)}
+                    className="flex items-center justify-between px-4 py-3 text-sm text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface-2)] transition-colors"
+                  >
+                    E-mail
+                    <span className="text-xs">↗</span>
+                  </a>
+                </div>
+              )}
+            </div>
             <button
               onClick={toggle}
               className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
@@ -98,11 +131,20 @@ export function Navbar() {
             {t.about}
           </Link>
           <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)] flex items-center justify-between"
+          >
+            LinkedIn <span className="text-xs">↗</span>
+          </a>
+          <a
             href={`mailto:${contact.email}`}
             onClick={() => setOpen(false)}
-            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)]"
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)] flex items-center justify-between"
           >
-            {t.contact}
+            E-mail <span className="text-xs">↗</span>
           </a>
           <button
             onClick={() => { toggle(); setOpen(false); }}
@@ -113,11 +155,19 @@ export function Navbar() {
         </nav>
       </div>
 
-      {/* Overlay */}
+      {/* Overlay mobile menu */}
       {open && (
         <div
           className="fixed inset-0 z-30 md:hidden"
           onClick={() => setOpen(false)}
+        />
+      )}
+
+      {/* Overlay dropdown contato */}
+      {contactOpen && (
+        <div
+          className="fixed inset-0 z-40"
+          onClick={() => setContactOpen(false)}
         />
       )}
     </>
