@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, contact } from "@/lib/content";
@@ -7,34 +8,118 @@ import { siteContent, contact } from "@/lib/content";
 export function Navbar() {
   const { lang, toggle } = useLang();
   const t = siteContent[lang].nav;
+  const availableForWork = siteContent[lang].hero.availableForWork;
+  const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur-sm">
-      <nav className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="text-sm font-medium tracking-tight hover:text-[var(--accent)] transition-colors">
-          Isabelle Galvão
-        </Link>
-        <div className="flex items-center gap-6">
-          <Link href="/#projects" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
+    <>
+      <header className="relative fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur-sm">
+        {/* Badge centralizado — apenas desktop */}
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
+          <span className="relative flex w-2 h-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+            <span className="relative inline-flex rounded-full w-2 h-2 bg-green-400" />
+          </span>
+          {availableForWork}
+        </span>
+
+        <nav className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-sm font-medium tracking-tight hover:text-[var(--accent)] transition-colors"
+            onClick={() => setOpen(false)}
+          >
+            Isabelle Galvão
+          </Link>
+
+          {/* Desktop links */}
+          <div className="hidden md:flex items-center gap-6">
+            <Link href="/#projects" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
+              {t.projects}
+            </Link>
+            <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
+              {t.about}
+            </Link>
+            <a
+              href={`mailto:${contact.email}`}
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            >
+              {t.contact}
+            </a>
+            <button
+              onClick={toggle}
+              className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
+            >
+              {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
+            </button>
+          </div>
+
+          {/* Hamburger — mobile */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+          >
+            <span className={`block h-px w-5 bg-current transition-all duration-300 origin-center ${open ? "rotate-45 translate-y-[7px]" : ""}`} />
+            <span className={`block h-px w-5 bg-current transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+            <span className={`block h-px w-5 bg-current transition-all duration-300 origin-center ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+          </button>
+        </nav>
+      </header>
+
+      {/* Mobile menu */}
+      <div
+        className={`fixed top-14 left-0 right-0 z-40 bg-[var(--background)] border-b border-[var(--border)] md:hidden transition-all duration-300 ease-in-out ${
+          open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col px-6 py-4 gap-1">
+          {/* Badge mobile */}
+          <span className="inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] self-start mb-3">
+            <span className="relative flex w-2 h-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full w-2 h-2 bg-green-400" />
+            </span>
+            {availableForWork}
+          </span>
+
+          <Link
+            href="/#projects"
+            onClick={() => setOpen(false)}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)]"
+          >
             {t.projects}
           </Link>
-          <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
+          <Link
+            href="/about"
+            onClick={() => setOpen(false)}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)]"
+          >
             {t.about}
           </Link>
           <a
             href={`mailto:${contact.email}`}
-            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            onClick={() => setOpen(false)}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)]"
           >
             {t.contact}
           </a>
           <button
-            onClick={toggle}
-            className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
+            onClick={() => { toggle(); setOpen(false); }}
+            className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors self-start mt-3"
           >
             {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
           </button>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </div>
+
+      {/* Overlay */}
+      {open && (
+        <div
+          className="fixed inset-0 z-30 md:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
+    </>
   );
 }

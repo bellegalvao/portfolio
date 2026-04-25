@@ -370,6 +370,8 @@ export const siteContent = {
         "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas — e nos resultados do negócio.",
       cta: "Ver projetos",
       ctaContact: "Vamos conversar",
+      ctaResume: "Currículo",
+      availableForWork: "Disponível para trabalhar",
     },
     projects: {
       title: "Projetos",
@@ -378,6 +380,7 @@ export const siteContent = {
     about: {
       title: "Sobre mim",
       bio: [
+        "Product Designer brasileira com 6 anos de experiência em produto, growth e web design, especializada em criar fluxos visualmente impactantes, intuitivos e com alta conversão.",
         "Trabalho para transformar problemas complexos em soluções simples, úteis e que realmente façam diferença na vida das pessoas e nos resultados do negócio.",
         "Sigo o conceito de que o design vai muito além de estética — é sobre tomar decisões bem fundamentadas, equilibrando necessidades do usuário, objetivos da empresa e viabilidade técnica. Por isso, busco sempre trabalhar de forma orientada por dados, validando hipóteses e aprendendo continuamente com o comportamento real dos usuários.",
         "Tenho como objetivo atuar como um conector entre estratégia, tecnologia e experiência, contribuindo para a construção de produtos que não apenas funcionem bem, mas que sejam relevantes, escaláveis e sustentem o crescimento da empresa.",
@@ -425,6 +428,8 @@ export const siteContent = {
         "I turn complex problems into simple, useful solutions that make a difference in people's lives — and in business results.",
       cta: "View projects",
       ctaContact: "Let's talk",
+      ctaResume: "Resume",
+      availableForWork: "Available for work",
     },
     projects: {
       title: "Projects",
@@ -433,6 +438,7 @@ export const siteContent = {
     about: {
       title: "About me",
       bio: [
+        "Product Designer from Brazil with 6 years of experience in product, growth and web design, I specialize in crafting visually stunning, user-friendly, and high-converting flows.",
         "I work to turn complex problems into simple, useful solutions that truly make a difference in people's lives and in business results.",
         "I believe design goes far beyond aesthetics — it's about making well-grounded decisions, balancing user needs, business goals, and technical feasibility. That's why I always aim to work data-driven, validating hypotheses and learning continuously from real user behavior.",
         "My goal is to act as a connector between strategy, technology, and experience, contributing to products that don't just work well, but are relevant, scalable, and sustain company growth.",
@@ -470,6 +476,8 @@ export const siteContent = {
 };
 
 export const contact = {
-  linkedin: "https://www.linkedin.com/in/isabellegalvao/",
+  linkedin: "https://www.linkedin.com/in/isabelle-galvao/",
+  github: "https://github.com/bellegalvao",
   email: "isabellecgalvao@gmail.com",
+  resume: "https://drive.google.com/file/d/1xEyVCbulleH7tTyGHYLPkb2bJiyS9uSY/view?usp=sharing",
 };
