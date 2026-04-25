@@ -25,7 +25,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
   const content = project[lang];
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <div className="max-w-5xl mx-auto px-6 pt-16 pb-6">
       {/* Back */}
       <Link
         href="/#projects"
@@ -155,34 +155,36 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         </Section>
       )}
 
-      {/* Contact CTA */}
-      <div className="border-t border-[var(--border)] mt-16 pt-16 text-center">
-        <p className="text-[var(--muted)] mb-6">
-          {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
-        </p>
-        <div className="flex justify-center gap-4">
-          <a
-            href={contact.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-          >
-            LinkedIn
-          </a>
-          <a
-            href={`mailto:${contact.email}`}
-            className="text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-          >
-            {lang === "pt" ? "E-mail" : "Email"}
-          </a>
+      {/* Contact CTA + Back to top */}
+      <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p className="text-[var(--muted)] mb-4 text-sm">
+            {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
+          </p>
+          <div className="flex gap-3">
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+              <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
+            </a>
+            <a
+              href={`mailto:${contact.email}`}
+              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+              <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+                {lang === "pt" ? "E-mail" : "Email"}
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
-
-      {/* Back to top */}
-      <div className="mt-12 flex justify-center">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
+          className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors shrink-0"
         >
           ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
         </button>
@@ -208,9 +210,10 @@ function ExternalLink({ href, label }: { href: string; label: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+      className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
     >
-      {label} ↗
+      <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+      <span className="relative z-10 group-hover:text-black transition-colors duration-500">{label} ↗</span>
     </a>
   );
 }

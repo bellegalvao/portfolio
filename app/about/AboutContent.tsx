@@ -10,7 +10,7 @@ export function AboutContent() {
   const t = siteContent[lang].about;
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <div className="max-w-5xl mx-auto px-6 py-5 md:py-16">
       {/* Header */}
       <h1 className="text-4xl font-bold tracking-tight mb-6">{t.title}</h1>
 
@@ -88,15 +88,21 @@ export function AboutContent() {
             href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+            className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            {t.contact.linkedin} ↗
+            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+              {t.contact.linkedin} ↗
+            </span>
           </a>
           <a
             href={`mailto:${contact.email}`}
-            className="text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+            className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            {t.contact.email} — {contact.email}
+            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+              {t.contact.email} — {contact.email}
+            </span>
           </a>
         </div>
       </section>

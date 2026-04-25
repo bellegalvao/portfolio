@@ -72,25 +72,31 @@ export default function Home() {
                 href={contact.resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+                className="group relative inline-flex items-center gap-2 text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
-                {t.hero.ctaResume}
+                <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+                <span className="relative z-10 inline-flex items-center gap-2 group-hover:text-black transition-colors duration-500">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                  {t.hero.ctaResume}
+                </span>
               </a>
               <a
                 href={`mailto:${contact.email}`}
-                className="inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg hover:bg-neutral-400 transition-colors font-medium"
+                className="group relative inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg font-medium overflow-hidden"
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                </svg>
-                {t.hero.ctaContact}
+                <span className="absolute inset-0 bg-[var(--accent)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+                <span className="relative z-10 inline-flex items-center gap-2 group-hover:text-white transition-colors duration-500">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  {t.hero.ctaContact}
+                </span>
               </a>
             </motion.div>
           </motion.div>
@@ -151,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section className="pb-24">
+      <section className="pb-10">
         <motion.h2
           className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-8"
           variants={fadeIn}
