@@ -479,5 +479,5 @@ export const contact = {
   linkedin: "https://www.linkedin.com/in/isabelle-galvao/",
   github: "https://github.com/bellegalvao",
   email: "isabellecgalvao@gmail.com",
-  resume: "https://drive.google.com/drive/u/0/folders/1c7pIorS8keACf48iOXzwAEfqrjAakp5w",
+  resume: "https://drive.google.com/file/d/1xEyVCbulleH7tTyGHYLPkb2bJiyS9uSY/view?usp=sharing",
 };
