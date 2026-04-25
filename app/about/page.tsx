@@ -2,6 +2,7 @@
 
 import { useLang } from "@/lib/lang-context";
 import { siteContent, contact } from "@/lib/content";
+import { SkillGroup } from "@/components/SkillGroup";
 
 export default function AboutPage() {
   const { lang } = useLang();
@@ -28,19 +29,10 @@ export default function AboutPage() {
         <h2 className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-8">
           {t.skills.title}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <SkillGroup
-            title="Design"
-            skills={t.skills.design}
-          />
-          <SkillGroup
-            title="Data"
-            skills={t.skills.data}
-          />
-          <SkillGroup
-            title="Tools"
-            skills={t.skills.tools}
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <SkillGroup title="Design" icon="✦" skills={t.skills.design} />
+          <SkillGroup title="Data"   icon="◈" skills={t.skills.data} />
+          <SkillGroup title="Tools"  icon="⌘" skills={t.skills.tools} />
         </div>
       </section>
 
@@ -72,18 +64,3 @@ export default function AboutPage() {
   );
 }
 
-function SkillGroup({ title, skills }: { title: string; skills: string[] }) {
-  return (
-    <div>
-      <p className="text-xs text-[var(--muted)] mb-3">{title}</p>
-      <ul className="space-y-2">
-        {skills.map((skill) => (
-          <li key={skill} className="text-sm flex items-center gap-2">
-            <span className="w-1 h-1 rounded-full bg-[var(--accent)] shrink-0" />
-            {skill}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}

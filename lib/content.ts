@@ -369,6 +369,7 @@ export const siteContent = {
       description:
         "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas — e nos resultados do negócio.",
       cta: "Ver projetos",
+      ctaContact: "Vamos conversar",
     },
     projects: {
       title: "Projetos",
@@ -423,6 +424,7 @@ export const siteContent = {
       description:
         "I turn complex problems into simple, useful solutions that make a difference in people's lives — and in business results.",
       cta: "View projects",
+      ctaContact: "Let's talk",
     },
     projects: {
       title: "Projects",
