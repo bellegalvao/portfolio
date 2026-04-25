@@ -25,7 +25,7 @@ export function Navbar() {
             onClick={toggle}
             className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
           >
-            {lang === "pt" ? "EN" : "PT"}
+            {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
           </button>
         </div>
       </nav>

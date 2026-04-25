@@ -407,7 +407,7 @@ export const siteContent = {
       back: "← Voltar",
     },
     footer: {
-      made: "Feito com",
+      made: "Feito com carinho por Isabelle Galvão",
       in: "em",
     },
   },
@@ -461,7 +461,7 @@ export const siteContent = {
       back: "← Back",
     },
     footer: {
-      made: "Made with",
+      made: "Made with love by Isabelle Galvão",
       in: "in",
     },
   },
@@ -469,5 +469,5 @@ export const siteContent = {
 
 export const contact = {
   linkedin: "https://www.linkedin.com/in/isabellegalvao/",
-  email: "isabelle@konsi.com.br",
+  email: "isabellecgalvao@gmail.com",
 };
