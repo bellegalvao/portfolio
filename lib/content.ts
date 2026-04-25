@@ -413,6 +413,8 @@ export const siteContent = {
     footer: {
       made: "Feito com carinho por Isabelle Galvão",
       in: "em",
+      cta: "Vamos iniciar um projeto juntos?",
+      ctaButton: "Vamos lá",
     },
   },
   en: {
@@ -471,6 +473,8 @@ export const siteContent = {
     footer: {
       made: "Made with love by Isabelle Galvão",
       in: "in",
+      cta: "Let's start a project together?",
+      ctaButton: "Let's go",
     },
   },
 };
