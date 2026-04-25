@@ -470,6 +470,7 @@ export const siteContent = {
 };
 
 export const contact = {
-  linkedin: "https://www.linkedin.com/in/isabellegalvao/",
+  linkedin: "https://www.linkedin.com/in/isabelle-galvao/",
+  github: "https://github.com/bellegalvao",
   email: "isabellecgalvao@gmail.com",
 };
