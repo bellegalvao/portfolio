@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-6">
       {/* Hero */}
-      <section className="py-5 md:py-32">
+      <section className="py-5 md:py-24">
         <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
           {/* Text */}
           <motion.div
