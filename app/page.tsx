@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, projects, contact } from "@/lib/content";
 import { ProjectCard } from "@/components/ProjectCard";
-import { SkillGroup } from "@/components/SkillGroup";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -151,24 +150,23 @@ export default function Home() {
         >
           {t.about.skills.title}
         </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {[
-            { title: "Design", icon: "✦", skills: t.about.skills.design },
-            { title: "Data",   icon: "◈", skills: t.about.skills.data },
-            { title: "Tools",  icon: "⌘", skills: t.about.skills.tools },
-          ].map((group, i) => (
-            <motion.div
-              key={group.title}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+        <motion.div
+          className="flex flex-wrap gap-2"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.5 }}
+        >
+          {[...t.about.skills.design, ...t.about.skills.data, ...t.about.skills.tools].map((skill) => (
+            <span
+              key={skill}
+              className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]"
             >
-              <SkillGroup title={group.title} icon={group.icon} skills={group.skills} />
-            </motion.div>
+              {skill}
+            </span>
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );
