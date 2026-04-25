@@ -37,14 +37,35 @@ export default function Home() {
             initial="hidden"
             animate="show"
           >
-            <motion.p variants={fadeUp} className="text-sm text-[var(--muted)] mb-3 font-mono">
-              {t.hero.greeting}
-            </motion.p>
-            <motion.h1 variants={fadeUp} className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
-              {t.hero.role}
-              <span className="text-[var(--accent)]">.</span>
-            </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg text-[var(--muted)] max-w-xl leading-relaxed mb-10">
+            {/* Mobile: greeting + title side by side with circular photo */}
+            <div className="flex items-center justify-between gap-4 md:block">
+              <div>
+                <motion.p variants={fadeUp} className="text-sm text-[var(--muted)] mb-3 font-mono">
+                  {t.hero.greeting}
+                </motion.p>
+                <motion.h1 variants={fadeUp} className="text-5xl md:text-6xl font-bold tracking-tight md:mb-6">
+                  {t.hero.role}
+                  <span className="text-[var(--accent)]">.</span>
+                </motion.h1>
+              </div>
+              {/* Circular photo — mobile only */}
+              <motion.div
+                className="md:hidden relative w-24 h-24 rounded-full overflow-hidden shrink-0"
+                initial={{ opacity: 0, scale: 1.04 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+              >
+                <Image
+                  src="/images/perfil.jpg"
+                  alt="Isabelle Galvão"
+                  fill
+                  sizes="96px"
+                  className="object-cover object-[center_25%]"
+                  priority
+                />
+              </motion.div>
+            </div>
+            <motion.p variants={fadeUp} className="text-lg text-[var(--muted)] max-w-xl leading-relaxed mb-10 mt-6 md:mt-0">
               {t.hero.description}
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
@@ -56,16 +77,16 @@ export default function Home() {
               </a>
               <a
                 href={`mailto:${contact.email}`}
-                className="inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium"
+                className="inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg hover:bg-neutral-400 transition-colors font-medium"
               >
                 {t.hero.ctaContact} {"↗︎"}
               </a>
             </motion.div>
           </motion.div>
 
-          {/* Photo */}
+          {/* Photo — desktop only (rectangular) */}
           <motion.div
-            className="relative w-full h-64 md:w-72 md:h-auto md:self-stretch shrink-0 rounded-2xl overflow-hidden"
+            className="relative hidden md:block md:w-72 md:self-stretch shrink-0 rounded-2xl overflow-hidden"
             initial={{ opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -74,7 +95,7 @@ export default function Home() {
               src="/images/perfil.jpg"
               alt="Isabelle Galvão"
               fill
-              sizes="(min-width: 768px) 288px, 100vw"
+              sizes="288px"
               className="object-cover object-[center_25%]"
               priority
             />
