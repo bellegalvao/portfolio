@@ -36,18 +36,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
           >
-            {/* Available for work badge */}
-            <motion.div variants={fadeUp} className="mb-5">
-              <span className="inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
-                <span className="relative flex w-2 h-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full w-2 h-2 bg-green-400" />
-                </span>
-                {t.hero.availableForWork}
-              </span>
-            </motion.div>
-
-            {/* Mobile: greeting + title side by side with circular photo */}
+            {/* Mobile: greeting + title side by side with circular photo + badge */}
             <div className="flex items-center justify-between gap-4 md:block">
               <div>
                 <motion.p variants={fadeUp} className="text-sm text-[var(--muted)] mb-3 font-mono">
@@ -58,21 +47,30 @@ export default function Home() {
                   <span className="text-[var(--accent)]">.</span>
                 </motion.h1>
               </div>
-              {/* Circular photo — mobile only */}
+              {/* Circular photo + badge — mobile only */}
               <motion.div
-                className="md:hidden relative w-24 h-24 rounded-full overflow-hidden shrink-0"
+                className="md:hidden flex flex-col items-center gap-2 shrink-0"
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
               >
-                <Image
-                  src="/images/perfil.jpg"
-                  alt="Isabelle Galvão"
-                  fill
-                  sizes="96px"
-                  className="object-cover object-[center_25%]"
-                  priority
-                />
+                <div className="relative w-24 h-24 rounded-full overflow-hidden">
+                  <Image
+                    src="/images/perfil.jpg"
+                    alt="Isabelle Galvão"
+                    fill
+                    sizes="96px"
+                    className="object-cover object-[center_25%]"
+                    priority
+                  />
+                </div>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-mono px-2 py-1 rounded-full border border-[var(--border)] text-[var(--muted)] whitespace-nowrap">
+                  <span className="relative flex w-1.5 h-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full w-1.5 h-1.5 bg-green-400" />
+                  </span>
+                  {t.hero.availableForWork}
+                </span>
               </motion.div>
             </div>
             <motion.p variants={fadeUp} className="text-lg text-[var(--muted)] max-w-xl leading-relaxed mb-10 mt-6 md:mt-0">
@@ -106,21 +104,30 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Photo — desktop only (rectangular) */}
+          {/* Photo + badge — desktop only */}
           <motion.div
-            className="relative hidden md:block md:w-72 md:self-stretch shrink-0 rounded-2xl overflow-hidden"
+            className="hidden md:flex md:flex-col md:self-stretch md:w-72 shrink-0 gap-3"
             initial={{ opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
           >
-            <Image
-              src="/images/perfil.jpg"
-              alt="Isabelle Galvão"
-              fill
-              sizes="288px"
-              className="object-cover object-[center_25%]"
-              priority
-            />
+            <div className="relative flex-1 rounded-2xl overflow-hidden min-h-0">
+              <Image
+                src="/images/perfil.jpg"
+                alt="Isabelle Galvão"
+                fill
+                sizes="288px"
+                className="object-cover object-[center_25%]"
+                priority
+              />
+            </div>
+            <span className="inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] self-start">
+              <span className="relative flex w-2 h-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                <span className="relative inline-flex rounded-full w-2 h-2 bg-green-400" />
+              </span>
+              {t.hero.availableForWork}
+            </span>
           </motion.div>
         </div>
       </section>
