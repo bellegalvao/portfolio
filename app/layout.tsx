@@ -69,7 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${monaSans.variable} ${geistSans.variable} ${geistMono.variable}`}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <LangProvider>
           <Navbar />
           <main className="flex-1 pt-14">{children}</main>
