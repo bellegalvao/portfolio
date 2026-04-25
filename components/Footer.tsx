@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-[var(--border)] mt-24">
       <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="text-xs text-[var(--muted)]">
-          {t.made} Next.js {t.in} Salvador, BA
+          {t.made} — Salvador, BA
         </span>
         <div className="flex items-center gap-4">
           <a
