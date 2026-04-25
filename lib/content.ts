@@ -410,6 +410,17 @@ export const siteContent = {
       live: "Ver ao vivo",
       back: "← Voltar",
     },
+    workflow: {
+      title: "Meu processo de criação",
+      description: "No mundo do design, a colaboração é fundamental, e é por isso que a parceria comigo é a escolha certa.",
+      steps: [
+        { title: "Descoberta", description: "Realizo uma imersão em seu negócio para detalharmos as especificações, objetivos e direções estratégicas." },
+        { title: "Ideação", description: "Nessa etapa crio todo o conteúdo do projeto com base nos objetivos do seu negócio e apresentaremos a hierarquia de informação." },
+        { title: "Design", description: "A atenção meticulosa aos detalhes está no centro do meu processo de design, garantindo um produto final polido e impecável." },
+        { title: "Protótipo", description: "Vou detalhar o projeto acrescentando cores, imagens, ilustrações e ícones. Também definiremos algumas interações avançadas." },
+        { title: "Validação", description: "Saio da bolha criativa e confronto a solução com a realidade, garantindo que o que foi construído realmente resolve o problema do usuário e é viável para o negócio." },
+      ],
+    },
     footer: {
       made: "Feito com carinho por Isabelle Galvão",
       in: "em",
@@ -469,6 +480,17 @@ export const siteContent = {
       github: "View on GitHub",
       live: "View live",
       back: "← Back",
+    },
+    workflow: {
+      title: "My creation process",
+      description: "In the world of design, collaboration is fundamental, and that's why partnering with me is the right choice.",
+      steps: [
+        { title: "Discovery", description: "I immerse myself in your business to detail the specifications, objectives and strategic directions." },
+        { title: "Ideation", description: "In this stage I create all the project content based on your business objectives and present the information hierarchy." },
+        { title: "Design", description: "Meticulous attention to detail is at the center of my design process, ensuring a polished and flawless final product." },
+        { title: "Prototype", description: "I'll detail the project by adding colors, images, illustrations and icons. We'll also define some advanced interactions." },
+        { title: "Validation", description: "I step outside the creative bubble and confront the solution with reality, ensuring what was built truly solves the user's problem and is viable for the business." },
+      ],
     },
     footer: {
       made: "Made with love by Isabelle Galvão",
