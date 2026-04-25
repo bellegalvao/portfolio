@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useLang } from "@/lib/lang-context";
-import { siteContent } from "@/lib/content";
+import { siteContent, contact } from "@/lib/content";
 
 export function Navbar() {
   const { lang, toggle } = useLang();
@@ -21,6 +21,12 @@ export function Navbar() {
           <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
             {t.about}
           </Link>
+          <a
+            href={`mailto:${contact.email}`}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+          >
+            {t.contact}
+          </a>
           <button
             onClick={toggle}
             className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
