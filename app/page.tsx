@@ -36,6 +36,17 @@ export default function Home() {
             initial="hidden"
             animate="show"
           >
+            {/* Available for work badge */}
+            <motion.div variants={fadeUp} className="mb-5">
+              <span className="inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
+                <span className="relative flex w-2 h-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full w-2 h-2 bg-green-400" />
+                </span>
+                {t.hero.availableForWork}
+              </span>
+            </motion.div>
+
             {/* Mobile: greeting + title side by side with circular photo */}
             <div className="flex items-center justify-between gap-4 md:block">
               <div>
@@ -79,6 +90,14 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg hover:bg-neutral-400 transition-colors font-medium"
               >
                 {t.hero.ctaContact} {"↗︎"}
+              </a>
+              <a
+                href={contact.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm border border-[var(--border)] px-4 py-2 rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+              >
+                {t.hero.ctaResume} ↗
               </a>
             </motion.div>
           </motion.div>

@@ -370,6 +370,8 @@ export const siteContent = {
         "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas — e nos resultados do negócio.",
       cta: "Ver projetos",
       ctaContact: "Vamos conversar",
+      ctaResume: "Currículo",
+      availableForWork: "Disponível para trabalhar",
     },
     projects: {
       title: "Projetos",
@@ -426,6 +428,8 @@ export const siteContent = {
         "I turn complex problems into simple, useful solutions that make a difference in people's lives — and in business results.",
       cta: "View projects",
       ctaContact: "Let's talk",
+      ctaResume: "Resume",
+      availableForWork: "Available for work",
     },
     projects: {
       title: "Projects",
@@ -475,4 +479,5 @@ export const contact = {
   linkedin: "https://www.linkedin.com/in/isabelle-galvao/",
   github: "https://github.com/bellegalvao",
   email: "isabellecgalvao@gmail.com",
+  resume: "https://drive.google.com/drive/u/0/folders/1c7pIorS8keACf48iOXzwAEfqrjAakp5w",
 };
