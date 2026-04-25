@@ -156,6 +156,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Workflow */}
+      <section className="pb-24">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-20">
+          <div className="md:sticky md:top-24 md:self-start md:w-2/5">
+            <motion.h2
+              className="text-2xl md:text-3xl font-bold mb-4 uppercase"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5 }}
+            >
+              {t.workflow.title}
+            </motion.h2>
+            <motion.p
+              className="text-[var(--muted)] leading-relaxed"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              {t.workflow.description}
+            </motion.p>
+          </div>
+          <div className="flex-1">
+            {t.workflow.steps.map((step, i) => (
+              <motion.div
+                key={i}
+                className="border-t border-[var(--border)] py-8"
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+              >
+                <span className="text-xs font-mono text-[var(--accent)] block mb-2">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+                <p className="text-sm text-[var(--muted)] leading-relaxed">{step.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Skills */}
       <section className="pb-10">
         <motion.h2
