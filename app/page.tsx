@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, projects, contact } from "@/lib/content";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Intro } from "@/components/Intro";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -23,8 +25,11 @@ const fadeIn = {
 export default function Home() {
   const { lang } = useLang();
   const t = siteContent[lang];
+  const [showIntro, setShowIntro] = useState(true);
 
   return (
+    <>
+      {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
     <div className="max-w-5xl mx-auto px-6">
       {/* Hero */}
       <section className="py-5 md:py-24">
@@ -234,5 +239,6 @@ export default function Home() {
         </motion.div>
       </section>
     </div>
+    </>
   );
 }
