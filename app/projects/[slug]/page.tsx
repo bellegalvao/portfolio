@@ -18,7 +18,7 @@ export async function generateMetadata({
   const description = project.pt.summary;
   const ogImage = project.cover
     ? [{ url: project.cover, width: 1200, height: 630, alt: project.pt.title }]
-    : [{ url: "/og-image.png", width: 1200, height: 630 }];
+    : [];
 
   return {
     title,

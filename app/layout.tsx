@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
@@ -26,14 +26,25 @@ const geistMono = Geist_Mono({
 
 const baseUrl = "https://isabellegalvao.com.br";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0a0a0a",
+};
+
 export const metadata: Metadata = {
   title: {
     default: "Isabelle Galvão — Product Designer",
-    template: "%s",
+    template: "%s — Isabelle Galvão",
   },
   description:
     "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
   metadataBase: new URL(baseUrl),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -42,14 +53,12 @@ export const metadata: Metadata = {
     title: "Isabelle Galvão — Product Designer",
     description:
       "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Isabelle Galvão — Product Designer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Isabelle Galvão — Product Designer",
     description:
       "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
-    images: ["/og-image.png"],
   },
 };
 
