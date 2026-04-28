@@ -113,7 +113,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Metrics */}
       <Section label={t.metrics}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className={`grid grid-cols-1 gap-3 ${content.metrics.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
           {content.metrics.map((m: MetricItem, i: number) => (
             <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
               <p className="text-xs text-[var(--muted)] mb-2">{m.label}</p>
