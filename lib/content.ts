@@ -16,7 +16,7 @@ export const projects = [
       title: "Konsi Design System",
       summary: "Sistema de design escalável do zero ao código Flutter em 2 meses.",
       challenge:
-        "Com o produto crescendo, designers e engenheiros trabalhavam sem uma fonte única de verdade — cada tela era recriada do zero, gerando inconsistência e lentidão.",
+        "Com o produto crescendo, designers e engenheiros trabalhavam sem uma fonte única de verdade,cada tela era recriada do zero, gerando inconsistência e lentidão.",
       solution:
         "Criei um design system completo com 3 camadas: tokens semânticos, biblioteca de componentes no Figma e documentação estática com código Flutter pronto para uso.",
       process: [
@@ -53,13 +53,13 @@ export const projects = [
         { label: "Conformidade de acessibilidade", value: "WCAG 2.1 AA" },
       ],
       highlight:
-        "A decisão mais importante foi priorizar documentação rigorosa. Um sistema sem documentação não é adotado — e um sistema não adotado não existe.",
+        "A decisão mais importante foi priorizar documentação rigorosa. Um sistema sem documentação não é adotado,e um sistema não adotado não existe.",
     },
     en: {
       title: "Konsi Design System",
       summary: "Scalable design system from zero to Flutter code in 2 months.",
       challenge:
-        "As the product grew, designers and engineers worked without a single source of truth — every screen was recreated from scratch, causing inconsistency and slow delivery.",
+        "As the product grew, designers and engineers worked without a single source of truth,every screen was recreated from scratch, causing inconsistency and slow delivery.",
       solution:
         "I built a complete design system with 3 layers: semantic tokens, a Figma component library, and static documentation with ready-to-use Flutter code.",
       process: [
@@ -96,7 +96,7 @@ export const projects = [
         { label: "Accessibility compliance", value: "WCAG 2.1 AA" },
       ],
       highlight:
-        "The most important decision was prioritizing rigorous documentation. A system without documentation isn't adopted — and a system that isn't adopted doesn't exist.",
+        "The most important decision was prioritizing rigorous documentation. A system without documentation isn't adopted,and a system that isn't adopted doesn't exist.",
     },
   },
   {
@@ -113,14 +113,14 @@ export const projects = [
       title: "Konsi App",
       summary: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
       challenge:
-        "O desafio não era só criar um app bonito — era oferecer crédito de forma humana para servidores públicos, muitos com baixa familiaridade digital, equilibrando a necessidade real do cliente com a capacidade técnica do produto.",
+        "O desafio não era só criar um app bonito,era oferecer crédito de forma humana para servidores públicos, muitos com baixa familiaridade digital, equilibrando a necessidade real do cliente com a capacidade técnica do produto.",
       solution:
         "Desenhei a jornada completa do zero: Onboarding → Cadastro → Login → Simulação → Contratação → Confirmação → Follow-Up, com foco em reduzir atrito em cada etapa.",
       process: [
         {
           step: "Pesquisa",
           description:
-            "Conduzi pesquisas com usuários e testes de usabilidade para entender as dores do público — muitos idosos e pessoas com pouco acesso a serviços financeiros digitais.",
+            "Conduzi pesquisas com usuários e testes de usabilidade para entender as dores do público,muitos idosos e pessoas com pouco acesso a serviços financeiros digitais.",
         },
         {
           step: "Fluxos",
@@ -155,14 +155,14 @@ export const projects = [
       title: "Konsi App",
       summary: "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
       challenge:
-        "The challenge wasn't just to create a beautiful app — it was to offer credit in a human way to civil servants, many with low digital familiarity, balancing the user's real need with the product's technical capacity.",
+        "The challenge wasn't just to create a beautiful app,it was to offer credit in a human way to civil servants, many with low digital familiarity, balancing the user's real need with the product's technical capacity.",
       solution:
         "I designed the full journey from scratch: Onboarding → Registration → Login → Simulation → Contracting → Confirmation → Follow-Up, focused on reducing friction at every step.",
       process: [
         {
           step: "Research",
           description:
-            "Conducted user research and usability tests to understand pain points — many elderly users and people with limited access to digital financial services.",
+            "Conducted user research and usability tests to understand pain points,many elderly users and people with limited access to digital financial services.",
         },
         {
           step: "Flows",
@@ -191,7 +191,7 @@ export const projects = [
         { label: "Conversion", value: "+25%" },
       ],
       highlight:
-        "The contracting flow looks simple — just address and bank account — but hides real complexity: attaching multiple documents, async validations, and error states. That was the flow I iterated on the most and I'm most proud of.",
+        "The contracting flow looks simple,just address and bank account,but hides real complexity: attaching multiple documents, async validations, and error states. That was the flow I iterated on the most and I'm most proud of.",
     },
   },
   {
@@ -208,7 +208,7 @@ export const projects = [
       title: "Konsi Insights",
       summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
       challenge:
-        "O time de produto, CS e design tomava decisões baseadas em feeling — os feedbacks dos clientes estavam dispersos em múltiplas plataformas sem visibilidade centralizada.",
+        "O time de produto, CS e design tomava decisões baseadas em feeling,os feedbacks dos clientes estavam dispersos em múltiplas plataformas sem visibilidade centralizada.",
       solution:
         "Criei um produto que agrega insights de clientes de diferentes fontes, tornando visível onde estão as dores, gerando relatórios e alimentando o backlog com dados reais.",
       process: [
@@ -220,12 +220,12 @@ export const projects = [
         {
           step: "Design",
           description:
-            "Desenhei a interface focada em visualização de padrões — não apenas listar feedbacks, mas revelar onde se concentram as dores.",
+            "Desenhei a interface focada em visualização de padrões,não apenas listar feedbacks, mas revelar onde se concentram as dores.",
         },
         {
           step: "Desenvolvimento",
           description:
-            "Construí o frontend em JavaScript com ajuda do Claude. Design e código 100% meu — do Figma ao Vercel.",
+            "Construí o frontend em JavaScript com ajuda do Claude. Design e código 100% meu,do Figma ao Vercel.",
         },
       ],
       metrics: [
@@ -234,13 +234,13 @@ export const projects = [
         { label: "Deploy", value: "Vercel" },
       ],
       highlight:
-        "Fiz o design e o código. Usar o Claude como parceiro de desenvolvimento foi uma extensão natural do meu processo — assim como uso dados para embasar decisões de design, usei IA para ampliar minha capacidade de entrega.",
+        "Fiz o design e o código. Usar o Claude como parceiro de desenvolvimento foi uma extensão natural do meu processo,assim como uso dados para embasar decisões de design, usei IA para ampliar minha capacidade de entrega.",
     },
     en: {
       title: "Konsi Insights",
       summary: "Dashboard that centralizes feedback from multiple platforms to generate data-driven product backlogs.",
       challenge:
-        "The product, CS, and design teams made decisions based on gut feeling — customer feedback was scattered across multiple platforms without centralized visibility.",
+        "The product, CS, and design teams made decisions based on gut feeling,customer feedback was scattered across multiple platforms without centralized visibility.",
       solution:
         "I built a product that aggregates customer insights from different sources, making pain points visible, generating reports, and feeding the backlog with real data.",
       process: [
@@ -252,12 +252,12 @@ export const projects = [
         {
           step: "Design",
           description:
-            "Designed the interface focused on pattern visualization — not just listing feedback, but revealing where pain points concentrate.",
+            "Designed the interface focused on pattern visualization,not just listing feedback, but revealing where pain points concentrate.",
         },
         {
           step: "Development",
           description:
-            "Built the frontend in JavaScript with Claude's help. Design and code 100% mine — from Figma to Vercel.",
+            "Built the frontend in JavaScript with Claude's help. Design and code 100% mine,from Figma to Vercel.",
         },
       ],
       metrics: [
@@ -266,7 +266,7 @@ export const projects = [
         { label: "Deploy", value: "Vercel" },
       ],
       highlight:
-        "I did the design and the code. Using Claude as a development partner was a natural extension of my process — just as I use data to support design decisions, I used AI to expand my delivery capacity.",
+        "I did the design and the code. Using Claude as a development partner was a natural extension of my process,just as I use data to support design decisions, I used AI to expand my delivery capacity.",
     },
   },
   {
@@ -283,7 +283,7 @@ export const projects = [
       title: "Minha Sorte",
       summary: "App de apostas em loteria com geração de palpites inteligentes por estatística. Em produção na loja.",
       challenge:
-        "Criar um app de loteria que fosse além de um simples gerador de números — algo que usasse estatística para dar ao usuário uma vantagem real e uma experiência de acompanhamento completa.",
+        "Criar um app de loteria que fosse além de um simples gerador de números,algo que usasse estatística para dar ao usuário uma vantagem real e uma experiência de acompanhamento completa.",
       solution:
         "Desenhei um app com 9 modalidades de loteria (Mega-Sena, Quina, Lotofácil, entre outras), palpites baseados em análise estatística de resultados históricos e 3 modalidades de pagamento.",
       process: [
@@ -295,7 +295,7 @@ export const projects = [
         {
           step: "Design",
           description:
-            "Criei a interface com visual clean e verde — a cor da sorte — e flows claros para cada modalidade de jogo.",
+            "Criei a interface com visual clean e verde,a cor da sorte,e flows claros para cada modalidade de jogo.",
         },
         {
           step: "Pagamentos",
@@ -305,7 +305,7 @@ export const projects = [
         {
           step: "Produção",
           description:
-            "O app foi desenvolvido em Flutter e publicado na loja — está em produção com usuários reais.",
+            "O app foi desenvolvido em Flutter e publicado na loja,está em produção com usuários reais.",
         },
       ],
       metrics: [
@@ -321,7 +321,7 @@ export const projects = [
       title: "Minha Sorte",
       summary: "Lottery betting app with statistical smart number generation. Live in production.",
       challenge:
-        "Create a lottery app that went beyond a simple number generator — something that used statistics to give users a real edge and a complete tracking experience.",
+        "Create a lottery app that went beyond a simple number generator,something that used statistics to give users a real edge and a complete tracking experience.",
       solution:
         "Designed an app with 9 lottery modalities (Mega-Sena, Quina, Lotofácil, and others), statistically-driven picks based on historical results, and 3 payment modalities.",
       process: [
@@ -333,7 +333,7 @@ export const projects = [
         {
           step: "Design",
           description:
-            "Created the interface with a clean green visual — the color of luck — and clear flows for each game modality.",
+            "Created the interface with a clean green visual,the color of luck,and clear flows for each game modality.",
         },
         {
           step: "Payments",
@@ -343,7 +343,7 @@ export const projects = [
         {
           step: "Production",
           description:
-            "The app was built in Flutter and published to the store — it's live in production with real users.",
+            "The app was built in Flutter and published to the store,it's live in production with real users.",
         },
       ],
       metrics: [
@@ -369,7 +369,7 @@ export const siteContent = {
       greeting: "Olá, sou Isabelle",
       role: "Product Designer",
       description:
-        "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas — e nos resultados do negócio.",
+        "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas,e nos resultados do negócio.",
       cta: "Ver projetos",
       ctaContact: "Vamos conversar",
       ctaResume: "Currículo",
@@ -384,7 +384,7 @@ export const siteContent = {
       bio: [
         "Product Designer brasileira com 6 anos de experiência em produto, growth e web design, especializada em criar fluxos visualmente impactantes, intuitivos e com alta conversão.",
         "Trabalho para transformar problemas complexos em soluções simples, úteis e que realmente façam diferença na vida das pessoas e nos resultados do negócio.",
-        "Sigo o conceito de que o design vai muito além de estética — é sobre tomar decisões bem fundamentadas, equilibrando necessidades do usuário, objetivos da empresa e viabilidade técnica. Por isso, busco sempre trabalhar de forma orientada por dados, validando hipóteses e aprendendo continuamente com o comportamento real dos usuários.",
+        "Sigo o conceito de que o design vai muito além de estética,é sobre tomar decisões bem fundamentadas, equilibrando necessidades do usuário, objetivos da empresa e viabilidade técnica. Por isso, busco sempre trabalhar de forma orientada por dados, validando hipóteses e aprendendo continuamente com o comportamento real dos usuários.",
         "Tenho como objetivo atuar como um conector entre estratégia, tecnologia e experiência, contribuindo para a construção de produtos que não apenas funcionem bem, mas que sejam relevantes, escaláveis e sustentem o crescimento da empresa.",
       ],
       location: "Salvador, Bahia",
@@ -442,7 +442,7 @@ export const siteContent = {
       greeting: "Hi, I'm Isabelle",
       role: "Product Designer",
       description:
-        "I turn complex problems into simple, useful solutions that make a difference in people's lives — and in business results.",
+        "I turn complex problems into simple, useful solutions that make a difference in people's lives,and in business results.",
       cta: "View projects",
       ctaContact: "Let's talk",
       ctaResume: "Resume",
@@ -457,10 +457,10 @@ export const siteContent = {
       bio: [
         "Product Designer from Brazil with 6 years of experience in product, growth and web design, I specialize in crafting visually stunning, user-friendly, and high-converting flows.",
         "I work to turn complex problems into simple, useful solutions that truly make a difference in people's lives and in business results.",
-        "I believe design goes far beyond aesthetics — it's about making well-grounded decisions, balancing user needs, business goals, and technical feasibility. That's why I always aim to work data-driven, validating hypotheses and learning continuously from real user behavior.",
+        "I believe design goes far beyond aesthetics,it's about making well-grounded decisions, balancing user needs, business goals, and technical feasibility. That's why I always aim to work data-driven, validating hypotheses and learning continuously from real user behavior.",
         "My goal is to act as a connector between strategy, technology, and experience, contributing to products that don't just work well, but are relevant, scalable, and sustain company growth.",
       ],
-      location: "Salvador, Bahia — Brazil",
+      location: "Salvador, Bahia,Brazil",
       skills: {
         title: "Skills",
         design: ["Figma", "Design Systems", "UI/UX", "User research", "Usability testing", "NPS"],
