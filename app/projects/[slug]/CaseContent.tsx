@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { use } from "react";
+import React, { use } from "react";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, projects, contact } from "@/lib/content";
 import { notFound } from "next/navigation";
+import { ProjectCard } from "@/components/ProjectCard";
 
 interface MetricItem {
   label: string;
@@ -113,20 +114,27 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Metrics */}
       <Section label={t.metrics}>
-        <div className={`grid grid-cols-1 gap-3 ${content.metrics.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
+        <div className="flex flex-col sm:flex-row items-stretch gap-0">
           {content.metrics.map((m: MetricItem, i: number) => (
-            <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
-              <p className="text-xs text-[var(--muted)] mb-2">{m.label}</p>
-              {m.before && m.after ? (
-                <div className="flex items-center gap-2">
-                  <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
-                  <span className="text-xs text-[var(--muted)]">→</span>
-                  <span className="text-base font-semibold text-[var(--accent)]">{m.after}</span>
+            <React.Fragment key={i}>
+              <div className="flex-1 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+                <p className="text-xs text-[var(--muted)] mb-2">{m.label}</p>
+                {m.before && m.after ? (
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
+                    <span className="text-xs text-[var(--muted)]">→</span>
+                    <span className="text-base font-semibold text-[var(--accent)]">{m.after}</span>
+                  </div>
+                ) : (
+                  <p className="text-base font-semibold text-[var(--foreground)]">{m.value}</p>
+                )}
+              </div>
+              {i < content.metrics.length - 1 && (
+                <div className="flex items-center justify-center text-[var(--muted)] px-2 py-2 sm:py-0 self-center text-lg">
+                  →
                 </div>
-              ) : (
-                <p className="text-base font-semibold text-[var(--foreground)]">{m.value}</p>
               )}
-            </div>
+            </React.Fragment>
           ))}
         </div>
       </Section>
@@ -150,6 +158,9 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
             )}
             {project.links.live && (
               <ExternalLink href={project.links.live} label={t.live} />
+            )}
+            {project.links.android && (
+              <ExternalLink href={project.links.android} label={t.android} />
             )}
           </div>
         </Section>
@@ -189,6 +200,36 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
         </button>
       </div>
+
+      {/* More work */}
+      {(() => {
+        const others = projects.filter((p) => p.slug !== slug).slice(0, 3);
+        if (others.length === 0) return null;
+        return (
+          <>
+            <div className="border-t border-[var(--border)] mt-12 mb-10" />
+            <section>
+              <h2 className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-6">
+                {t.moreWork}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {others.map((p, i) => (
+                  <ProjectCard
+                    key={p.slug}
+                    slug={p.slug}
+                    title={p[lang].title}
+                    summary={p[lang].summary}
+                    tags={p.tags}
+                    year={p.year}
+                    index={i}
+                    cover={p.cover}
+                  />
+                ))}
+              </div>
+            </section>
+          </>
+        );
+      })()}
     </div>
   );
 }
