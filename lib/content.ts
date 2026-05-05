@@ -6,7 +6,7 @@ export const projects = [
     year: "2026",
     tags: ["Design Systems", "Design + Code", "Flutter"],
     images: ["/images/konsi-ds-live.png"],
-    cover: "/images/konsi-ds-live.png",
+    cover: "/images/ds-konsi.webp",
     links: {
       figma: "https://www.figma.com/design/dgIacIvjWtNgIB6mmhoRbN",
       github: "https://github.com/bellegalvao/konsi-design-system",
@@ -104,9 +104,10 @@ export const projects = [
     year: "2023",
     tags: ["Product Design", "Mobile", "Fintech"],
     images: ["/images/konsi-app-1.png", "/images/konsi-app-2.png", "/images/konsi-app-3.png"],
-    cover: "/images/konsi-app-2.png",
+    cover: "/images/konsi-app-cover.webp",
     links: {
       figma: "https://www.figma.com/design/iJ6LZoPpLwhkA232HjtTQj",
+      android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",
     },
     pt: {
       title: "Konsi App",
@@ -143,12 +144,12 @@ export const projects = [
         },
       ],
       metrics: [
+        { label: "NPS implementado do zero", value: "✓" },
         { label: "NPS", value: "Acima de 80 pts" },
         { label: "Conversão", value: "+25%" },
-        { label: "NPS implementado do zero", value: "✓" },
       ],
       highlight:
-        "O fluxo de contratação parece simples — só endereço e conta bancária — mas esconde complexidade real: anexar documentos diversos, validações assíncronas e estados de erro. Esse foi o fluxo que mais iterei e tenho mais orgulho.",
+        "O fluxo de contratação parece simples, só endereço e conta bancária, mas tem uma complexidade real: anexar documentos diversos, validações assíncronas e estados de erro. Esse foi o fluxo que mais criei soluções e melhorias, tenho muito orgulho dele.",
     },
     en: {
       title: "Konsi App",
@@ -185,9 +186,9 @@ export const projects = [
         },
       ],
       metrics: [
+        { label: "NPS implemented from scratch", value: "✓" },
         { label: "NPS", value: "Above 80 pts" },
         { label: "Conversion", value: "+25%" },
-        { label: "NPS implemented from scratch", value: "✓" },
       ],
       highlight:
         "The contracting flow looks simple — just address and bank account — but hides real complexity: attaching multiple documents, async validations, and error states. That was the flow I iterated on the most and I'm most proud of.",
@@ -198,7 +199,7 @@ export const projects = [
     year: "2025",
     tags: ["Data Product", "Dashboard", "Design + Code"],
     images: ["/images/konsi-insights-live.png"],
-    cover: "/images/konsi-insights-live.png",
+    cover: "/images/konsi-insights.webp",
     links: {
       github: "https://github.com/bellegalvao/konsi-insights",
       live: "https://konsi-insights.vercel.app/",
@@ -273,9 +274,10 @@ export const projects = [
     year: "2021",
     tags: ["Product Design", "Mobile", "Em produção"],
     images: ["/images/minha-sorte-1.png", "/images/minha-sorte-2.png"],
-    cover: "/images/minha-sorte-1.png",
+    cover: "/images/minha-sorte.webp",
     links: {
       figma: "https://www.figma.com/design/9IOcNtIfc7QiDCd46dzAKS",
+      android: "https://android.minhasorteapp.com.br",
     },
     pt: {
       title: "Minha Sorte",
@@ -408,7 +410,9 @@ export const siteContent = {
       figma: "Abrir no Figma",
       github: "Ver no GitHub",
       live: "Ver ao vivo",
+      android: "Ver na Play Store",
       back: "← Voltar",
+      moreWork: "Mais trabalhos",
     },
     workflow: {
       title: "Meu processo de criação",
@@ -479,7 +483,9 @@ export const siteContent = {
       figma: "Open in Figma",
       github: "View on GitHub",
       live: "View live",
+      android: "View on Play Store",
       back: "← Back",
+      moreWork: "More work",
     },
     workflow: {
       title: "My creation process",

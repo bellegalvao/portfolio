@@ -101,7 +101,7 @@ export function AboutContent() {
           >
             <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-              {t.contact.email} — {contact.email}
+              {t.contact.email} ↗
             </span>
           </a>
         </div>
