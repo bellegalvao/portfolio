@@ -26,7 +26,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
   const content = project[lang];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 pt-16 pb-6">
+    <div className="max-w-5xl mx-auto px-6 pt-0 md:pt-16 pb-6">
       {/* Back */}
       <Link
         href="/#projects"
@@ -114,7 +114,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Metrics */}
       <Section label={t.metrics}>
-        <div className="flex flex-col sm:flex-row items-stretch gap-0">
+        <div className="flex flex-col sm:flex-row items-stretch gap-2 sm:gap-0">
           {content.metrics.map((m: MetricItem, i: number) => (
             <React.Fragment key={i}>
               <div className="flex-1 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
@@ -130,7 +130,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                 )}
               </div>
               {i < content.metrics.length - 1 && (
-                <div className="flex items-center justify-center text-[var(--muted)] px-2 py-2 sm:py-0 self-center text-lg">
+                <div className="hidden sm:flex items-center justify-center text-[var(--muted)] px-2 self-center text-lg">
                   →
                 </div>
               )}
