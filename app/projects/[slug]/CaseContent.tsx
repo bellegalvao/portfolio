@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { use } from "react";
+import React, { use } from "react";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, projects, contact } from "@/lib/content";
 import { notFound } from "next/navigation";
@@ -116,8 +116,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       <Section label={t.metrics}>
         <div className="flex flex-col sm:flex-row items-stretch gap-0">
           {content.metrics.map((m: MetricItem, i: number) => (
-            <>
-              <div key={i} className="flex-1 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+            <React.Fragment key={i}>
+              <div className="flex-1 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
                 <p className="text-xs text-[var(--muted)] mb-2">{m.label}</p>
                 {m.before && m.after ? (
                   <div className="flex items-center gap-2">
@@ -130,11 +130,11 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                 )}
               </div>
               {i < content.metrics.length - 1 && (
-                <div key={`arrow-${i}`} className="flex items-center justify-center text-[var(--muted)] px-2 py-2 sm:py-0 self-center text-lg">
+                <div className="flex items-center justify-center text-[var(--muted)] px-2 py-2 sm:py-0 self-center text-lg">
                   →
                 </div>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
       </Section>
