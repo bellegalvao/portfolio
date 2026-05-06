@@ -91,10 +91,25 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
               {project.images.map((img, i) => (
                 <div
                   key={i}
-                  className="relative w-[70vw] md:w-52 shrink-0 rounded-xl overflow-hidden border border-[var(--border)] snap-start"
-                  style={{ aspectRatio: "10/19" }}
+                  className={`shrink-0 rounded-xl overflow-hidden border border-[var(--border)] snap-start ${
+                    project.imageLayout === "landscape"
+                      ? "w-[85vw] md:w-[calc(50%-6px)]"
+                      : "w-[70vw] md:w-52"
+                  }`}
                 >
-                  <Image src={img} alt={`${content.title} ${i + 1}`} fill className="object-cover object-center" />
+                  {project.imageLayout === "landscape" ? (
+                    <Image
+                      src={img}
+                      alt={`${content.title} ${i + 1}`}
+                      width={1400}
+                      height={1000}
+                      className="w-full h-auto block"
+                    />
+                  ) : (
+                    <div className="relative" style={{ aspectRatio: "10/19" }}>
+                      <Image src={img} alt={`${content.title} ${i + 1}`} fill className="object-cover object-center" />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

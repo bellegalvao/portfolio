@@ -199,8 +199,10 @@ export const projects = [
     slug: "konsi-insights",
     year: "2025",
     tags: ["Data Product", "Dashboard", "Design + Code"],
-    images: ["/images/konsi-insights-live.png"],
+    images: ["/images/konsi-insights-1.webp", "/images/konsi-insights-2.webp"],
+    imageLayout: "landscape" as const,
     cover: "/images/konsi-insights.webp",
+    banner: "/images/konsi-insights-banner.webp",
     links: {
       github: "https://github.com/bellegalvao/konsi-insights",
       live: "https://konsi-insights.vercel.app/",
@@ -276,6 +278,7 @@ export const projects = [
     tags: ["Product Design", "Mobile", "Em produção"],
     images: ["/images/minha-sorte-1.png", "/images/minha-sorte-2.png"],
     cover: "/images/minha-sorte.webp",
+    banner: "/images/minha-sorte-banner.webp",
     links: {
       figma: "https://www.figma.com/design/9IOcNtIfc7QiDCd46dzAKS",
       android: "https://android.minhasorteapp.com.br",
