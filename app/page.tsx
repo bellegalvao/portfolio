@@ -231,7 +231,7 @@ export default function Home() {
           {[...t.about.skills.design, ...t.about.skills.data, ...t.about.skills.tools].map((skill) => (
             <span
               key={skill}
-              className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]"
+              className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--accent)]/50 hover:bg-[var(--surface)] transition-all duration-200 cursor-default"
             >
               {skill}
             </span>
