@@ -103,8 +103,9 @@ export const projects = [
     slug: "konsi-app",
     year: "2023",
     tags: ["Product Design", "Mobile", "Fintech"],
-    images: ["/images/konsi-app-1.png", "/images/konsi-app-2.png", "/images/konsi-app-3.png"],
+    images: ["/images/konsi-app-1.webp", "/images/konsi-app-2.webp", "/images/konsi-app-3.webp", "/images/konsi-app-4.webp", "/images/konsi-app-5.webp", "/images/konsi-app-6.webp"],
     cover: "/images/konsi-app-cover.webp",
+    banner: "/images/konsi-banner-top.webp",
     links: {
       figma: "https://www.figma.com/design/iJ6LZoPpLwhkA232HjtTQj",
       android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",

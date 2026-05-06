@@ -26,7 +26,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
   const content = project[lang];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 pt-0 md:pt-16 pb-6">
+    <div className="max-w-5xl mx-auto px-6 pt-0 pb-6">
       {/* Back */}
       <Link
         href="/#projects"
@@ -54,9 +54,29 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         <p className="text-lg text-[var(--muted)] leading-relaxed">{content.summary}</p>
       </header>
 
-      {/* Images */}
+      {/* Banner (projeto específico) */}
+      {project.banner && (
+        <div className="relative w-full overflow-hidden border border-[var(--border)] mb-16" style={{ aspectRatio: "16/9", borderRadius: "18px" }}>
+          <Image src={project.banner} alt={content.title} fill className="object-contain" />
+        </div>
+      )}
+
+      {/* Divider */}
+      <div className="border-t border-[var(--border)] mb-16" />
+
+      {/* Challenge */}
+      <Section label={t.challenge}>
+        <p className="text-[var(--muted)] leading-relaxed">{content.challenge}</p>
+      </Section>
+
+      {/* Solution */}
+      <Section label={t.solution}>
+        <p className="text-[var(--muted)] leading-relaxed">{content.solution}</p>
+      </Section>
+
+      {/* Images (carousel) */}
       {project.images && project.images.length > 0 && (
-        <div className="mb-16">
+        <div className="mb-12">
           {project.images.length === 1 ? (
             <div className="relative w-full rounded-xl overflow-hidden border border-[var(--border)]" style={{ aspectRatio: "16/9" }}>
               <Image
@@ -74,26 +94,13 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                   className="relative w-[70vw] md:w-52 shrink-0 rounded-xl overflow-hidden border border-[var(--border)] snap-start"
                   style={{ aspectRatio: "10/19" }}
                 >
-                  <Image src={img} alt={`${content.title} ${i + 1}`} fill className="object-cover object-top" />
+                  <Image src={img} alt={`${content.title} ${i + 1}`} fill className="object-cover object-center" />
                 </div>
               ))}
             </div>
           )}
         </div>
       )}
-
-      {/* Divider */}
-      <div className="border-t border-[var(--border)] mb-16" />
-
-      {/* Challenge */}
-      <Section label={t.challenge}>
-        <p className="text-[var(--muted)] leading-relaxed">{content.challenge}</p>
-      </Section>
-
-      {/* Solution */}
-      <Section label={t.solution}>
-        <p className="text-[var(--muted)] leading-relaxed">{content.solution}</p>
-      </Section>
 
       {/* Process */}
       <Section label={t.process}>
