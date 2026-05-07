@@ -194,7 +194,20 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       </Section>
 
       {/* Links */}
-      {project.comingSoon ? (
+      {"internalNote" in project && project.internalNote && (
+        <Section label={t.links}>
+          <div className="flex flex-wrap gap-3">
+            <div className="inline-flex items-center gap-2 text-sm text-[var(--muted)] border border-[var(--border)] rounded-lg px-4 py-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--muted)] shrink-0" />
+              {lang === "pt" ? "Sistema interno" : "Internal system"}
+            </div>
+            {"links" in project && project.links.github && (
+              <ExternalLink href={project.links.github} label={t.github} />
+            )}
+          </div>
+        </Section>
+      )}
+      {!("internalNote" in project && project.internalNote) && (project.comingSoon ? (
         <Section label={t.links}>
           <div className="inline-flex items-center gap-2 text-sm text-[var(--muted)] border border-[var(--border)] rounded-lg px-4 py-2.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse shrink-0" />
@@ -220,7 +233,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
             )}
           </div>
         </Section>
-      )}
+      ))}
 
       {/* Contact CTA + Back to top */}
       <ContactCTA lang={lang} />

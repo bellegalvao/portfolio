@@ -208,8 +208,8 @@ export const projects = [
     banner: "/images/konsi-insights-banner.webp",
     links: {
       github: "https://github.com/bellegalvao/konsi-insights",
-      live: "https://konsi-insights.vercel.app/",
     },
+    internalNote: true as const,
     pt: {
       title: "Konsi Insights",
       summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
