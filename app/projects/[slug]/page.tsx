@@ -16,9 +16,7 @@ export async function generateMetadata({
 
   const title = `${project.pt.title} — Isabelle Galvão`;
   const description = project.pt.summary;
-  const ogImage = project.cover
-    ? [{ url: project.cover, width: 1200, height: 630, alt: project.pt.title }]
-    : [];
+  const ogImage = project.cover ? [{ url: project.cover, alt: project.pt.title }] : [];
 
   return {
     title,

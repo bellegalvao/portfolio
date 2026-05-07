@@ -146,13 +146,18 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       </Section>
 
       {/* Mid Images (between Process and Metrics) */}
-      {"midImages" in project && Array.isArray(project.midImages) && project.midImages.length > 0 && (
-        <div className="mb-12 flex flex-col" style={{ gap: "8px" }}>
-          {(project.midImages as string[]).map((img, i) => (
-            <ScrollFadeImage key={i} src={img} alt={`${content.title} detail ${i + 1}`} index={i} />
-          ))}
-        </div>
-      )}
+      {(() => {
+        if (!("midImages" in project)) return null;
+        const midImgs: string[] = Array.isArray(project.midImages) ? project.midImages as string[] : [];
+        if (midImgs.length === 0) return null;
+        return (
+          <div className="mb-12 flex flex-col" style={{ gap: "8px" }}>
+            {midImgs.map((img, i) => (
+              <ScrollFadeImage key={i} src={img} alt={`${content.title} detail ${i + 1}`} index={i} />
+            ))}
+          </div>
+        );
+      })()}
 
       {/* Metrics */}
       <Section label={t.metrics}>
@@ -261,7 +266,7 @@ function VisualOnlyCase({
   project: { slug: string; year: string; tags: string[]; images: string[]; links: { figma?: string; github?: string; live?: string; android?: string }; cover: string; banner?: string };
   content: { title: string; summary?: string };
   slug: string;
-  lang: string;
+  lang: "pt" | "en";
   t: Record<string, string>;
 }) {
   const others = projects.filter((p) => p.slug !== slug && !("hidden" in p && p.hidden)).slice(0, 3);
@@ -374,7 +379,7 @@ function Section({ label, children }: { label: string; children: React.ReactNode
   );
 }
 
-function ContactCTA({ lang }: { lang: string }) {
+function ContactCTA({ lang }: { lang: "pt" | "en" }) {
   return (
     <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
       <div>

@@ -9,7 +9,7 @@ export function Footer() {
 
   return (
     <footer className="mt-10">
-      <div className="max-w-5xl mx-auto px-6 py-24 md:py-32 flex flex-row items-center justify-between gap-6">
+      <div className="max-w-5xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-6">
         <h2 className="text-3xl md:text-5xl font-bold">
           {lang === "pt" ? (
             <>Vamos iniciar<br />um projeto juntos?</>
