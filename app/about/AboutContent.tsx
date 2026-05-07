@@ -18,7 +18,7 @@ export function AboutContent() {
       <div className="flex items-center gap-5 mb-12">
         <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
           <Image
-            src="/images/perfil.jpg"
+            src="/images/perfil.webp"
             alt="Isabelle Galvão"
             fill
             sizes="80px"

@@ -269,10 +269,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                     key={p.slug}
                     slug={p.slug}
                     title={p[lang].title}
-                    summary={p[lang].summary}
                     tags={p.tags}
                     year={p.year}
-                    index={i}
                     cover={p.cover}
                   />
                 ))}
@@ -416,10 +414,8 @@ function VisualOnlyCase({
                   key={p.slug}
                   slug={p.slug}
                   title={p[lang as "pt" | "en"].title}
-                  summary={p[lang as "pt" | "en"].summary ?? ""}
                   tags={p.tags}
                   year={p.year}
-                  index={i}
                   cover={p.cover}
                 />
               ))}
@@ -450,7 +446,7 @@ function ScrollFadeImage({ src, alt, index }: { src: string; alt: string; index:
       ref={ref}
       initial={{ opacity: 0, y: 32 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: Math.min(index * 0.08, 0.3), ease: [0.22, 1, 0.36, 1] }}
       className="rounded-xl overflow-hidden border border-[var(--border)] w-full"
     >
       <Image

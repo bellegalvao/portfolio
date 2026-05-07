@@ -6,7 +6,7 @@ export const projects = [
     year: "2026",
     featured: true as const,
     tags: ["Design Systems", "Design + Code", "Flutter"],
-    images: ["/images/konsi-ds-live.png", "/images/konsi-ds-1.webp"],
+    images: ["/images/konsi-ds-live.webp", "/images/konsi-ds-1.webp"],
     imageLayout: "stacked" as const,
     midImages: ["/images/konsi-ds-3.webp", "/images/konsi-ds-4.webp", "/images/konsi-ds-2.webp"],
     cover: "/images/ds-konsi.webp",
@@ -420,7 +420,7 @@ export const projects = [
     slug: "minha-sorte",
     year: "2025",
     tags: ["Product Design", "Mobile", "Em produção"],
-    images: ["/images/minha-sorte-1.png", "/images/minha-sorte-2.png"],
+    images: ["/images/minha-sorte-1.webp", "/images/minha-sorte-2.webp"],
     cover: "/images/minha-sorte.webp",
     banner: "/images/minha-sorte-banner.webp",
     links: {

@@ -60,7 +60,7 @@ export default function Home() {
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
               >
                 <Image
-                  src="/images/perfil.jpg"
+                  src="/images/perfil.webp"
                   alt="Isabelle Galvão"
                   fill
                   sizes="96px"
@@ -114,7 +114,7 @@ export default function Home() {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
           >
             <Image
-              src="/images/perfil.jpg"
+              src="/images/perfil.webp"
               alt="Isabelle Galvão"
               fill
               sizes="288px"
@@ -158,10 +158,8 @@ export default function Home() {
               <ProjectCard
                 slug={project.slug}
                 title={project[lang].title}
-                summary={project[lang].summary}
                 tags={project.tags}
                 year={project.year}
-                index={i}
                 cover={project.cover}
                 featured={"featured" in project && project.featured}
               />

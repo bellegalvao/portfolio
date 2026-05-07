@@ -8,15 +8,13 @@ import { siteContent } from "@/lib/content";
 interface ProjectCardProps {
   slug: string;
   title: string;
-  summary: string;
   tags: string[];
   year: string;
-  index: number;
   cover?: string;
   featured?: boolean;
 }
 
-export function ProjectCard({ slug, title, tags, year, index, cover, featured }: ProjectCardProps) {
+export function ProjectCard({ slug, title, tags, year, cover, featured }: ProjectCardProps) {
   const { lang } = useLang();
   const t = siteContent[lang].projects;
 
