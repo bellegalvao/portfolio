@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React, { use } from "react";
+import React, { use, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { siteContent, projects, contact } from "@/lib/content";
 import { notFound } from "next/navigation";
@@ -74,10 +75,16 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         <p className="text-[var(--muted)] leading-relaxed">{content.solution}</p>
       </Section>
 
-      {/* Images (carousel) */}
+      {/* Images */}
       {project.images && project.images.length > 0 && (
         <div className="mb-12">
-          {project.images.length === 1 ? (
+          {project.imageLayout === "stacked" ? (
+            <div className="flex flex-col" style={{ gap: "8px" }}>
+              {project.images.map((img, i) => (
+                <ScrollFadeImage key={i} src={img} alt={`${content.title} ${i + 1}`} index={i} />
+              ))}
+            </div>
+          ) : project.images.length === 1 ? (
             <div className="relative w-full rounded-xl overflow-hidden border border-[var(--border)]" style={{ aspectRatio: "16/9" }}>
               <Image
                 src={project.images[0]}
@@ -273,6 +280,28 @@ function Section({ label, children }: { label: string; children: React.ReactNode
       </h2>
       {children}
     </section>
+  );
+}
+
+function ScrollFadeImage({ src, alt, index }: { src: string; alt: string; index: number }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 32 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+      className="rounded-xl overflow-hidden border border-[var(--border)] w-full"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={1600}
+        height={900}
+        className="w-full h-auto block"
+      />
+    </motion.div>
   );
 }
 
