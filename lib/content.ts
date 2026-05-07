@@ -4,6 +4,7 @@ export const projects = [
   {
     slug: "konsi-design-system",
     year: "2026",
+    featured: true as const,
     tags: ["Design Systems", "Design + Code", "Flutter"],
     images: ["/images/konsi-ds-live.png"],
     cover: "/images/ds-konsi.webp",

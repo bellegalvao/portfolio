@@ -138,7 +138,15 @@ export default function Home() {
           {t.projects.title}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.filter((p) => !("hidden" in p && p.hidden)).map((project, i) => (
+          {projects
+            .filter((p) => !("hidden" in p && p.hidden))
+            .sort((a, b) => {
+              const aFeatured = "featured" in a && a.featured ? 1 : 0;
+              const bFeatured = "featured" in b && b.featured ? 1 : 0;
+              if (bFeatured !== aFeatured) return bFeatured - aFeatured;
+              return Number(b.year) - Number(a.year);
+            })
+            .map((project, i) => (
             <motion.div
               key={project.slug}
               variants={fadeUp}
@@ -155,6 +163,7 @@ export default function Home() {
                 year={project.year}
                 index={i}
                 cover={project.cover}
+                featured={"featured" in project && project.featured}
               />
             </motion.div>
           ))}

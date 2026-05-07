@@ -13,9 +13,10 @@ interface ProjectCardProps {
   year: string;
   index: number;
   cover?: string;
+  featured?: boolean;
 }
 
-export function ProjectCard({ slug, title, tags, year, index, cover }: ProjectCardProps) {
+export function ProjectCard({ slug, title, tags, year, index, cover, featured }: ProjectCardProps) {
   const { lang } = useLang();
   const t = siteContent[lang].projects;
 
@@ -30,6 +31,12 @@ export function ProjectCard({ slug, title, tags, year, index, cover }: ProjectCa
               fill
               className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
             />
+            {featured && (
+              <div className="absolute top-3 left-3 z-10 flex items-center gap-1 px-2.5 py-1 rounded-full bg-yellow-50/95 backdrop-blur-sm text-[11px] font-semibold text-amber-600 shadow-sm">
+                <span>★</span>
+                <span>Destaque</span>
+              </div>
+            )}
             <div className="absolute bottom-0 left-0 right-0 px-3 pb-3 pt-8 bg-gradient-to-t from-black/50 to-transparent flex flex-wrap gap-1.5">
               {tags.map((tag) => (
                 <span
