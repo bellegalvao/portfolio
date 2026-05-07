@@ -283,7 +283,7 @@ function VisualOnlyCase({
   lang,
   t,
 }: {
-  project: { slug: string; year: string; tags: string[]; images: string[]; links: Record<string, string>; cover: string; banner?: string };
+  project: { slug: string; year: string; tags: string[]; images: string[]; links: { figma?: string; github?: string; live?: string; android?: string }; cover: string; banner?: string };
   content: { title: string; summary?: string };
   slug: string;
   lang: string;
@@ -347,13 +347,51 @@ function VisualOnlyCase({
 
       {/* Links */}
       {Object.keys(project.links).length > 0 && (
-        <div className="mt-16 pt-8 border-t border-[var(--border)] flex flex-wrap gap-3">
-          {project.links.figma && <ExternalLink href={project.links.figma} label={t.figma} />}
-          {project.links.github && <ExternalLink href={project.links.github} label={t.github} />}
-          {project.links.live && <ExternalLink href={project.links.live} label={t.live} />}
-          {project.links.android && <ExternalLink href={project.links.android} label={t.android} />}
+        <div className="mt-16 pt-8 border-t border-[var(--border)]">
+          <h2 className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-4">{t.links}</h2>
+          <div className="flex flex-wrap gap-3">
+            {project.links.figma && <ExternalLink href={project.links.figma} label={t.figma} />}
+            {project.links.github && <ExternalLink href={project.links.github} label={t.github} />}
+            {project.links.live && <ExternalLink href={project.links.live} label={t.live} />}
+            {project.links.android && <ExternalLink href={project.links.android} label={t.android} />}
+          </div>
         </div>
       )}
+
+      {/* Contact CTA */}
+      <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p className="text-[var(--muted)] mb-4 text-sm">
+            {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
+          </p>
+          <div className="flex gap-3">
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+              <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
+            </a>
+            <a
+              href={`mailto:${contact.email}`}
+              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+              <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+                {lang === "pt" ? "E-mail" : "Email"}
+              </span>
+            </a>
+          </div>
+        </div>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors shrink-0"
+        >
+          ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
+        </button>
+      </div>
 
       {/* More work */}
       {others.length > 0 && (

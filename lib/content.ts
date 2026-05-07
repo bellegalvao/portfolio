@@ -375,7 +375,7 @@ export const projects = [
   {
     slug: "meu-vivaz",
     year: "2021",
-    tags: ["Design"],
+    tags: ["Product Design", "Discovery", "Mobile"],
     images: [
       "/images/meu-vivaz-1.webp",
       "/images/meu-vivaz-2.webp",
@@ -390,7 +390,10 @@ export const projects = [
     cover: "/images/meu-vivaz-cover.webp",
     banner: "/images/meu-vivaz.webp",
     visualOnly: true as const,
-    links: {} as Record<string, never>,
+    links: {
+      figma: "https://www.figma.com/design/Kp6hwdVMrsaSPPw34iBSnK/%F0%9F%92%95--Projeto-2021----Meu-Vivaz?node-id=0-1&t=JA1EsEDUvcdzp3Qj-1",
+      android: "https://play.google.com/store/apps/details?id=br.com.cyrela.app.vivaz&hl=pt_BR",
+    },
     pt: {
       title: "Meu Vivaz",
       summary: "O projeto teve como objetivo ajudar pessoas a acompanhar todas as etapas da aquisição de um imóvel novo.",
