@@ -50,6 +50,7 @@ export default function Home() {
                 <motion.h1 variants={fadeUp} className="text-5xl md:text-6xl font-bold tracking-tight md:mb-6">
                   {t.hero.role}
                   <span className="text-[var(--accent)]">.</span>
+                  <span className="sr-only"> Isabelle Galvão</span>
                 </motion.h1>
               </div>
               {/* Circular photo — mobile only */}

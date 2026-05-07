@@ -14,7 +14,7 @@ export async function generateMetadata({
     return { title: "Projeto não encontrado — Isabelle Galvão" };
   }
 
-  const title = `${project.pt.title} — Isabelle Galvão`;
+  const title = `${project.pt.title} | Case de Design — Isabelle Galvão`;
   const description = project.pt.summary;
   const ogImage = project.cover ? [{ url: project.cover, alt: project.pt.title }] : [];
 

@@ -17,7 +17,7 @@ export const projects = [
     },
     pt: {
       title: "Konsi Design System",
-      summary: "Sistema de design escalável do zero ao código Flutter em 2 meses.",
+      summary: "Sistema de design escalável do zero ao código Flutter em 2 meses — design system, tokens semânticos, Material 3.",
       challenge:
         "Com o produto crescendo, designers e engenheiros trabalhavam sem uma fonte única de verdade,cada tela era recriada do zero, gerando inconsistência e lentidão.",
       solution:
@@ -115,7 +115,7 @@ export const projects = [
     },
     pt: {
       title: "Konsi App",
-      summary: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
+      summary: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital — UX design mobile, fintech, consignado.",
       challenge:
         "O desafio não era só criar um app bonito,era oferecer crédito de forma humana para servidores públicos, muitos com baixa familiaridade digital, equilibrando a necessidade real do cliente com a capacidade técnica do produto.",
       solution:
@@ -212,7 +212,7 @@ export const projects = [
     internalNote: true as const,
     pt: {
       title: "Konsi Insights",
-      summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
+      summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais — data product, JavaScript.",
       challenge:
         "O time de produto, CS e design tomava decisões baseadas em feeling,os feedbacks dos clientes estavam dispersos em múltiplas plataformas sem visibilidade centralizada.",
       solution:
@@ -290,7 +290,7 @@ export const projects = [
     },
     pt: {
       title: "SIG Engenharia Elétrica",
-      summary: "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação.",
+      summary: "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação — web design institucional, React, Tailwind.",
       challenge:
         "A SIG tem +35 anos de experiência em alta tensão e um portfólio sólido de grandes clientes,mas nenhuma presença digital. Toda a captação vinha de indicação. O desafio era traduzir uma operação altamente técnica em algo que qualquer tomador de decisão entendesse,sem perder a credibilidade conquistada ao longo de décadas.",
       solution:
@@ -517,7 +517,7 @@ export const siteContent = {
       greeting: "Olá, sou Isabelle",
       role: "Product Designer",
       description:
-        "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas,e nos resultados do negócio.",
+        "Product Designer especializada em fintech, design systems e produtos mobile. Transformo problemas complexos em soluções simples, úteis e orientadas a dados.",
       cta: "Ver projetos",
       ctaContact: "Vamos conversar",
       ctaResume: "Currículo",
@@ -530,7 +530,7 @@ export const siteContent = {
     about: {
       title: "Sobre mim",
       bio: [
-        "Product Designer brasileira com 6 anos de experiência em produto, growth e web design, especializada em criar fluxos visualmente impactantes, intuitivos e com alta conversão.",
+        "Product Designer brasileira com 6 anos de experiência em produto digital, fintech e design systems — especializada em mobile (Flutter), growth e web design, criando fluxos visualmente impactantes, intuitivos e com alta conversão.",
         "Trabalho para transformar problemas complexos em soluções simples, úteis e que realmente façam diferença na vida das pessoas e nos resultados do negócio.",
         "Sigo o conceito de que o design vai muito além de estética,é sobre tomar decisões bem fundamentadas, equilibrando necessidades do usuário, objetivos da empresa e viabilidade técnica. Por isso, busco sempre trabalhar de forma orientada por dados, validando hipóteses e aprendendo continuamente com o comportamento real dos usuários.",
         "Tenho como objetivo atuar como um conector entre estratégia, tecnologia e experiência, contribuindo para a construção de produtos que não apenas funcionem bem, mas que sejam relevantes, escaláveis e sustentem o crescimento da empresa.",
