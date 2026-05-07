@@ -282,7 +282,7 @@ function VisualOnlyCase({
   lang: "pt" | "en";
   t: Record<string, string>;
 }) {
-  const others = projects.filter((p) => p.slug !== slug && !("hidden" in p && p.hidden)).slice(0, 3);
+  const others = projects.filter((p) => p.slug !== slug && !("hidden" in p && p.hidden)).slice(0, 2);
 
   return (
     <div className="max-w-3xl mx-auto px-6 pt-0 pb-16">
@@ -362,8 +362,8 @@ function VisualOnlyCase({
             <h2 className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-6">
               {t.moreWork}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {others.map((p, i) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {others.map((p) => (
                 <ProjectCard
                   key={p.slug}
                   slug={p.slug}
