@@ -145,6 +145,15 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         </ol>
       </Section>
 
+      {/* Mid Images (between Process and Metrics) */}
+      {"midImages" in project && Array.isArray(project.midImages) && project.midImages.length > 0 && (
+        <div className="mb-12 flex flex-col" style={{ gap: "4px" }}>
+          {(project.midImages as string[]).map((img, i) => (
+            <ScrollFadeImage key={i} src={img} alt={`${content.title} detail ${i + 1}`} index={i} />
+          ))}
+        </div>
+      )}
+
       {/* Metrics */}
       <Section label={t.metrics}>
         <div className="flex flex-col sm:flex-row items-stretch gap-2 sm:gap-0">
