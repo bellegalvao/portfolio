@@ -138,7 +138,7 @@ export default function Home() {
           {t.projects.title}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project, i) => (
+          {projects.filter((p) => !("hidden" in p && p.hidden)).map((project, i) => (
             <motion.div
               key={project.slug}
               variants={fadeUp}

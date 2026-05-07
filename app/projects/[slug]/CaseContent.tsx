@@ -26,6 +26,10 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
   const content = project[lang];
 
+  if ("visualOnly" in project && project.visualOnly) {
+    return <VisualOnlyCase project={project} content={content} slug={slug} lang={lang} t={t} />;
+  }
+
   return (
     <div className="max-w-5xl mx-auto px-6 pt-0 pb-6">
       {/* Back */}
@@ -241,7 +245,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* More work */}
       {(() => {
-        const others = projects.filter((p) => p.slug !== slug).slice(0, 3);
+        const others = projects.filter((p) => p.slug !== slug && !("hidden" in p && p.hidden)).slice(0, 3);
         if (others.length === 0) return null;
         return (
           <>
@@ -268,6 +272,114 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           </>
         );
       })()}
+    </div>
+  );
+}
+
+function VisualOnlyCase({
+  project,
+  content,
+  slug,
+  lang,
+  t,
+}: {
+  project: { slug: string; year: string; tags: string[]; images: string[]; links: Record<string, string>; cover: string; banner?: string };
+  content: { title: string; summary?: string };
+  slug: string;
+  lang: string;
+  t: Record<string, string>;
+}) {
+  const others = projects.filter((p) => p.slug !== slug && !("hidden" in p && p.hidden)).slice(0, 3);
+
+  return (
+    <div className="max-w-3xl mx-auto px-6 pt-0 pb-16">
+      {/* Back */}
+      <Link
+        href="/#projects"
+        className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors mb-12 inline-block"
+      >
+        {t.back}
+      </Link>
+
+      {/* Header */}
+      <header className="mb-12">
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs px-2 py-0.5 rounded-full border border-[var(--border)] text-[var(--muted)]"
+            >
+              {tag}
+            </span>
+          ))}
+          <span className="text-xs px-2 py-0.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
+            {project.year}
+          </span>
+        </div>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{content.title}</h1>
+        {content.summary && (
+          <p className="text-lg text-[var(--muted)] leading-relaxed">{content.summary}</p>
+        )}
+      </header>
+
+      {/* Banner */}
+      {project.banner && (
+        <div className="relative w-full overflow-hidden border border-[var(--border)] mb-12" style={{ aspectRatio: "16/9", borderRadius: "18px" }}>
+          <Image src={project.banner} alt={content.title} fill className="object-cover" />
+        </div>
+      )}
+
+      {/* Divider */}
+      <div className="border-t border-[var(--border)] mb-16" />
+
+      {/* Images */}
+      {project.images.length > 0 ? (
+        <div className="flex flex-col" style={{ gap: "4px" }}>
+          {project.images.map((img, i) => (
+            <ScrollFadeImage key={i} src={img} alt={`${content.title} ${i + 1}`} index={i} />
+          ))}
+        </div>
+      ) : (
+        <div className="flex items-center justify-center h-64 rounded-xl border border-dashed border-[var(--border)] text-[var(--muted)] text-sm">
+          {lang === "pt" ? "Imagens em breve" : "Images coming soon"}
+        </div>
+      )}
+
+      {/* Links */}
+      {Object.keys(project.links).length > 0 && (
+        <div className="mt-16 pt-8 border-t border-[var(--border)] flex flex-wrap gap-3">
+          {project.links.figma && <ExternalLink href={project.links.figma} label={t.figma} />}
+          {project.links.github && <ExternalLink href={project.links.github} label={t.github} />}
+          {project.links.live && <ExternalLink href={project.links.live} label={t.live} />}
+          {project.links.android && <ExternalLink href={project.links.android} label={t.android} />}
+        </div>
+      )}
+
+      {/* More work */}
+      {others.length > 0 && (
+        <>
+          <div className="border-t border-[var(--border)] mt-16 mb-10" />
+          <section>
+            <h2 className="text-xs font-mono text-[var(--muted)] uppercase tracking-widest mb-6">
+              {t.moreWork}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {others.map((p, i) => (
+                <ProjectCard
+                  key={p.slug}
+                  slug={p.slug}
+                  title={p[lang as "pt" | "en"].title}
+                  summary={p[lang as "pt" | "en"].summary ?? ""}
+                  tags={p.tags}
+                  year={p.year}
+                  index={i}
+                  cover={p.cover}
+                />
+              ))}
+            </div>
+          </section>
+        </>
+      )}
     </div>
   );
 }
