@@ -147,7 +147,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Mid Images (between Process and Metrics) */}
       {"midImages" in project && Array.isArray(project.midImages) && project.midImages.length > 0 && (
-        <div className="mb-12 flex flex-col" style={{ gap: "4px" }}>
+        <div className="mb-12 flex flex-col" style={{ gap: "8px" }}>
           {(project.midImages as string[]).map((img, i) => (
             <ScrollFadeImage key={i} src={img} alt={`${content.title} detail ${i + 1}`} index={i} />
           ))}
@@ -218,39 +218,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       )}
 
       {/* Contact CTA + Back to top */}
-      <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-        <div>
-          <p className="text-[var(--muted)] mb-4 text-sm">
-            {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
-          </p>
-          <div className="flex gap-3">
-            <a
-              href={contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-              <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
-            </a>
-            <a
-              href={`mailto:${contact.email}`}
-              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-              <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-                {lang === "pt" ? "E-mail" : "Email"}
-              </span>
-            </a>
-          </div>
-        </div>
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors shrink-0"
-        >
-          ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
-        </button>
-      </div>
+      <ContactCTA lang={lang} />
 
       {/* More work */}
       {(() => {
@@ -366,39 +334,7 @@ function VisualOnlyCase({
       )}
 
       {/* Contact CTA */}
-      <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-        <div>
-          <p className="text-[var(--muted)] mb-4 text-sm">
-            {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
-          </p>
-          <div className="flex gap-3">
-            <a
-              href={contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-              <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
-            </a>
-            <a
-              href={`mailto:${contact.email}`}
-              className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-              <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-                {lang === "pt" ? "E-mail" : "Email"}
-              </span>
-            </a>
-          </div>
-        </div>
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors shrink-0"
-        >
-          ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
-        </button>
-      </div>
+      <ContactCTA lang={lang} />
 
       {/* More work */}
       {others.length > 0 && (
@@ -435,6 +371,44 @@ function Section({ label, children }: { label: string; children: React.ReactNode
       </h2>
       {children}
     </section>
+  );
+}
+
+function ContactCTA({ lang }: { lang: string }) {
+  return (
+    <div className="border-t border-[var(--border)] mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <p className="text-[var(--muted)] mb-4 text-sm">
+          {lang === "pt" ? "Quer conversar sobre este projeto?" : "Want to talk about this project?"}
+        </p>
+        <div className="flex gap-3">
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+          >
+            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
+          </a>
+          <a
+            href={`mailto:${contact.email}`}
+            className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
+          >
+            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+              {lang === "pt" ? "E-mail" : "Email"}
+            </span>
+          </a>
+        </div>
+      </div>
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="text-xs font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors shrink-0"
+      >
+        ↑ {lang === "pt" ? "voltar ao topo" : "back to top"}
+      </button>
+    </div>
   );
 }
 

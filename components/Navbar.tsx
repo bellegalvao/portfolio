@@ -44,6 +44,8 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setContactOpen((v) => !v)}
+                aria-haspopup="true"
+                aria-expanded={contactOpen}
                 className="flex items-center gap-1 text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
               >
                 {t.contact}
