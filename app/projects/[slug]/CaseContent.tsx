@@ -169,7 +169,16 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       </Section>
 
       {/* Links */}
-      {(project.links.figma || project.links.github || project.links.live) && (
+      {project.comingSoon ? (
+        <Section label={t.links}>
+          <div className="inline-flex items-center gap-2 text-sm text-[var(--muted)] border border-[var(--border)] rounded-lg px-4 py-2.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse shrink-0" />
+            {lang === "pt"
+              ? "Em breve — aguardando compra de domínio e publicação final."
+              : "Coming soon — pending domain purchase and final deployment."}
+          </div>
+        </Section>
+      ) : (project.links.figma || project.links.github || project.links.live || project.links.android) && (
         <Section label={t.links}>
           <div className="flex flex-wrap gap-3">
             {project.links.figma && (
