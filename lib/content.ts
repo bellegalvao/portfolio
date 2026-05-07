@@ -373,7 +373,7 @@ export const projects = [
   },
   {
     slug: "minha-sorte",
-    year: "2021",
+    year: "2025",
     tags: ["Product Design", "Mobile", "Em produção"],
     images: ["/images/minha-sorte-1.png", "/images/minha-sorte-2.png"],
     cover: "/images/minha-sorte.webp",
