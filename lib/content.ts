@@ -17,7 +17,7 @@ export const projects = [
     },
     pt: {
       title: "Konsi Design System",
-      summary: "Sistema de design escalável do zero ao código Flutter em 2 meses — design system, tokens semânticos, Material 3.",
+      summary: "Sistema de design escalável do zero ao código Flutter em 2 meses, design system, tokens semânticos, Material 3.",
       challenge:
         "Com o produto crescendo, designers e engenheiros trabalhavam sem uma fonte única de verdade,cada tela era recriada do zero, gerando inconsistência e lentidão.",
       solution:
@@ -115,7 +115,7 @@ export const projects = [
     },
     pt: {
       title: "Konsi App",
-      summary: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital — UX design mobile, fintech, consignado.",
+      summary: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital, UX design mobile, fintech, consignado.",
       challenge:
         "O desafio não era só criar um app bonito,era oferecer crédito de forma humana para servidores públicos, muitos com baixa familiaridade digital, equilibrando a necessidade real do cliente com a capacidade técnica do produto.",
       solution:
@@ -212,7 +212,7 @@ export const projects = [
     internalNote: true as const,
     pt: {
       title: "Konsi Insights",
-      summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais — data product, JavaScript.",
+      summary: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais, data product, JavaScript.",
       challenge:
         "O time de produto, CS e design tomava decisões baseadas em feeling,os feedbacks dos clientes estavam dispersos em múltiplas plataformas sem visibilidade centralizada.",
       solution:
@@ -290,7 +290,7 @@ export const projects = [
     },
     pt: {
       title: "SIG Engenharia Elétrica",
-      summary: "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação — web design institucional, React, Tailwind.",
+      summary: "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação, web design institucional, React, Tailwind.",
       challenge:
         "A SIG tem +35 anos de experiência em alta tensão e um portfólio sólido de grandes clientes,mas nenhuma presença digital. Toda a captação vinha de indicação. O desafio era traduzir uma operação altamente técnica em algo que qualquer tomador de decisão entendesse,sem perder a credibilidade conquistada ao longo de décadas.",
       solution:
