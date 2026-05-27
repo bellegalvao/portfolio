@@ -213,23 +213,25 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Impacto / Métricas */}
       <Section label={t.metrics}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {content.metrics.map((m: MetricItem, i: number) => (
             <div
               key={i}
-              className={`bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col ${m.description ? "gap-3" : ""}`}
+              className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col gap-3"
             >
-              <p className="text-xs text-[var(--muted)] leading-snug">{m.label}</p>
-              {m.before && m.after ? (
-                <div className="flex flex-col gap-1">
-                  <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
-                  <span className="text-xl font-bold text-[var(--accent)]">{m.after}</span>
-                </div>
-              ) : (
-                <p className="text-2xl font-bold text-[var(--accent)]">{m.value}</p>
-              )}
+              <div>
+                <p className="text-xs text-[var(--muted)] leading-snug mb-2">{m.label}</p>
+                {m.before && m.after ? (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
+                    <span className="text-2xl font-bold text-[var(--accent)]">{m.after}</span>
+                  </div>
+                ) : (
+                  <p className="text-2xl font-bold text-[var(--accent)]">{m.value}</p>
+                )}
+              </div>
               {m.description && (
-                <p className="text-xs text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3 mt-auto">
+                <p className="text-xs text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3">
                   {m.description}
                 </p>
               )}
