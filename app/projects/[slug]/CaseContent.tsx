@@ -55,12 +55,12 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-0.5 rounded-full border border-[var(--border)] text-[var(--muted)]"
+              className="text-xs px-2 py-0.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-[var(--foreground)]"
             >
               {tag}
             </span>
           ))}
-          <span className="text-xs px-2 py-0.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-[var(--foreground)]">
             {project.year}
           </span>
         </div>
