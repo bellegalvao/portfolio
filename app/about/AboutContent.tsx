@@ -12,13 +12,16 @@ export function AboutContent() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-5 md:py-16">
       {/* Header */}
-      <h1 className="text-4xl font-bold tracking-tight mb-6">{t.title}</h1>
+      <h1 className="text-4xl font-bold tracking-tight mb-6">
+        {t.title}
+        <span className="sr-only"> — Isabelle Galvão, Product Designer</span>
+      </h1>
 
       {/* Foto + ícones sociais na mesma linha */}
       <div className="flex items-center gap-5 mb-12">
         <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
           <Image
-            src="/images/perfil.jpg"
+            src="/images/perfil.webp"
             alt="Isabelle Galvão"
             fill
             sizes="80px"

@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     template: "%s — Isabelle Galvão",
   },
   description:
-    "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
+    "Product Designer UX/UI com 6 anos de experiência em produtos digitais, fintech e design systems. Baseada em Salvador, BA. Especialista em mobile, dados e Flutter.",
+  keywords: ["product designer", "UX designer", "UI designer", "design system", "fintech", "mobile design", "Flutter", "Salvador", "Brasil", "portfólio designer"],
   metadataBase: new URL(baseUrl),
   robots: {
     index: true,
@@ -52,13 +53,13 @@ export const metadata: Metadata = {
     siteName: "Isabelle Galvão",
     title: "Isabelle Galvão — Product Designer",
     description:
-      "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
+      "Product Designer UX/UI com 6 anos de experiência em produtos digitais, fintech e design systems. Baseada em Salvador, BA. Especialista em mobile, dados e Flutter.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Isabelle Galvão — Product Designer",
     description:
-      "Product Designer baseada em Salvador, BA. Transformo problemas complexos em soluções simples e orientadas a dados.",
+      "Product Designer UX/UI com 6 anos de experiência em produtos digitais, fintech e design systems. Baseada em Salvador, BA. Especialista em mobile, dados e Flutter.",
   },
 };
 

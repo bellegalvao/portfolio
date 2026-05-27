@@ -151,10 +151,10 @@ export function HomeContent() {
                 <ProjectCard
                   slug={project.slug}
                   title={project[lang].title}
-                  summary={project[lang].summary}
+
                   tags={project.tags}
                   year={project.year}
-                  index={i}
+
                   cover={project.cover}
                 />
               </motion.div>

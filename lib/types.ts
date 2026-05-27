@@ -39,9 +39,16 @@ export interface Project {
   year: string;
   tags: string[];
   images: string[];
+  imageLayout?: "stacked" | "landscape";
+  midImages?: string[];
   cover: string;
   banner?: string;
   links: ProjectLinks;
+  featured?: boolean;
+  hidden?: boolean;
+  visualOnly?: boolean;
+  internalNote?: boolean;
+  comingSoon?: boolean;
   pt: ProjectContent;
   en: ProjectContent;
 }
