@@ -18,38 +18,41 @@ export const konsiApp: Project = {
   },
   pt: {
     title: "Konsi App",
-    headline: "NPS acima de 80 pontos e conversão +25% em um app financeiro para um público com pouca familiaridade digital.",
+    headline: "Otimizando a jornada de crédito: Como redesenhei o fluxo de contratação da Konsi equilibrando regras de negócio complexas e experiência do usuário.",
     summary:
-      "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
+      "Liderando a evolução do produto mobile para aumentar a conversão de propostas e simplificar a gestão de crédito consignado para milhares de usuários.",
     challenge:
-      "O desafio não era só criar um app bonito,era oferecer crédito de forma humana para servidores públicos, muitos com baixa familiaridade digital, equilibrando a necessidade real do cliente com a capacidade técnica do produto.",
+      "A Konsi opera em um ecossistema onde o usuário precisa fornecer dados sensíveis e passar por múltiplas camadas de validação. O fluxo original sofria com altas taxas de drop-off devido à carga cognitiva elevada e à falta de clareza nas etapas de simulação de crédito.",
+    challengePoints: [
+      "Fricção Cognitiva — O excesso de informações bancárias e termos jurídicos gerava insegurança no preenchimento.",
+      "Complexidade de Backend vs. Frontend — As diversas regras de convênios (SIAPE, INSS, Governos) precisavam ser traduzidas em uma interface simples, sem expor a complexidade técnica ao usuário.",
+      "Necessidade de Retenção — Além de contratar o crédito, o app precisava se tornar uma ferramenta de gestão financeira para que o usuário retornasse e acompanhasse suas margens.",
+    ],
     solution:
       "Desenhei a jornada completa do zero: Onboarding → Cadastro → Login → Simulação → Contratação → Confirmação → Follow-Up, com foco em reduzir atrito em cada etapa.",
+    processTitle: "Design Orientado a Dados e Conversão",
+    processIntro:
+      "Para escalar o produto, implementei uma estratégia de design focada em redução de fricção e transparência:",
     process: [
       {
-        step: "Pesquisa",
+        step: "Progressive Disclosure (Revelação Progressiva)",
         description:
-          "Conduzi pesquisas com usuários e testes de usabilidade para entender as dores do público,muitos idosos e pessoas com pouco acesso a serviços financeiros digitais.",
+          "Reestruturei o fluxo de simulação para coletar dados em etapas lógicas, reduzindo a ansiedade do usuário e aumentando a taxa de completude do formulário.",
       },
       {
-        step: "Fluxos",
+        step: "Visualização de Dados Financeiros",
         description:
-          "Mapeei todos os fluxos críticos identificando onde o atrito era maior, especialmente na contratação (documentos, dados bancários, endereço).",
+          "Criei dashboards intuitivos para que o usuário visualize suas margens e contratos atuais de forma clara, utilizando os componentes do Design System para garantir rapidez e consistência.",
       },
       {
-        step: "Design",
+        step: "Integração com Product Analytics",
         description:
-          "Criei as telas com tipografia grande, hierarquia clara e feedbacks visuais constantes para reduzir ansiedade no processo financeiro.",
+          "Utilizei ferramentas como PostHog e Metabase para identificar exatamente em quais etapas do funil os usuários abandonavam a jornada, permitindo iterações rápidas baseadas em comportamento real.",
       },
       {
-        step: "Testes",
+        step: "Loop de Feedback Contínuo (Estratégia de NPS)",
         description:
-          "Validei os fluxos com usuários reais, iterando principalmente no fluxo de contratação que parece simples mas esconde complexidade real.",
-      },
-      {
-        step: "NPS",
-        description:
-          "Implementei o NPS do zero como sistema de monitoramento contínuo da experiência, usando os dados para priorizar melhorias.",
+          "Desenhei e implementei a jornada de Net Promoter Score dentro do app. Em vez de disparar pesquisas aleatórias, mapeei o momento de maior valor percebido (o Aha! Moment) para coletar a nota, transformando um dado qualitativo em uma métrica de saúde do produto rastreável em tempo real.",
       },
     ],
     metrics: [
@@ -58,7 +61,7 @@ export const konsiApp: Project = {
       { label: "Conversão", value: "+25%" },
     ],
     highlight:
-      "O fluxo de contratação parece simples, só endereço e conta bancária, mas tem uma complexidade real: anexar documentos diversos, validações assíncronas e estados de erro. Esse foi o fluxo que mais criei soluções e melhorias, tenho muito orgulho dele.",
+      "Em um produto de crédito, a confiança é a métrica principal. Minha decisão estratégica foi priorizar a clareza radical nas taxas e prazos, mesmo que isso exigisse fluxos um pouco mais longos. O resultado foi uma conversão de maior qualidade, com menos chamados no suporte e maior satisfação do cliente final.",
     cardTitle: "Konsi App: UX para Fintech de Crédito",
     cardLine: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
     cardTags: ["UX Research", "Mobile Fintech", "Acessibilidade"],
