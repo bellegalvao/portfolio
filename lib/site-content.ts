@@ -35,8 +35,16 @@ export const siteContent = {
           { title: "UX Research & Testing", description: "Pesquisa com usuários, testes de usabilidade (Maze) e mapeamento de métricas de satisfação (NPS)." },
           { title: "Growth Design", description: "Otimização de funil, testes A/B e design focado em conversão (CRO)." },
         ],
-        data: ["SQL", "Metabase", "PostHog", "Maze", "Análise de dados", "IA aplicada a produto"],
-        tools: ["Flutter tokens", "n8n", "Automações", "Vercel", "GitHub"],
+        data: [
+          { title: "Análise Quantitativa", description: "Extração de dados via SQL e criação de dashboards em Metabase." },
+          { title: "Product Analytics", description: "Monitoramento de comportamento do usuário e funis de conversão via PostHog." },
+          { title: "IA Aplicada a Produto", description: "Integração de inteligência artificial generativa no pipeline de descoberta, ideação e assets promocionais." },
+        ],
+        tools: [
+          { title: "Design-to-Code", description: "Arquitetura e sincronização de Design Tokens para Flutter, garantindo paridade total com a engenharia." },
+          { title: "Automações & Web", description: "Criação de fluxos e esteiras de dados utilizando n8n." },
+          { title: "Deploy & Repositórios", description: "Noções de infraestrutura de front-end com Vercel e controle de versão via GitHub." },
+        ],
       },
       contact: {
         title: "Vamos conversar",
@@ -133,8 +141,16 @@ export const siteContent = {
           { title: "UX Research & Testing", description: "User research, usability testing (Maze), and satisfaction metrics mapping (NPS)." },
           { title: "Growth Design", description: "Funnel optimization, A/B testing, and conversion-focused design (CRO)." },
         ],
-        data: ["SQL", "Metabase", "PostHog", "Maze", "Data analysis", "AI applied to product"],
-        tools: ["Flutter tokens", "n8n", "Automations", "Vercel", "GitHub"],
+        data: [
+          { title: "Quantitative Analysis", description: "Data extraction via SQL and dashboard creation in Metabase." },
+          { title: "Product Analytics", description: "User behavior monitoring and conversion funnel tracking via PostHog." },
+          { title: "AI Applied to Product", description: "Integration of generative artificial intelligence in the discovery, ideation, and promotional asset pipeline." },
+        ],
+        tools: [
+          { title: "Design-to-Code", description: "Architecture and synchronization of Design Tokens for Flutter, ensuring full parity with engineering." },
+          { title: "Automations & Web", description: "Building workflows and data pipelines using n8n." },
+          { title: "Deploy & Repositories", description: "Front-end infrastructure fundamentals with Vercel and version control via GitHub." },
+        ],
       },
       contact: {
         title: "Let's talk",
