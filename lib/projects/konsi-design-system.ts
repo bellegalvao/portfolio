@@ -44,11 +44,6 @@ export const konsiDesignSystem: Project = {
         description:
           "Implementei um fluxo de documentação onde o código é o destino final. O portal estático no GitHub Pages reduziu o tempo de onboarding de novos desenvolvedores e serviu como manual de governança de produto.",
       },
-      {
-        step: "Governança 70/30",
-        description:
-          "Dediquei 70% do esforço em alinhar a implementação com o time de Engenharia e construir documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
-      },
     ],
     metrics: [
       { label: "Lead time de entrega de módulo", before: "10 dias úteis", after: "3 dias úteis" },
@@ -57,7 +52,7 @@ export const konsiDesignSystem: Project = {
       { label: "Economia em horas de ajuste de interface", value: "−25%" },
     ],
     highlight:
-      "Como sênior, entendi que um Design System morre sem adoção. Dediquei 70% do esforço em alinhar a implementação com Engenharia e criar documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
+      "Um Design System morre sem adoção. Dediquei 70% do esforço em alinhar a implementação com Engenharia e criar documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
   },
   en: {
     title: "Konsi Design System",
@@ -92,11 +87,6 @@ export const konsiDesignSystem: Project = {
         description:
           "I implemented a documentation workflow where code is the final destination. The static portal on GitHub Pages reduced onboarding time for new developers and served as the product governance manual.",
       },
-      {
-        step: "70/30 Governance",
-        description:
-          "I dedicated 70% of the effort to aligning implementation with the Engineering team and building robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
-      },
     ],
     metrics: [
       { label: "Module delivery lead time", before: "10 business days", after: "3 business days" },
@@ -105,6 +95,6 @@ export const konsiDesignSystem: Project = {
       { label: "Savings in interface adjustment hours", value: "−25%" },
     ],
     highlight:
-      "As a senior designer, I understood that a Design System dies without adoption. I dedicated 70% of the effort to aligning implementation with Engineering and creating robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
+      "A Design System dies without adoption. I dedicated 70% of the effort to aligning implementation with Engineering and creating robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
   },
 };
