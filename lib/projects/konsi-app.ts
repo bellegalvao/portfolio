@@ -52,7 +52,7 @@ export const konsiApp: Project = {
       {
         step: "Loop de Feedback Contínuo (Estratégia de NPS)",
         description:
-          "Desenhei e implementei a jornada de Net Promoter Score dentro do app. Em vez de disparar pesquisas aleatórias, mapeei o momento de maior valor percebido (o Aha! Moment) para coletar a nota, transformando um dado qualitativo em uma métrica de saúde do produto rastreável em tempo real.",
+          "Desenhei e implementei a jornada de Net Promoter Score dentro do app. Em vez de disparar pesquisas aleatórias, mapeei o momento de maior valor percebido para coletar a nota, transformando um dado qualitativo em uma métrica de saúde do produto rastreável em tempo real.",
       },
     ],
     metrics: [

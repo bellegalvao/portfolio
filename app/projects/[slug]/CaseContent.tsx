@@ -220,18 +220,18 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
               className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col gap-3"
             >
               <div>
-                <p className="text-xs text-[var(--muted)] leading-snug mb-2">{m.label}</p>
+                <p className="text-sm text-[var(--muted)] leading-snug mb-2">{m.label}</p>
                 {m.before && m.after ? (
                   <div className="flex flex-col gap-1">
                     <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
-                    <span className="text-2xl font-bold text-[var(--accent)]">{m.after}</span>
+                    <span className="text-3xl font-bold text-[var(--accent)]">{m.after}</span>
                   </div>
                 ) : (
-                  <p className="text-2xl font-bold text-[var(--accent)]">{m.value}</p>
+                  <p className="text-3xl font-bold text-[var(--accent)]">{m.value}</p>
                 )}
               </div>
               {m.description && (
-                <p className="text-xs text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3">
+                <p className="text-sm text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3">
                   {m.description}
                 </p>
               )}
