@@ -9,7 +9,7 @@ export const siteContent = {
       greeting: "Olá, sou Isabelle",
       role: "Product Designer",
       description:
-        "Transformo problemas complexos em soluções simples, úteis e que fazem diferença na vida das pessoas,e nos resultados do negócio.",
+        "Especializada em desenhar produtos digitais complexos, arquitetar sistemas escaláveis e conectar a experiência do usuário às métricas de negócio. Com forte atuação no setor de fintech e crédito pessoal, transformo regras de negócio complexas em interfaces eficientes que aceleram o go-to-market.",
       cta: "Ver projetos",
       ctaContact: "Vamos conversar",
       ctaResume: "Currículo",
@@ -103,7 +103,7 @@ export const siteContent = {
       greeting: "Hi, I'm Isabelle",
       role: "Product Designer",
       description:
-        "I turn complex problems into simple, useful solutions that make a difference in people's lives,and in business results.",
+        "Specialized in designing complex digital products, architecting scalable systems, and connecting user experience to business metrics. With strong expertise in fintech and personal credit, I turn complex business rules into efficient interfaces that accelerate go-to-market.",
       cta: "View projects",
       ctaContact: "Let's talk",
       ctaResume: "Resume",
