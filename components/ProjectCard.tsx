@@ -40,7 +40,7 @@ export function ProjectCard({ slug, title, tags, year, cover, featured, cardTitl
               </div>
             )}
             <div className="absolute bottom-0 left-0 right-0 px-3 pb-3 pt-8 bg-gradient-to-t from-black/50 to-transparent flex flex-wrap gap-1.5">
-              {tags.map((tag) => (
+              {(cardTags ?? tags).map((tag) => (
                 <span
                   key={tag}
                   className="text-xs px-2 py-0.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/25 text-white"
@@ -65,18 +65,6 @@ export function ProjectCard({ slug, title, tags, year, cover, featured, cardTitl
           </div>
           {cardLine && (
             <p className="text-xs text-[var(--muted)] leading-snug mt-1.5 line-clamp-2">{cardLine}</p>
-          )}
-          {cardTags && cardTags.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-2.5">
-              {cardTags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-[10px] px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--muted)]"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
           )}
         </div>
       </article>
