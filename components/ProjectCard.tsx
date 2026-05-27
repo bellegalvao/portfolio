@@ -56,12 +56,9 @@ export function ProjectCard({ slug, title, tags, year, cover, featured, cardTitl
             <h3 className="text-sm font-semibold group-hover:text-[var(--accent)] transition-colors leading-snug">
               {cardTitle ?? title}
             </h3>
-            <div className="flex items-center gap-3 shrink-0 pt-0.5">
-              <span className="text-xs text-[var(--muted)]">{year}</span>
-              <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors">
-                {t.viewCase}
-              </span>
-            </div>
+            <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors shrink-0 pt-0.5">
+              {t.viewCase}
+            </span>
           </div>
           {cardLine && (
             <p className="text-xs text-[var(--muted)] leading-snug mt-1.5 line-clamp-2">{cardLine}</p>

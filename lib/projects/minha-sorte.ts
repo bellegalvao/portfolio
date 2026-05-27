@@ -49,6 +49,9 @@ export const minhaSorte: Project = {
     ],
     highlight:
       "Um dos usuários ganhou uma quadra na Mega-Sena usando os palpites do app. Não tem métrica que supere isso.",
+    cardTitle: "Minha Sorte: App de Loteria em Produção",
+    cardLine: "App de apostas com geração de palpites inteligentes por estatística. Em produção na loja desde 2021.",
+    cardTags: ["Flutter", "Em Produção", "Side Project"],
   },
   en: {
     title: "Minha Sorte",
@@ -89,5 +92,8 @@ export const minhaSorte: Project = {
     ],
     highlight:
       "One of the users won a 4-number prize in Brazil's biggest lottery using the app's picks. No metric beats that.",
+    cardTitle: "Minha Sorte: Lottery App in Production",
+    cardLine: "Lottery betting app with statistical smart number generation. Live in the app store since 2021.",
+    cardTags: ["Flutter", "Live in Production", "Side Project"],
   },
 };

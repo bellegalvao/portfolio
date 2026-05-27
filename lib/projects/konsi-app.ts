@@ -59,6 +59,9 @@ export const konsiApp: Project = {
     ],
     highlight:
       "O fluxo de contratação parece simples, só endereço e conta bancária, mas tem uma complexidade real: anexar documentos diversos, validações assíncronas e estados de erro. Esse foi o fluxo que mais criei soluções e melhorias, tenho muito orgulho dele.",
+    cardTitle: "Konsi App: UX para Fintech de Crédito",
+    cardLine: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
+    cardTags: ["UX Research", "Mobile Fintech", "Acessibilidade"],
   },
   en: {
     title: "Konsi App",
@@ -103,5 +106,8 @@ export const konsiApp: Project = {
     ],
     highlight:
       "The contracting flow looks simple,just address and bank account,but hides real complexity: attaching multiple documents, async validations, and error states. That was the flow I iterated on the most and I'm most proud of.",
+    cardTitle: "Konsi App: UX for Credit Fintech",
+    cardLine: "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
+    cardTags: ["UX Research", "Mobile Fintech", "Accessibility"],
   },
 };

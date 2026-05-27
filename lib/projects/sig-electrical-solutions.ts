@@ -58,6 +58,9 @@ export const sigElectricalSolutions: Project = {
     ],
     highlight:
       "O maior desafio foi tornar o invisível visível: alta tensão, subestações e linhas de distribuição são serviços que as pessoas usam sem saber. Criar uma linguagem técnica o suficiente para engenheiros e clara o suficiente para diretores financeiros foi a decisão de design mais importante do projeto.",
+    cardTitle: "SIG Engenharia: Presença Digital do Zero",
+    cardLine: "Site institucional para empresa com 35+ anos de expertise que operava 100% por indicação — do conceito ao deploy em 1 semana.",
+    cardTags: ["Web Design", "Design + Code", "Institucional"],
   },
   en: {
     title: "SIG Electrical Engineering",
@@ -104,5 +107,8 @@ export const sigElectricalSolutions: Project = {
     ],
     highlight:
       "The biggest challenge was making the invisible visible: high-voltage substations and distribution lines are services people rely on without ever thinking about. Creating a language technical enough for engineers but clear enough for CFOs was the most important design decision in the project.",
+    cardTitle: "SIG Engineering: Digital Presence from Scratch",
+    cardLine: "Institutional website for a 35+ year firm that ran 100% on referrals — from concept to deploy in 1 week.",
+    cardTags: ["Web Design", "Design + Code", "Institutional"],
   },
 };

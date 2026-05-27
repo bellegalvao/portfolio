@@ -43,6 +43,9 @@ export const konsiInsights: Project = {
     ],
     highlight:
       "Fiz o design e o código. Usar o Claude como parceiro de desenvolvimento foi uma extensão natural do meu processo,assim como uso dados para embasar decisões de design, usei IA para ampliar minha capacidade de entrega.",
+    cardTitle: "Konsi Insights: Do Figma ao Deploy",
+    cardLine: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
+    cardTags: ["Data Product", "Design + Code", "Full-cycle"],
   },
   en: {
     title: "Konsi Insights",
@@ -77,5 +80,8 @@ export const konsiInsights: Project = {
     ],
     highlight:
       "I did the design and the code. Using Claude as a development partner was a natural extension of my process,just as I use data to support design decisions, I used AI to expand my delivery capacity.",
+    cardTitle: "Konsi Insights: From Figma to Deploy",
+    cardLine: "Dashboard that centralizes feedback from multiple platforms to generate data-driven product backlogs.",
+    cardTags: ["Data Product", "Design + Code", "Full-cycle"],
   },
 };

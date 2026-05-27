@@ -34,6 +34,9 @@ export const meuVivaz: Project = {
     process: [],
     metrics: [],
     highlight: "",
+    cardTitle: "Meu Vivaz: Acompanhamento de Imóvel",
+    cardLine: "O projeto teve como objetivo ajudar pessoas a acompanhar todas as etapas da aquisição de um imóvel novo.",
+    cardTags: ["Product Design", "Discovery", "Mobile"],
   },
   en: {
     title: "Meu Vivaz",
@@ -45,5 +48,8 @@ export const meuVivaz: Project = {
     process: [],
     metrics: [],
     highlight: "",
+    cardTitle: "Meu Vivaz: Property Tracking App",
+    cardLine: "The project aimed to help people track every step of acquiring a new property.",
+    cardTags: ["Product Design", "Discovery", "Mobile"],
   },
 };
