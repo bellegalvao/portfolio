@@ -56,9 +56,10 @@ export const konsiApp: Project = {
       },
     ],
     metrics: [
-      { label: "NPS implementado do zero", value: "✓" },
-      { label: "NPS", value: "Acima de 80 pts" },
-      { label: "Conversão", value: "+25%" },
+      { label: "Conversão de Funil", value: "Aumento significativo na taxa de usuários que completam a simulação e solicitam a proposta." },
+      { label: "Eficiência de Suporte", value: "Redução no número de tickets de dúvidas sobre status da proposta devido à melhoria na visualização da jornada no app." },
+      { label: "Sincronia Técnica", value: "100% de aproveitamento dos componentes do Design System, permitindo o lançamento de novas funcionalidades com 3x mais agilidade." },
+      { label: "Satisfação do Usuário", value: "Manutenção de métricas de NPS saudáveis mesmo em um fluxo de alta sensibilidade financeira." },
     ],
     highlight:
       "Em um produto de crédito, a confiança é a métrica principal. Minha decisão estratégica foi priorizar a clareza radical nas taxas e prazos, mesmo que isso exigisse fluxos um pouco mais longos. O resultado foi uma conversão de maior qualidade, com menos chamados no suporte e maior satisfação do cliente final.",
