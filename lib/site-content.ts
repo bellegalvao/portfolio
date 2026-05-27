@@ -28,7 +28,7 @@ export const siteContent = {
       ],
       location: "Salvador, Bahia, Brasil — Disponível para atuação remota global",
       skills: {
-        title: "Skills",
+        title: "Stack & Competências",
         design: ["Figma", "Design Systems", "UI/UX", "Pesquisa com usuários", "Testes de usabilidade", "NPS"],
         data: ["SQL", "Metabase", "PostHog", "Maze", "Análise de dados", "IA aplicada a produto"],
         tools: ["Flutter tokens", "n8n", "Automações", "Vercel", "GitHub"],
@@ -121,7 +121,7 @@ export const siteContent = {
       ],
       location: "Salvador, Bahia, Brazil — Available for global remote work",
       skills: {
-        title: "Skills",
+        title: "Stack & Expertise",
         design: ["Figma", "Design Systems", "UI/UX", "User research", "Usability testing", "NPS"],
         data: ["SQL", "Metabase", "PostHog", "Maze", "Data analysis", "AI applied to product"],
         tools: ["Flutter tokens", "n8n", "Automations", "Vercel", "GitHub"],
