@@ -101,6 +101,16 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       {/* Contexto (era "Desafio") */}
       <Section label={t.challenge}>
         <p className="text-[var(--muted)] leading-relaxed">{content.challenge}</p>
+        {content.challengePoints && content.challengePoints.length > 0 && (
+          <ul className="mt-5 space-y-3">
+            {content.challengePoints.map((point, i) => (
+              <li key={i} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">
+                <span className="text-[var(--accent)] mt-0.5 shrink-0">→</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        )}
       </Section>
 
       {/* Imagens */}
@@ -141,6 +151,12 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Decisões de Design (era "Processo") */}
       <Section label={t.process}>
+        {content.processTitle && (
+          <h2 className="text-lg font-semibold mb-2">{content.processTitle}</h2>
+        )}
+        {content.processIntro && (
+          <p className="text-sm text-[var(--muted)] leading-relaxed mb-8">{content.processIntro}</p>
+        )}
         <ol className="space-y-8">
           {content.process.map((item, i) => (
             <li key={i} className="flex gap-5">

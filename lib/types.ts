@@ -18,7 +18,10 @@ export interface ProjectContent {
   headline: string;
   summary: string;
   challenge: string;
+  challengePoints?: string[];
   solution: string;
+  processTitle?: string;
+  processIntro?: string;
   process: ProcessStep[];
   metrics: Metric[];
   highlight: string;
