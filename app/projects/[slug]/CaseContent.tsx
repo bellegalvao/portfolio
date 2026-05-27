@@ -69,15 +69,15 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         </h1>
 
         {/* Summary como subtítulo contextual */}
-        <p className="text-base md:text-lg text-[var(--muted)] leading-relaxed max-w-2xl">
+        <p className="text-base md:text-lg text-[var(--muted)] leading-relaxed">
           {content.summary}
         </p>
 
         {/* Lede bar de métricas — mostra impacto antes do contexto */}
         {ledeMetrics.length > 0 && (
-          <div className="flex flex-wrap gap-8 mt-10 pt-10 border-t border-[var(--border)]">
+          <div className="flex flex-wrap divide-x divide-[var(--border)] mt-10 pt-10 border-t border-[var(--border)]">
             {ledeMetrics.map((m: MetricItem, i: number) => (
-              <div key={i} className="flex flex-col">
+              <div key={i} className="flex flex-col px-8 first:pl-0 last:pr-0">
                 <span className="text-2xl md:text-3xl font-bold text-[var(--accent)] tabular-nums">
                   {m.after ?? m.value}
                 </span>
@@ -100,11 +100,11 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Contexto (era "Desafio") */}
       <Section label={t.challenge}>
-        <p className="text-[var(--muted)] leading-relaxed">{content.challenge}</p>
+        <p className="text-lg text-[var(--muted)] leading-relaxed">{content.challenge}</p>
         {content.challengePoints && content.challengePoints.length > 0 && (
           <ul className="mt-5 space-y-3">
             {content.challengePoints.map((point, i) => (
-              <li key={i} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">
+              <li key={i} className="flex gap-3 text-base text-[var(--muted)] leading-relaxed">
                 <span className="text-[var(--accent)] mt-0.5 shrink-0">→</span>
                 <span>{point}</span>
               </li>
@@ -155,7 +155,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           <h2 className="text-lg font-semibold mb-2">{content.processTitle}</h2>
         )}
         {content.processIntro && (
-          <p className="text-sm text-[var(--muted)] leading-relaxed mb-8">{content.processIntro}</p>
+          <p className="text-base text-[var(--muted)] leading-relaxed mb-8">{content.processIntro}</p>
         )}
         <ol className="space-y-8">
           {content.process.map((item, i) => (
@@ -164,8 +164,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="flex-1 border-t border-[var(--border)] pt-5">
-                <p className="font-semibold mb-2 text-sm">{item.step}</p>
-                <p className="text-sm text-[var(--muted)] leading-relaxed">
+                <p className="font-semibold mb-2 text-base">{item.step}</p>
+                <p className="text-base text-[var(--muted)] leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -199,7 +199,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       {/* O que fez diferença (era "Decisão chave") */}
       <Section label={t.highlight}>
         <blockquote className="border-l-2 border-[var(--accent)] pl-5">
-          <p className="text-[var(--muted)] leading-relaxed italic text-base">
+          <p className="text-[var(--muted)] leading-relaxed italic text-lg">
             {content.highlight}
           </p>
         </blockquote>
