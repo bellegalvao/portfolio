@@ -231,7 +231,11 @@ export function HomeContent() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5 }}
           >
-            {[...t.about.skills.design, ...t.about.skills.data, ...t.about.skills.tools].map((skill) => (
+            {[
+              ...t.about.skills.design.map((s) => typeof s === "string" ? s : s.title),
+              ...t.about.skills.data,
+              ...t.about.skills.tools,
+            ].map((skill) => (
               <span
                 key={skill}
                 className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)]"

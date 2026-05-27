@@ -73,7 +73,7 @@ export function AboutContent() {
           {t.skills.title}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <SkillGroup title="Design" icon="✦" skills={t.skills.design} />
+          <SkillGroup title="Product Design & Strategy" icon="✦" skills={t.skills.design} />
           <SkillGroup title="Data"   icon="◈" skills={t.skills.data} />
           <SkillGroup title="Tools"  icon="⌘" skills={t.skills.tools} />
         </div>

@@ -29,7 +29,12 @@ export const siteContent = {
       location: "Salvador, Bahia, Brasil — Disponível para atuação remota global",
       skills: {
         title: "Stack & Competências",
-        design: ["Figma", "Design Systems", "UI/UX", "Pesquisa com usuários", "Testes de usabilidade", "NPS"],
+        design: [
+          { title: "Figma de Alta Performance", description: "Arquitetura de arquivos avançada, Auto-layout, Variants e Componentização." },
+          { title: "Design Ops & Systems", description: "Criação, governança e escalabilidade de bibliotecas focadas em eficiência técnica." },
+          { title: "UX Research & Testing", description: "Pesquisa com usuários, testes de usabilidade (Maze) e mapeamento de métricas de satisfação (NPS)." },
+          { title: "Growth Design", description: "Otimização de funil, testes A/B e design focado em conversão (CRO)." },
+        ],
         data: ["SQL", "Metabase", "PostHog", "Maze", "Análise de dados", "IA aplicada a produto"],
         tools: ["Flutter tokens", "n8n", "Automações", "Vercel", "GitHub"],
       },
@@ -122,7 +127,12 @@ export const siteContent = {
       location: "Salvador, Bahia, Brazil — Available for global remote work",
       skills: {
         title: "Stack & Expertise",
-        design: ["Figma", "Design Systems", "UI/UX", "User research", "Usability testing", "NPS"],
+        design: [
+          { title: "High-Performance Figma", description: "Advanced file architecture, Auto-layout, Variants, and Componentization." },
+          { title: "Design Ops & Systems", description: "Creation, governance, and scalability of component libraries focused on technical efficiency." },
+          { title: "UX Research & Testing", description: "User research, usability testing (Maze), and satisfaction metrics mapping (NPS)." },
+          { title: "Growth Design", description: "Funnel optimization, A/B testing, and conversion-focused design (CRO)." },
+        ],
         data: ["SQL", "Metabase", "PostHog", "Maze", "Data analysis", "AI applied to product"],
         tools: ["Flutter tokens", "n8n", "Automations", "Vercel", "GitHub"],
       },
