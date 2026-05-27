@@ -14,6 +14,8 @@ export interface Metric {
 
 export interface ProjectContent {
   title: string;
+  /** Headline de impacto: o resultado gerado, não o problema resolvido. */
+  headline: string;
   summary: string;
   challenge: string;
   solution: string;

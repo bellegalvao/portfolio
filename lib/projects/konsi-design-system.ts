@@ -13,6 +13,7 @@ export const konsiDesignSystem: Project = {
   },
   pt: {
     title: "Konsi Design System",
+    headline: "Reduzi de 2 semanas para 4 dias o tempo de entrega de uma tela — e construí a infraestrutura de design que o produto precisava para escalar.",
     summary: "Sistema de design escalável do zero ao código Flutter em 2 meses.",
     challenge:
       "Com o produto crescendo, designers e engenheiros trabalhavam sem uma fonte única de verdade,cada tela era recriada do zero, gerando inconsistência e lentidão.",
@@ -56,6 +57,7 @@ export const konsiDesignSystem: Project = {
   },
   en: {
     title: "Konsi Design System",
+    headline: "Reduced screen delivery from 2 weeks to 4 days — and built the design infrastructure the product needed to scale.",
     summary: "Scalable design system from zero to Flutter code in 2 months.",
     challenge:
       "As the product grew, designers and engineers worked without a single source of truth,every screen was recreated from scratch, causing inconsistency and slow delivery.",

@@ -12,6 +12,7 @@ export const konsiInsights: Project = {
   },
   pt: {
     title: "Konsi Insights",
+    headline: "Construí do zero o produto que o time de produto, CS e design usa toda semana para tomar decisões — do Figma ao deploy, sozinha.",
     summary:
       "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
     challenge:
@@ -45,6 +46,7 @@ export const konsiInsights: Project = {
   },
   en: {
     title: "Konsi Insights",
+    headline: "Built from scratch the product the team uses every week to make decisions — from Figma to deploy, solo.",
     summary:
       "Dashboard that centralizes feedback from multiple platforms to generate data-driven product backlogs.",
     challenge:

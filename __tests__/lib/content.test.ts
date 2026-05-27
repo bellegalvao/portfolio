@@ -25,12 +25,14 @@ describe("projects", () => {
   it("cada projeto tem conteúdo em pt e en", () => {
     for (const p of projects) {
       expect(p.pt.title, `${p.slug}: pt.title ausente`).toBeTruthy();
+      expect(p.pt.headline, `${p.slug}: pt.headline ausente`).toBeTruthy();
       expect(p.pt.challenge, `${p.slug}: pt.challenge ausente`).toBeTruthy();
       expect(p.pt.solution, `${p.slug}: pt.solution ausente`).toBeTruthy();
       expect(p.pt.process.length, `${p.slug}: pt.process vazio`).toBeGreaterThan(0);
       expect(p.pt.metrics.length, `${p.slug}: pt.metrics vazio`).toBeGreaterThan(0);
 
       expect(p.en.title, `${p.slug}: en.title ausente`).toBeTruthy();
+      expect(p.en.headline, `${p.slug}: en.headline ausente`).toBeTruthy();
       expect(p.en.challenge, `${p.slug}: en.challenge ausente`).toBeTruthy();
       expect(p.en.solution, `${p.slug}: en.solution ausente`).toBeTruthy();
       expect(p.en.process.length, `${p.slug}: en.process vazio`).toBeGreaterThan(0);

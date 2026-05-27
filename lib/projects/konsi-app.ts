@@ -18,6 +18,7 @@ export const konsiApp: Project = {
   },
   pt: {
     title: "Konsi App",
+    headline: "NPS acima de 80 pontos e conversão +25% em um app financeiro para um público com pouca familiaridade digital.",
     summary:
       "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
     challenge:
@@ -61,6 +62,7 @@ export const konsiApp: Project = {
   },
   en: {
     title: "Konsi App",
+    headline: "NPS above 80 points and +25% conversion in a financial app designed for users with low digital literacy.",
     summary:
       "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
     challenge:

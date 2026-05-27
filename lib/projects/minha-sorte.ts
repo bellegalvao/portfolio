@@ -12,6 +12,7 @@ export const minhaSorte: Project = {
   },
   pt: {
     title: "Minha Sorte",
+    headline: "Um usuário ganhou uma quadra na Mega-Sena com os palpites do app. Em produção com usuários reais desde 2021.",
     summary:
       "App de apostas em loteria com geração de palpites inteligentes por estatística. Em produção na loja.",
     challenge:
@@ -51,6 +52,7 @@ export const minhaSorte: Project = {
   },
   en: {
     title: "Minha Sorte",
+    headline: "One user won a 4-number prize in Brazil's biggest lottery using the app's picks. Live in production since 2021.",
     summary:
       "Lottery betting app with statistical smart number generation. Live in production.",
     challenge:
