@@ -233,8 +233,8 @@ export function HomeContent() {
           >
             {[
               ...t.about.skills.design.map((s) => typeof s === "string" ? s : s.title),
-              ...t.about.skills.data,
-              ...t.about.skills.tools,
+              ...t.about.skills.data.map((s) => typeof s === "string" ? s : s.title),
+              ...t.about.skills.tools.map((s) => typeof s === "string" ? s : s.title),
             ].map((skill) => (
               <span
                 key={skill}
