@@ -56,10 +56,26 @@ export const konsiApp: Project = {
       },
     ],
     metrics: [
-      { label: "Conversão no Funil de Crédito", value: "+24%" },
-      { label: "Tickets de Dúvidas no Suporte", value: "−40%" },
-      { label: "Velocidade de Go-To-Market", value: "3x" },
-      { label: "NPS (Zona de Excelência)", value: "+75" },
+      {
+        label: "Conversão no Funil de Crédito",
+        value: "+24%",
+        description: "Otimização expressiva na taxa de usuários que completaram a simulação e avançaram para a solicitação de proposta. A redução da carga cognitiva no fluxo eliminou gargalos críticos de abandono (drop-off).",
+      },
+      {
+        label: "Tickets de Dúvidas no Suporte",
+        value: "−40%",
+        description: "Redução drástica no volume de chamados relacionados ao status e andamento das propostas. A criação de uma visualização de jornada clara e transparente deu autonomia ao usuário e desafogou a equipe de atendimento.",
+      },
+      {
+        label: "Velocidade de Go-To-Market",
+        value: "3x",
+        description: "Agilidade multiplicada no lançamento de novas funcionalidades de crédito. Com 100% de aproveitamento dos componentes do Konsi Design System, o tempo de design e desenvolvimento de novas interfaces foi reduzido drasticamente.",
+      },
+      {
+        label: "NPS (Zona de Excelência)",
+        value: "+75",
+        description: "Manutenção e consolidação de uma métrica de satisfação altamente saudável. A implementação da pesquisa pós-depósito provou que a transparência nas taxas e prazos blindou a experiência do usuário, mesmo em um fluxo financeiro de alta sensibilidade.",
+      },
     ],
     highlight:
       "Em um produto de crédito, a confiança é a métrica principal. Minha decisão estratégica foi priorizar a clareza radical nas taxas e prazos, mesmo que isso exigisse fluxos um pouco mais longos. O resultado foi uma conversão de maior qualidade, com menos chamados no suporte e maior satisfação do cliente final.",

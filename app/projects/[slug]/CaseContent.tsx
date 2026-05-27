@@ -15,6 +15,7 @@ interface MetricItem {
   value?: string;
   before?: string;
   after?: string;
+  description?: string;
 }
 
 export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
@@ -216,16 +217,21 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           {content.metrics.map((m: MetricItem, i: number) => (
             <div
               key={i}
-              className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5"
+              className={`bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col ${m.description ? "gap-3" : ""}`}
             >
-              <p className="text-xs text-[var(--muted)] mb-3 leading-snug">{m.label}</p>
+              <p className="text-xs text-[var(--muted)] leading-snug">{m.label}</p>
               {m.before && m.after ? (
                 <div className="flex flex-col gap-1">
                   <span className="text-sm line-through text-[var(--muted)]">{m.before}</span>
                   <span className="text-xl font-bold text-[var(--accent)]">{m.after}</span>
                 </div>
               ) : (
-                <p className="text-xl font-bold text-[var(--foreground)]">{m.value}</p>
+                <p className="text-2xl font-bold text-[var(--accent)]">{m.value}</p>
+              )}
+              {m.description && (
+                <p className="text-xs text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3 mt-auto">
+                  {m.description}
+                </p>
               )}
             </div>
           ))}

@@ -10,6 +10,8 @@ export interface Metric {
   value?: string;
   before?: string;
   after?: string;
+  /** Texto descritivo exibido apenas no card de impacto detalhado (seção inferior). */
+  description?: string;
 }
 
 export interface ProjectContent {
