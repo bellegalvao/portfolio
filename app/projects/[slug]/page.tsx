@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
-import { projects } from "@/lib/content";
+import { projects } from "@/lib/projects/index";
 import { CaseContent } from "./CaseContent";
+
+/**
+ * Pré-gera rotas estáticas para cada projeto em build time.
+ * Sem isso, Next.js renderiza a página on-demand (SSR/dynamic).
+ */
+export async function generateStaticParams() {
+  return projects.map((p) => ({ slug: p.slug }));
+}
 
 export async function generateMetadata({
   params,
@@ -24,7 +32,12 @@ export async function generateMetadata({
     title,
     description,
     openGraph: { title, description, images: ogImage },
-    twitter: { card: "summary_large_image", title, description, images: ogImage.map((i) => i.url) },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ogImage.map((i) => i.url),
+    },
   };
 }
 
