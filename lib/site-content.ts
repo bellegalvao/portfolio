@@ -22,12 +22,11 @@ export const siteContent = {
     about: {
       title: "Sobre mim",
       bio: [
-        "Product Designer brasileira com 6 anos de experiência em produto, growth e web design, especializada em criar fluxos visualmente impactantes, intuitivos e com alta conversão.",
-        "Trabalho para transformar problemas complexos em soluções simples, úteis e que realmente façam diferença na vida das pessoas e nos resultados do negócio.",
-        "Sigo o conceito de que o design vai muito além de estética,é sobre tomar decisões bem fundamentadas, equilibrando necessidades do usuário, objetivos da empresa e viabilidade técnica. Por isso, busco sempre trabalhar de forma orientada por dados, validando hipóteses e aprendendo continuamente com o comportamento real dos usuários.",
-        "Tenho como objetivo atuar como um conector entre estratégia, tecnologia e experiência, contribuindo para a construção de produtos que não apenas funcionem bem, mas que sejam relevantes, escaláveis e sustentem o crescimento da empresa.",
+        "Product Designer com mais de 6 anos de experiência na intersecção entre Produto, Growth e Engenharia de Design. Sou especializada em desatar nós de regras de negócio complexas, transformando cenários de alta fricção, como os setores de fintech e crédito pessoal, em fluxos intuitivos, visualmente impecáveis e de alta conversão.",
+        "Acredito que o design de produto maduro é fundamentado em dados e viabilidade técnica. Minha abordagem une a sensibilidade estética e a empatia pelo usuário à análise quantitativa de dados. Utilizo ferramentas de analytics e consultas SQL para investigar o comportamento real do usuário, validar hipóteses e medir o impacto financeiro e operacional de cada decisão de interface.",
+        "Atuo estrategicamente como o elo entre Product Managers, Engenharia e Growth, garantindo não apenas que o produto seja relevante para o usuário, mas que seja sustentável, escalável e diretamente alinhado aos OKRs de crescimento da empresa.",
       ],
-      location: "Salvador, Bahia",
+      location: "Salvador, Bahia, Brasil — Disponível para atuação remota global",
       skills: {
         title: "Skills",
         design: ["Figma", "Design Systems", "UI/UX", "Pesquisa com usuários", "Testes de usabilidade", "NPS"],
@@ -116,12 +115,11 @@ export const siteContent = {
     about: {
       title: "About me",
       bio: [
-        "Product Designer from Brazil with 6 years of experience in product, growth and web design, I specialize in crafting visually stunning, user-friendly, and high-converting flows.",
-        "I work to turn complex problems into simple, useful solutions that truly make a difference in people's lives and in business results.",
-        "I believe design goes far beyond aesthetics,it's about making well-grounded decisions, balancing user needs, business goals, and technical feasibility. That's why I always aim to work data-driven, validating hypotheses and learning continuously from real user behavior.",
-        "My goal is to act as a connector between strategy, technology, and experience, contributing to products that don't just work well, but are relevant, scalable, and sustain company growth.",
+        "Product Designer with 6+ years of experience at the intersection of Product, Growth, and Design Engineering. I specialize in untangling complex business rules, turning high-friction scenarios — such as fintech and personal credit — into intuitive, visually flawless, high-converting flows.",
+        "I believe mature product design is grounded in data and technical feasibility. My approach blends aesthetic sensibility and user empathy with quantitative data analysis. I use analytics tools and SQL queries to investigate real user behavior, validate hypotheses, and measure the financial and operational impact of every interface decision.",
+        "I act strategically as the link between Product Managers, Engineering, and Growth — ensuring the product is not only relevant to users, but sustainable, scalable, and directly aligned with the company's growth OKRs.",
       ],
-      location: "Salvador, Bahia,Brazil",
+      location: "Salvador, Bahia, Brazil — Available for global remote work",
       skills: {
         title: "Skills",
         design: ["Figma", "Design Systems", "UI/UX", "User research", "Usability testing", "NPS"],
