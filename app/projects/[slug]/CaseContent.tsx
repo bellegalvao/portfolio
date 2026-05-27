@@ -306,6 +306,9 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                     tags={p.tags}
                     year={p.year}
                     cover={p.cover}
+                    cardTitle={p[lang].cardTitle}
+                    cardLine={p[lang].cardLine}
+                    cardTags={p[lang].cardTags}
                   />
                 ))}
               </div>
@@ -419,6 +422,9 @@ function VisualOnlyCase({
                   tags={p.tags}
                   year={p.year}
                   cover={p.cover}
+                  cardTitle={p[lang as "pt" | "en"].cardTitle}
+                  cardLine={p[lang as "pt" | "en"].cardLine}
+                  cardTags={p[lang as "pt" | "en"].cardTags}
                 />
               ))}
             </div>

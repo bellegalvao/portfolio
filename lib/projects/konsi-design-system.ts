@@ -53,6 +53,10 @@ export const konsiDesignSystem: Project = {
     ],
     highlight:
       "Um Design System morre sem adoção. Dediquei 70% do esforço em alinhar a implementação com Engenharia e criar documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
+    cardTitle: "Konsi Design System: Escala & Design Ops",
+    cardLine:
+      "Construção de uma fonte única de verdade sincronizada em Flutter que reduziu o Lead Time de desenvolvimento de 2 semanas para 4 dias.",
+    cardTags: ["Design Ops", "Sistemas Complexos", "Acessibilidade WCAG"],
   },
   en: {
     title: "Konsi Design System",
@@ -96,5 +100,9 @@ export const konsiDesignSystem: Project = {
     ],
     highlight:
       "A Design System dies without adoption. I dedicated 70% of the effort to aligning implementation with Engineering and creating robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
+    cardTitle: "Konsi Design System: Scale & Design Ops",
+    cardLine:
+      "Building a single source of truth synced in Flutter that reduced development lead time from 2 weeks to 4 days.",
+    cardTags: ["Design Ops", "Complex Systems", "WCAG Accessibility"],
   },
 };

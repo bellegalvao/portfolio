@@ -12,9 +12,12 @@ interface ProjectCardProps {
   year: string;
   cover?: string;
   featured?: boolean;
+  cardTitle?: string;
+  cardLine?: string;
+  cardTags?: string[];
 }
 
-export function ProjectCard({ slug, title, tags, year, cover, featured }: ProjectCardProps) {
+export function ProjectCard({ slug, title, tags, year, cover, featured, cardTitle, cardLine, cardTags }: ProjectCardProps) {
   const { lang } = useLang();
   const t = siteContent[lang].projects;
 
@@ -48,16 +51,33 @@ export function ProjectCard({ slug, title, tags, year, cover, featured }: Projec
             </div>
           </div>
         )}
-        <div className="px-4 py-3 flex items-center justify-between gap-4">
-          <h3 className="text-sm font-semibold group-hover:text-[var(--accent)] transition-colors leading-snug">
-            {title}
-          </h3>
-          <div className="flex items-center gap-3 shrink-0">
-            <span className="text-xs text-[var(--muted)]">{year}</span>
-            <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors">
-              {t.viewCase}
-            </span>
+        <div className="px-4 py-3">
+          <div className="flex items-start justify-between gap-4">
+            <h3 className="text-sm font-semibold group-hover:text-[var(--accent)] transition-colors leading-snug">
+              {cardTitle ?? title}
+            </h3>
+            <div className="flex items-center gap-3 shrink-0 pt-0.5">
+              <span className="text-xs text-[var(--muted)]">{year}</span>
+              <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors">
+                {t.viewCase}
+              </span>
+            </div>
           </div>
+          {cardLine && (
+            <p className="text-xs text-[var(--muted)] leading-snug mt-1.5 line-clamp-2">{cardLine}</p>
+          )}
+          {cardTags && cardTags.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-2.5">
+              {cardTags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[10px] px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--muted)]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </article>
     </Link>

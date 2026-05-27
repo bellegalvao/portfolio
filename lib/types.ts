@@ -25,6 +25,12 @@ export interface ProjectContent {
   process: ProcessStep[];
   metrics: Metric[];
   highlight: string;
+  /** Título alternativo exibido no card (home + mais trabalhos). */
+  cardTitle?: string;
+  /** Linha de apoio exibida no card, abaixo do título. */
+  cardLine?: string;
+  /** Tags visuais exibidas no rodapé do card. */
+  cardTags?: string[];
 }
 
 export interface ProjectLinks {
