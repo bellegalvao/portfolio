@@ -55,34 +55,34 @@ export const siteContent = {
       moreWork: "Mais trabalhos",
     },
     workflow: {
-      title: "Meu processo de criação",
+      title: "Meu Processo Estratégico",
       description:
-        "No mundo do design, a colaboração é fundamental, e é por isso que a parceria comigo é a escolha certa.",
+        "Design de produto não é sobre desenhar telas lineares; é sobre arquitetar soluções sustentáveis. Trabalho na intersecção entre experiência do usuário, viabilidade técnica e objetivos de negócio para destravar a escala de produtos digitais.",
       steps: [
         {
-          title: "Descoberta",
+          title: "Imersão & Alinhamento Estratégico",
           description:
-            "Realizo uma imersão em seu negócio para detalharmos as especificações, objetivos e direções estratégicas.",
+            "Investigo profundamente o ecossistema do negócio, dados de uso e dores dos usuários. Colaboro diretamente com Product Managers e stakeholders para desatar nós de regras de negócio complexas antes de desenhar a primeira linha.",
         },
         {
-          title: "Ideação",
+          title: "Arquitetura de Informação & Fluxos",
           description:
-            "Nessa etapa crio todo o conteúdo do projeto com base nos objetivos do seu negócio e apresentaremos a hierarquia de informação.",
+            "Mapeio cenários críticos, casos de borda (edge cases) e jornadas complexas. O foco nesta etapa é garantir eficiência cognitiva para o usuário e clareza estrutural para o produto, tangibilizando a estratégia em fluxos lógicos de navegação.",
         },
         {
-          title: "Design",
+          title: "Interface Systematizada & Acessível",
           description:
-            "A atenção meticulosa aos detalhes está no centro do meu processo de design, garantindo um produto final polido e impecável.",
+            "Desenvolvo interfaces de alta fidelidade baseadas em sistemas de design escaláveis, consistentes e focados em performance. Cada decisão visual é tomada respeitando os critérios globais de acessibilidade (WCAG 2.1 AA).",
         },
         {
-          title: "Protótipo",
+          title: "Prototipagem Dinâmica & Validação",
           description:
-            "Vou detalhar o projeto acrescentando cores, imagens, ilustrações e ícones. Também definiremos algumas interações avançadas.",
+            "Materializo fluxos complexos em protótipos funcionais de alta fidelidade para mitigar riscos de desenvolvimento. Valido hipóteses através de testes de usabilidade qualitativos e métricas de comportamento para garantir que o produto resolve o problema real.",
         },
         {
-          title: "Validação",
+          title: "Handoff de Alta Performance & Governança",
           description:
-            "Saio da bolha criativa e confronto a solução com a realidade, garantindo que o que foi construído realmente resolve o problema do usuário e é viável para o negócio.",
+            "Meu trabalho não termina na entrega do layout. Entrego arquivos rigorosamente documentados no Figma, com especificações de tokens, estados de componentes e regras de negócio detalhadas, atuando lado a lado com a Engenharia para garantir paridade absoluta no código final.",
         },
       ],
     },
@@ -149,34 +149,34 @@ export const siteContent = {
       moreWork: "More work",
     },
     workflow: {
-      title: "My creation process",
+      title: "My Strategic Process",
       description:
-        "In the world of design, collaboration is fundamental, and that's why partnering with me is the right choice.",
+        "Product design isn't about drawing linear screens; it's about architecting sustainable solutions. I work at the intersection of user experience, technical feasibility, and business objectives to unlock the scale of digital products.",
       steps: [
         {
-          title: "Discovery",
+          title: "Immersion & Strategic Alignment",
           description:
-            "I immerse myself in your business to detail the specifications, objectives and strategic directions.",
+            "I deeply investigate the business ecosystem, usage data, and user pain points. I collaborate directly with Product Managers and stakeholders to untangle complex business rules before drawing a single line.",
         },
         {
-          title: "Ideation",
+          title: "Information Architecture & Flows",
           description:
-            "In this stage I create all the project content based on your business objectives and present the information hierarchy.",
+            "I map critical scenarios, edge cases, and complex journeys. The focus at this stage is ensuring cognitive efficiency for the user and structural clarity for the product, turning strategy into logical navigation flows.",
         },
         {
-          title: "Design",
+          title: "Systematized & Accessible Interface",
           description:
-            "Meticulous attention to detail is at the center of my design process, ensuring a polished and flawless final product.",
+            "I develop high-fidelity interfaces based on scalable, consistent design systems focused on performance. Every visual decision is made in compliance with global accessibility standards (WCAG 2.1 AA).",
         },
         {
-          title: "Prototype",
+          title: "Dynamic Prototyping & Validation",
           description:
-            "I'll detail the project by adding colors, images, illustrations and icons. We'll also define some advanced interactions.",
+            "I materialize complex flows into high-fidelity functional prototypes to mitigate development risks. I validate hypotheses through qualitative usability testing and behavioral metrics to ensure the product solves the real problem.",
         },
         {
-          title: "Validation",
+          title: "High-Performance Handoff & Governance",
           description:
-            "I step outside the creative bubble and confront the solution with reality, ensuring what was built truly solves the user's problem and is viable for the business.",
+            "My work doesn't end at layout delivery. I deliver rigorously documented Figma files with token specifications, component states, and detailed business rules, working side by side with Engineering to ensure absolute parity in the final code.",
         },
       ],
     },
