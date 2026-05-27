@@ -10,7 +10,7 @@ export function AboutContent() {
   const t = siteContent[lang].about;
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-5 md:py-16">
+    <div className="max-w-5xl mx-auto px-6 py-4 md:py-8">
       {/* Header */}
       <h1 className="text-4xl font-bold tracking-tight mb-6">
         {t.title}
