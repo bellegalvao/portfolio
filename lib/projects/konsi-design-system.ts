@@ -16,7 +16,7 @@ export const konsiDesignSystem: Project = {
     headline:
       "Escalando a eficiência operacional da Konsi: a arquitetura de um Design System focado em redução de lead time e governança técnica.",
     summary:
-      "Como liderei a transição de uma interface fragmentada para um ecossistema de tokens semânticos e documentação viva, reduzindo o tempo de desenvolvimento em 71% e eliminando o débito técnico em 2 meses.",
+      "Como liderei a transição de uma interface fragmentada para um ecossistema de tokens semânticos e documentação viva, reduzindo o tempo de desenvolvimento em 70% e eliminando o débito técnico em 2 meses.",
     challenge:
       "A Konsi enfrentava o custo da desordem. Com o crescimento acelerado, a falta de padronização não era apenas um problema estético, era um gargalo financeiro.",
     challengePoints: [
