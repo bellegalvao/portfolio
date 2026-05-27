@@ -46,10 +46,26 @@ export const konsiDesignSystem: Project = {
       },
     ],
     metrics: [
-      { label: "Lead time de entrega de módulo", before: "10 dias úteis", after: "3 dias úteis" },
-      { label: "Paridade Figma / App", value: "100%" },
-      { label: "Redução de discussões de UI no QA", value: "−90%" },
-      { label: "Economia em horas de ajuste de interface", value: "−25%" },
+      {
+        label: "Lead Time de Entrega",
+        value: "−70%",
+        description: "Redução drástica no ciclo de desenvolvimento de novos módulos, passando de 10 para apenas 3 dias úteis. A padronização de componentes permitiu que o time focasse na lógica de negócio, não na construção de UI do zero.",
+      },
+      {
+        label: "Paridade Design-to-Code",
+        value: "100%",
+        description: "Sincronia absoluta entre as definições do Figma e a implementação em Flutter. Através da arquitetura de Design Tokens, garantimos que a \"fonte única de verdade\" fosse respeitada em todas as frentes de desenvolvimento.",
+      },
+      {
+        label: "Ruído em QA de Interface",
+        value: "−90%",
+        description: "Eliminação quase total de discussões e refações de UI durante a fase de Quality Assurance. A documentação rigorosa e os componentes testados removeram a ambiguidade no handoff para a engenharia.",
+      },
+      {
+        label: "Esforço de Ajustes (Dev Hours)",
+        value: "−25%",
+        description: "Economia direta em horas de desenvolvimento dedicadas a ajustes finos de interface. Esse ganho de eficiência permitiu que a engenharia redirecionasse foco para a performance e estabilidade do backend.",
+      },
     ],
     highlight:
       "Um Design System morre sem adoção. Dediquei 70% do esforço em alinhar a implementação com Engenharia e criar documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
