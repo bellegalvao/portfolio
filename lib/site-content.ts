@@ -57,7 +57,7 @@ export const siteContent = {
     workflow: {
       title: "Meu Processo Estratégico",
       description:
-        "Design de produto não é sobre desenhar telas lineares; é sobre arquitetar soluções sustentáveis. Trabalho na intersecção entre experiência do usuário, viabilidade técnica e objetivos de negócio para destravar a escala de produtos digitais.",
+        "Design de produto é sobre arquitetar soluções sustentáveis. Trabalho na intersecção entre experiência do usuário, viabilidade técnica e objetivos de negócio para destravar a escala de produtos digitais.",
       steps: [
         {
           title: "Imersão & Alinhamento Estratégico",
@@ -151,7 +151,7 @@ export const siteContent = {
     workflow: {
       title: "My Strategic Process",
       description:
-        "Product design isn't about drawing linear screens; it's about architecting sustainable solutions. I work at the intersection of user experience, technical feasibility, and business objectives to unlock the scale of digital products.",
+        "Product design is about architecting sustainable solutions. I work at the intersection of user experience, technical feasibility, and business objectives to unlock the scale of digital products.",
       steps: [
         {
           title: "Immersion & Strategic Alignment",
