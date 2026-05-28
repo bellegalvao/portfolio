@@ -8,7 +8,6 @@ export const sigElectricalSolutions: Project = {
   cover: "/images/sig.webp",
   banner: "/images/sig-banner.webp",
   links: {
-    github: "https://github.com/bellegalvao/sig-electrical-solutions",
     live: "https://www.sigengenharia.com/",
   },
   pt: {
