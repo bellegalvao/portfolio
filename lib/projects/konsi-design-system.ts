@@ -77,7 +77,7 @@ export const konsiDesignSystem: Project = {
     headline:
       "Scaling Konsi's operational efficiency: the architecture of a Design System focused on lead time reduction and technical governance.",
     summary:
-      "How I led the transition from a fragmented interface to an ecosystem of semantic tokens and living documentation, reducing development time by 71% and eliminating technical debt in 2 months.",
+      "How I led the transition from a fragmented interface to an ecosystem of semantic tokens and living documentation, accelerating the delivery of new modules by more than 3x and eliminating technical debt in just 2 months.",
     challenge:
       "Konsi was facing the cost of disorder. With accelerated growth, the lack of standardization wasn't just an aesthetic problem — it was a financial bottleneck.",
     challengePoints: [
@@ -107,16 +107,32 @@ export const konsiDesignSystem: Project = {
       },
     ],
     metrics: [
-      { label: "Module delivery lead time", before: "10 business days", after: "3 business days" },
-      { label: "Figma / App parity", value: "100%" },
-      { label: "Reduction in UI QA discussions", value: "−90%" },
-      { label: "Savings in interface adjustment hours", value: "−25%" },
+      {
+        label: "Time-to-Market Acceleration",
+        value: "3.3x",
+        description: "Significant acceleration in the delivery cycle of new modules, reducing development time from 10 to just 3 business days. Standardization freed engineering to focus on business logic and launch speed.",
+      },
+      {
+        label: "Design-to-Code Parity",
+        value: "100%",
+        description: "Absolute synchronization between Figma definitions and Flutter implementation. Through the Design Tokens architecture, we ensured the single source of truth was respected across all development fronts.",
+      },
+      {
+        label: "UI QA Efficiency",
+        value: "90%",
+        description: "Massive optimization of the Quality Assurance process, virtually eliminating UI rework and review discussions. Rigorous documentation cleared communication noise and brought absolute clarity to the handoff.",
+      },
+      {
+        label: "Engineering Capacity Gain",
+        value: "25%",
+        description: "Direct savings in development hours previously spent on fine-tuning UI details. This efficiency gain allowed engineering to redirect focus toward backend performance and stability.",
+      },
     ],
     highlight:
       "A Design System dies without adoption. I dedicated 70% of the effort to aligning implementation with Engineering and creating robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
     cardTitle: "Konsi Design System: Scale & Design Ops",
     cardLine:
-      "Building a single source of truth synced in Flutter that reduced development lead time from 2 weeks to 4 days.",
+      "Building a single source of truth synced in Flutter that reduced module delivery lead time from 10 to 3 business days.",
     cardTags: ["Design Ops", "Complex Systems", "WCAG Accessibility"],
   },
 };
