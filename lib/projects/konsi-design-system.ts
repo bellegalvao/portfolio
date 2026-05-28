@@ -2,7 +2,7 @@ import type { Project } from "../types";
 
 export const konsiDesignSystem: Project = {
   slug: "konsi-design-system",
-  tags: ["Design Systems", "Design Ops", "Design + Code", "Flutter"],
+  tags: ["Design Ops", "Sistemas Complexos", "Acessibilidade WCAG", "Design System"],
   images: ["/images/konsi-ds-live.webp"],
   cover: "/images/ds-konsi.webp",
   links: {
