@@ -10,7 +10,7 @@ export const sigElectricalSolutions: Project = {
   comingSoon: true,
   links: {
     github: "https://github.com/bellegalvao/sig-electrical-solutions",
-    live: "https://sig-power-solutions.lovable.app/",
+    live: "https://www.sigengenharia.com/",
   },
   pt: {
     title: "SIG Engenharia Elétrica",
@@ -46,7 +46,7 @@ export const sigElectricalSolutions: Project = {
       {
         step: "Entrega",
         description:
-          "Projeto completo entregue em 1 semana, do conceito ao deploy.",
+          "Projeto completo entregue em 1 semana, do conceito ao deploy. Instrumentei o site com PostHog para analytics de comportamento, Google Search Console para monitoramento de SEO orgânico e Microsoft Clarity para heatmaps e gravações de sessão.",
       },
     ],
     metrics: [
@@ -95,7 +95,7 @@ export const sigElectricalSolutions: Project = {
       {
         step: "Delivery",
         description:
-          "Full project delivered in 1 week, from concept to deploy.",
+          "Full project delivered in 1 week, from concept to deploy. Instrumented the site with PostHog for behavioral analytics, Google Search Console for organic SEO monitoring, and Microsoft Clarity for heatmaps and session recordings.",
       },
     ],
     metrics: [
