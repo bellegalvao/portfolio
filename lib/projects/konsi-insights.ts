@@ -2,7 +2,6 @@ import type { Project } from "../types";
 
 export const konsiInsights: Project = {
   slug: "konsi-insights",
-  year: "2025",
   tags: ["Data Product", "Dashboard", "Design + Code"],
   images: ["/images/konsi-insights-live.png"],
   cover: "/images/konsi-insights.webp",

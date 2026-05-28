@@ -152,7 +152,7 @@ export function HomeContent() {
                   slug={project.slug}
                   title={project[lang].title}
                   tags={project.tags}
-                  year={project.year}
+
                   cover={project.cover}
                   featured={"featured" in project && project.featured}
                   cardTitle={project[lang].cardTitle}

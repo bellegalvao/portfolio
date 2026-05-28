@@ -2,7 +2,6 @@ import type { Project } from "../types";
 
 export const konsiApp: Project = {
   slug: "konsi-app",
-  year: "2023",
   tags: ["Product Design", "Mobile", "Fintech"],
   // Images fixed: actual files are .png (not .webp); only 3 exist
   images: [

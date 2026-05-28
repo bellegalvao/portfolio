@@ -60,9 +60,6 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
               {tag}
             </span>
           ))}
-          <span className="text-xs px-2 py-0.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-[var(--foreground)]">
-            {project.year}
-          </span>
         </div>
 
         {/* Label do projeto (nome) */}
@@ -312,7 +309,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                     slug={p.slug}
                     title={p[lang].title}
                     tags={p.tags}
-                    year={p.year}
+
                     cover={p.cover}
                     cardTitle={p[lang].cardTitle}
                     cardLine={p[lang].cardLine}
@@ -335,7 +332,7 @@ function VisualOnlyCase({
   lang,
   t,
 }: {
-  project: { slug: string; year: string; tags: string[]; images: string[]; links: { figma?: string; github?: string; live?: string; android?: string }; cover: string; banner?: string };
+  project: { slug: string; tags: string[]; images: string[]; links: { figma?: string; github?: string; live?: string; android?: string }; cover: string; banner?: string };
   content: { title: string; summary?: string };
   slug: string;
   lang: "pt" | "en";
@@ -364,9 +361,6 @@ function VisualOnlyCase({
               {tag}
             </span>
           ))}
-          <span className="text-xs px-2 py-0.5 rounded-full border border-[var(--border)] text-[var(--muted)]">
-            {project.year}
-          </span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{content.title}</h1>
         {content.summary && (

@@ -7,13 +7,7 @@ import { siteContent, contact } from "@/lib/site-content";
 import { projects } from "@/lib/projects/index";
 
 const visibleProjects = projects
-  .filter((p) => !("hidden" in p && p.hidden))
-  .sort((a, b) => {
-    const aFeat = "featured" in a && a.featured ? 1 : 0;
-    const bFeat = "featured" in b && b.featured ? 1 : 0;
-    if (bFeat !== aFeat) return bFeat - aFeat;
-    return Number(b.year) - Number(a.year);
-  });
+  .filter((p) => !("hidden" in p && p.hidden));
 
 const chevron = (open: boolean) => (
   <svg
@@ -80,7 +74,6 @@ export function Navbar() {
                         className="flex items-center justify-between px-4 py-3 text-sm text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface-2)] transition-colors"
                       >
                         <span className="truncate pr-2">{p[lang].title}</span>
-                        <span className="text-xs shrink-0">{p.year}</span>
                       </Link>
                     </div>
                   ))}
@@ -184,7 +177,6 @@ export function Navbar() {
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors py-3 border-b border-[var(--border)] flex items-center justify-between"
             >
               {p[lang].title}
-              <span className="text-xs">{p.year}</span>
             </Link>
           ))}
 

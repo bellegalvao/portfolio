@@ -9,7 +9,6 @@ interface ProjectCardProps {
   slug: string;
   title: string;
   tags: string[];
-  year: string;
   cover?: string;
   featured?: boolean;
   cardTitle?: string;
@@ -17,7 +16,7 @@ interface ProjectCardProps {
   cardTags?: string[];
 }
 
-export function ProjectCard({ slug, title, tags, year, cover, featured, cardTitle, cardLine, cardTags }: ProjectCardProps) {
+export function ProjectCard({ slug, title, tags, cover, featured, cardTitle, cardLine, cardTags }: ProjectCardProps) {
   const { lang } = useLang();
   const t = siteContent[lang].projects;
 

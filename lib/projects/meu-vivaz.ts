@@ -2,7 +2,6 @@ import type { Project } from "../types";
 
 export const meuVivaz: Project = {
   slug: "meu-vivaz",
-  year: "2021",
   tags: ["Product Design", "Discovery", "Mobile"],
   images: [
     "/images/meu-vivaz-1.webp",

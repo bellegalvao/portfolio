@@ -44,7 +44,6 @@ export interface ProjectLinks {
 
 export interface Project {
   slug: string;
-  year: string;
   tags: string[];
   images: string[];
   imageLayout?: "stacked" | "landscape";

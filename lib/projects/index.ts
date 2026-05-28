@@ -16,8 +16,8 @@ import { minhaSorte } from "./minha-sorte";
 export const projects = [
   konsiDesignSystem,
   konsiApp,
+  minhaSorte,
   konsiInsights,
   sigElectricalSolutions,
   meuVivaz,
-  minhaSorte,
 ];
