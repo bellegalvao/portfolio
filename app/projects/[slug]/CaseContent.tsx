@@ -33,8 +33,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
     return <VisualOnlyCase project={project} content={content} slug={slug} lang={lang} t={t} />;
   }
 
-  /* Métricas para o lede bar: pega até 3 */
-  const ledeMetrics = content.metrics.slice(0, 3);
+  /* Métricas para o lede bar: pega até 4 */
+  const ledeMetrics = content.metrics.slice(0, 4);
 
   return (
     <div className="max-w-5xl mx-auto px-6 pt-0 pb-6">
