@@ -7,7 +7,6 @@ export const sigElectricalSolutions: Project = {
   imageLayout: "stacked",
   cover: "/images/sig.webp",
   banner: "/images/sig-banner.webp",
-  comingSoon: true,
   links: {
     github: "https://github.com/bellegalvao/sig-electrical-solutions",
     live: "https://www.sigengenharia.com/",
