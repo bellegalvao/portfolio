@@ -3,7 +3,7 @@ import type { Project } from "../types";
 export const konsiDesignSystem: Project = {
   slug: "konsi-design-system",
   tags: ["Design Systems", "Design Ops", "Design + Code", "Flutter"],
-  images: ["/images/konsi-ds-live.png"],
+  images: ["/images/konsi-ds-live.webp"],
   cover: "/images/ds-konsi.webp",
   links: {
     figma: "https://www.figma.com/design/dgIacIvjWtNgIB6mmhoRbN",
