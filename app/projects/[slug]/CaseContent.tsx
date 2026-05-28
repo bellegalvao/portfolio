@@ -84,7 +84,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         {ledeMetrics.length > 0 && (
           <div className="flex flex-wrap divide-x divide-[var(--border)] mt-10 pt-10 border-t border-[var(--border)]">
             {ledeMetrics.map((m: MetricItem, i: number) => (
-              <div key={i} className="flex flex-col px-8 first:pl-0 last:pr-0">
+              <div key={i} className="flex flex-col flex-1 px-8 first:pl-0 last:pr-0">
                 <span className="text-[28px] md:text-[34px] font-bold text-[var(--accent)] tabular-nums">
                   {m.after ?? m.value}
                 </span>
