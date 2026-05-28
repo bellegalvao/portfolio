@@ -422,7 +422,6 @@ function VisualOnlyCase({
                   slug={p.slug}
                   title={p[lang as "pt" | "en"].title}
                   tags={p.tags}
-                  year={p.year}
                   cover={p.cover}
                   cardTitle={p[lang as "pt" | "en"].cardTitle}
                   cardLine={p[lang as "pt" | "en"].cardLine}
