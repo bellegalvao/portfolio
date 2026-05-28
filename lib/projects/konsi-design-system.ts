@@ -62,8 +62,8 @@ export const konsiDesignSystem: Project = {
         description: "Otimização massiva do processo de Quality Assurance, eliminando quase por completo as discussões e refações de UI. A documentação rigorosa limpou o ruído de comunicação e trouxe clareza absoluta ao handoff.",
       },
       {
-        label: "Esforço de Ajustes (Dev Hours)",
-        value: "−25%",
+        label: "Ganho de Capacidade de Engenharia",
+        value: "25%",
         description: "Economia direta em horas de desenvolvimento dedicadas a ajustes finos de interface. Esse ganho de eficiência permitiu que a engenharia redirecionasse foco para a performance e estabilidade do backend.",
       },
     ],
