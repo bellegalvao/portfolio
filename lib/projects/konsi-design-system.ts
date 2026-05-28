@@ -47,9 +47,9 @@ export const konsiDesignSystem: Project = {
     ],
     metrics: [
       {
-        label: "Lead Time de Entrega",
-        value: "−70%",
-        description: "Redução drástica no ciclo de desenvolvimento de novos módulos, passando de 10 para apenas 3 dias úteis. A padronização de componentes permitiu que o time focasse na lógica de negócio, não na construção de UI do zero.",
+        label: "Aceleração de Time-to-Market",
+        value: "3.3x",
+        description: "Aceleração expressiva no ciclo de entrega de novos módulos, reduzindo o tempo de desenvolvimento de 10 para apenas 3 dias úteis. A padronização destravou a engenharia para focar na lógica de negócio e na velocidade de lançamento.",
       },
       {
         label: "Paridade Design-to-Code",
