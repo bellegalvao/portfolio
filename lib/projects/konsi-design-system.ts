@@ -6,7 +6,6 @@ export const konsiDesignSystem: Project = {
   images: ["/images/konsi-ds-live.webp"],
   cover: "/images/ds-konsi.webp",
   links: {
-    figma: "https://www.figma.com/design/dgIacIvjWtNgIB6mmhoRbN",
     github: "https://github.com/bellegalvao/konsi-design-system",
     live: "https://isabelle-galvao.github.io/konsi-design-system/#home",
   },
