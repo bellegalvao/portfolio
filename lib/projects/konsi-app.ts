@@ -12,7 +12,6 @@ export const konsiApp: Project = {
   cover: "/images/konsi-app-cover.webp",
   // banner removed: /images/konsi-banner-top.webp does not exist in public/images
   links: {
-    figma: "https://www.figma.com/design/iJ6LZoPpLwhkA232HjtTQj",
     android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",
   },
   pt: {
