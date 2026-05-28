@@ -57,9 +57,9 @@ export const konsiDesignSystem: Project = {
         description: "Sincronia absoluta entre as definições do Figma e a implementação em Flutter. Através da arquitetura de Design Tokens, garantimos que a \"fonte única de verdade\" fosse respeitada em todas as frentes de desenvolvimento.",
       },
       {
-        label: "Ruído em QA de Interface",
-        value: "−90%",
-        description: "Eliminação quase total de discussões e refações de UI durante a fase de Quality Assurance. A documentação rigorosa e os componentes testados removeram a ambiguidade no handoff para a engenharia.",
+        label: "Eficiência em QA de Interface",
+        value: "90%",
+        description: "Otimização massiva do processo de Quality Assurance, eliminando quase por completo as discussões e refações de UI. A documentação rigorosa limpou o ruído de comunicação e trouxe clareza absoluta ao handoff.",
       },
       {
         label: "Esforço de Ajustes (Dev Hours)",
