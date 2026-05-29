@@ -121,6 +121,7 @@ export function HomeContent() {
                 sizes="288px"
                 className="object-cover object-[center_25%]"
                 priority
+                unoptimized
               />
             </motion.div>
           </div>
