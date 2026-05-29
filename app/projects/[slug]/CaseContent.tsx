@@ -9,6 +9,7 @@ import { siteContent, contact } from "@/lib/site-content";
 import { projects } from "@/lib/projects/index";
 import { notFound } from "next/navigation";
 import { ProjectCard } from "@/components/ProjectCard";
+import { DesignSystemShowcase } from "./DesignSystemShowcase";
 
 interface MetricItem {
   label: string;
@@ -193,6 +194,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           ))}
         </ol>
       </Section>
+
+      {slug === "konsi-design-system" && <DesignSystemShowcase lang={lang} />}
 
       {/* Mid Images (entre processo e métricas) */}
       {(() => {
