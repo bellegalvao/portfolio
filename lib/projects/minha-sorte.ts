@@ -3,16 +3,25 @@ import type { Project } from "../types";
 export const minhaSorte: Project = {
   slug: "minha-sorte",
   tags: ["Product Design", "Mobile", "Em produção"],
-  images: [],
-  midImages: [],
-  outroImages: [],
+  images: [
+    "/images/minha-sorte-screens-1.webp",
+  ],
+  imageLayout: "stacked",
+  midImages: [
+    "/images/minha-sorte-screens-2.webp",
+    "/images/minha-sorte-screens-4.webp",
+    "/images/minha-sorte-screens-3.webp",
+  ],
+  outroImages: [
+    "/images/minha-sorte-brand.webp",
+  ],
   cover: "/images/minha-sorte.webp",
   links: {
     android: "https://android.minhasorteapp.com.br",
   },
   pt: {
     title: "Minha Sorte",
-    headline: "Minha Sorte: Concepção, Design e Gestão de um Ecossistema de Apostas Inteligentes",
+    headline: "Minha Sorte: Concepção, design e gestão de um ecossistema de palpites inteligentes",
     summary:
       "Como idealizadora, Product Manager e Product Designer, liderei o ciclo completo de vida (End-to-End) de um aplicativo de loterias estatísticas, transformando uma oportunidade de mercado em um produto rentável, escalável e ativo desde 2025.",
     challenge:
@@ -23,7 +32,7 @@ export const minhaSorte: Project = {
       "Estratégia de Go-To-Market e Retenção: Garantir que o app se mantivesse relevante no dispositivo do usuário mesmo fora dos dias de grandes sorteios.",
     ],
     solution:
-      "Desenhei um app com 9 modalidades de loteria (Mega-Sena, Quina, Lotofácil, entre outras), palpites baseados em análise estatística de resultados históricos e 3 modalidades de pagamento.",
+      "Como idealizadora e designer do produto, concebi e desenhei o ecossistema ponta a ponta do Minha Sorte em Flutter, cobrindo a jornada completa de 9 modalidades de loteria. A solução consistiu em criar uma camada de interface limpa e focada em Data Viz para traduzir análises estatísticas complexas em palpites visuais simples e acionáveis. Além disso, estruturei 3 esteiras de pagamento nativas e transparentes para otimizar a conversão financeira, transformando dados complexos de backend em uma experiência mobile gamificada, segura e de alta conversão.",
     processLabel: "Decisões Estratégicas e Execução",
     process: [
       {
