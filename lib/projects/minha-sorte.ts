@@ -2,7 +2,7 @@ import type { Project } from "../types";
 
 export const minhaSorte: Project = {
   slug: "minha-sorte",
-  tags: ["Product Design", "Mobile", "Em produção"],
+  tags: ["UX Research", "Data Viz", "Mobile Design"],
   images: [
     "/images/minha-sorte-screens-1.webp",
   ],
@@ -96,9 +96,9 @@ export const minhaSorte: Project = {
     ],
     highlight:
       "Gerenciar o Minha Sorte como fundadora e designer me deu uma visão holística que vai muito além das telas. Aprendi que o design de interface de sucesso é aquele que resolve uma dor real de forma sustentável para o negócio. Descobrir como traduzir backend complexo em telas simples, enquanto gerencio taxas de conversão e viabilidade técnica, moldou minha abordagem como uma Product Designer orientada a resultados e focada em gerar valor real para o ecossistema de negócios.",
-    cardTitle: "Minha Sorte: App de Loteria em Produção",
-    cardLine: "App de apostas com geração de palpites inteligentes por estatística. Em produção na loja desde 2021.",
-    cardTags: ["Flutter", "Em Produção", "Side Project"],
+    cardTitle: "Minha Sorte: Concepção & Product Design",
+    cardLine: "O case de um aplicativo mobile de apostas inteligente projetado e gerenciado por mim. Em produção com mais de 10 mil downloads, 4.6★ nas lojas e uma proposta de valor validada com usuário premiado.",
+    cardTags: ["UX Research", "Data Viz", "Mobile Design"],
   },
   en: {
     title: "Minha Sorte",
@@ -141,6 +141,6 @@ export const minhaSorte: Project = {
       "One of the users won a 4-number prize in Brazil's biggest lottery using the app's picks. No metric beats that.",
     cardTitle: "Minha Sorte: Lottery App in Production",
     cardLine: "Lottery betting app with statistical smart number generation. Live on Google Play since 2021.",
-    cardTags: ["Flutter", "Live in Production", "Side Project"],
+    cardTags: ["UX Research", "Data Viz", "Mobile Design"],
   },
 };

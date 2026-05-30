@@ -20,7 +20,7 @@ export const konsiApp: Project = {
   },
   pt: {
     title: "Konsi App",
-    headline: "Konsi App: Equilibrando Conversão e Complexidade Regulatória no Crédito Consignado",
+    headline: "Konsi App: Equilibrando conversão e complexidade regulatória no crédito consignado",
     summary:
       "Como liderei a evolução da experiência mobile, traduzindo regras de negócio complexas (INSS, SIAPE, Governos) em uma jornada de alta conversão, transparência e retenção.",
     challenge:
