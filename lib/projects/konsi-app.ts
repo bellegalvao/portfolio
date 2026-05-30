@@ -20,11 +20,11 @@ export const konsiApp: Project = {
     summary:
       "Como liderei a evolução da experiência mobile, traduzindo regras de negócio complexas (INSS, SIAPE, Governos) em uma jornada de alta conversão, transparência e retenção.",
     challenge:
-      "A Konsi opera em um ecossistema onde o usuário precisa fornecer dados sensíveis e passar por múltiplas camadas de validação. O fluxo original sofria com altas taxas de drop-off devido à carga cognitiva elevada e à falta de clareza nas etapas de simulação de crédito.",
+      "A Konsi opera em um cenário financeiro altamente regulado e de baixa confiança por parte do usuário. O fluxo original sofria com um alto índice de drop-off porque tentava resolver a complexidade do ecossistema expondo-a diretamente ao cliente.\nMinha missão como Product Designer foi navegar por três grandes pilares de atrito:",
     challengePoints: [
-      "Fricção Cognitiva — O excesso de informações bancárias e termos jurídicos gerava insegurança no preenchimento.",
-      "Complexidade de Backend vs. Frontend — As diversas regras de convênios (SIAPE, INSS, Governos) precisavam ser traduzidas em uma interface simples, sem expor a complexidade técnica ao usuário.",
-      "Necessidade de Retenção — Além de contratar o crédito, o app precisava se tornar uma ferramenta de gestão financeira para que o usuário retornasse e acompanhasse suas margens.",
+      "A assimetria de informação (Fricção Cognitiva): O excesso de termos jurídicos e bancários gerava insegurança no preenchimento de dados sensíveis. O usuário não entendia o valor de cada etapa.",
+      "A complexidade invisível: Cada convênio (SIAPE, INSS, instâncias governamentais) possui regras de negócio, limites de margem e exigências documentais completamente diferentes. O desafio era criar uma interface única e linear que absorvesse essa complexidade sem que o usuário percebesse as ramificações técnicas por trás da tela.",
+      "O paradoxo da retenção: Crédito costuma ser uma jornada transacional (o usuário contrata e some). O objetivo era transformar o app em um hub de gestão financeira e de margem, estimulando o engajamento contínuo.",
     ],
     solution:
       "Desenhei a jornada completa do zero: Onboarding → Cadastro → Login → Simulação → Contratação → Confirmação → Follow-Up, com foco em reduzir atrito em cada etapa.",
