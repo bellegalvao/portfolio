@@ -5,10 +5,12 @@ export const konsiApp: Project = {
   tags: ["Product Design", "Mobile", "Fintech"],
   images: [
     "/images/konsi-app-1.png",
+  ],
+  imageLayout: "stacked",
+  midImages: [
     "/images/konsi-app-2.png",
     "/images/konsi-app-3.png",
   ],
-  imageLayout: "stacked",
   cover: "/images/konsi-app-cover.webp",
   links: {
     android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",
