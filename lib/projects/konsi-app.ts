@@ -57,7 +57,7 @@ export const konsiApp: Project = {
       {
         label: "Conversão no Funil de Crédito",
         value: "+24%",
-        description: "Otimização expressiva na taxa de usuários que completaram a simulação e avançaram para a solicitação de proposta. A redução da carga cognitiva no fluxo eliminou gargalos críticos de abandono (drop-off).",
+        description: "A eliminação dos pontos de atrito psicológico e a clareza na simulação garantiram que mais usuários chegassem até a proposta final de forma qualificada.",
       },
       {
         label: "Tickets de Dúvidas no Suporte",
@@ -124,7 +124,7 @@ export const konsiApp: Project = {
       {
         label: "Credit Funnel Conversion",
         value: "+24%",
-        description: "Significant improvement in the rate of users who completed the simulation and advanced to a proposal request. Reducing cognitive load in the flow eliminated critical drop-off bottlenecks.",
+        description: "Eliminating psychological friction points and clarifying the simulation ensured that more users reached the final proposal in a qualified manner.",
       },
       {
         label: "Support Inquiry Tickets",
