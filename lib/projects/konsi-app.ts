@@ -62,17 +62,17 @@ export const konsiApp: Project = {
       {
         label: "Tickets de Dúvidas no Suporte",
         value: "−40%",
-        description: "Redução drástica no volume de chamados relacionados ao status e andamento das propostas. A criação de uma visualização de jornada clara e transparente deu autonomia ao usuário e desafogou a equipe de atendimento.",
+        description: "Ao desenhar uma linha do tempo clara e transparente do status da proposta dentro do app, demos autonomia ao cliente. Isso gerou um alívio massivo na operação de atendimento, permitindo que a equipe focasse em casos de alta complexidade.",
       },
       {
         label: "Velocidade de Go-To-Market",
         value: "3x",
-        description: "Agilidade multiplicada no lançamento de novas funcionalidades de crédito. Com 100% de aproveitamento dos componentes do Konsi Design System, o tempo de design e desenvolvimento de novas interfaces foi reduzido drasticamente.",
+        description: "A maturidade do processo de handoff e o uso rigoroso de componentes globais do Design System conectaram perfeitamente Design e Engenharia. O tempo gasto desenhando e codificando telas do zero caiu drasticamente, permitindo testar novos produtos de crédito em tempo recorde.",
       },
       {
         label: "NPS (Zona de Excelência)",
         value: "+75",
-        description: "Manutenção e consolidação de uma métrica de satisfação altamente saudável. A implementação da pesquisa pós-depósito provou que a transparência nas taxas e prazos blindou a experiência do usuário, mesmo em um fluxo financeiro de alta sensibilidade.",
+        description: "A nota reflete o acerto da estratégia de transparência. Mesmo lidando com um produto financeiro sensível, a clareza sobre taxas, prazos e andamento gerou blindagem de marca e recomendação orgânica.",
       },
     ],
     highlight:
@@ -129,17 +129,17 @@ export const konsiApp: Project = {
       {
         label: "Support Inquiry Tickets",
         value: "−40%",
-        description: "Drastic reduction in the volume of support tickets related to proposal status and progress. Creating a clear and transparent journey visualization gave users autonomy and relieved the support team.",
+        description: "By designing a clear and transparent proposal status timeline inside the app, we gave customers autonomy. This generated massive relief for the support operation, allowing the team to focus on high-complexity cases.",
       },
       {
         label: "Go-To-Market Speed",
         value: "3x",
-        description: "Multiplied agility in launching new credit features. With 100% reuse of Konsi Design System components, the time to design and develop new interfaces was drastically reduced.",
+        description: "The maturity of the handoff process and rigorous use of global Design System components perfectly connected Design and Engineering. Time spent designing and coding screens from scratch dropped drastically, enabling new credit products to be tested in record time.",
       },
       {
         label: "NPS (Excellence Zone)",
         value: "+75",
-        description: "Maintenance and consolidation of a highly healthy satisfaction metric. The post-deposit survey implementation proved that transparency in rates and deadlines shielded the user experience, even in a highly sensitive financial flow.",
+        description: "The score reflects the success of the transparency strategy. Even handling a sensitive financial product, clarity around rates, deadlines, and progress generated brand protection and organic recommendations.",
       },
     ],
     highlight:
