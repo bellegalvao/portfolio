@@ -4,15 +4,15 @@ export const konsiApp: Project = {
   slug: "konsi-app",
   tags: ["Product Design", "Mobile", "Fintech"],
   images: [
-    "/images/konsi-app-1.png",
+    "/images/konsi-app-1.webp",
   ],
   imageLayout: "stacked",
   midImages: [
-    "/images/konsi-app-2.png",
-    "/images/konsi-app-3.png",
+    "/images/konsi-app-2.webp",
+    "/images/konsi-app-3.webp",
   ],
   outroImages: [
-    "/images/konsi-app-4.png",
+    "/images/konsi-app-4.webp",
   ],
   cover: "/images/konsi-app-cover.webp",
   links: {
