@@ -76,7 +76,7 @@ export const konsiApp: Project = {
       },
     ],
     highlight:
-      "Em um produto de crédito, a confiança é a métrica principal. Minha decisão estratégica foi priorizar a clareza radical nas taxas e prazos, mesmo que isso exigisse fluxos um pouco mais longos. O resultado foi uma conversão de maior qualidade, com menos chamados no suporte e maior satisfação do cliente final.",
+      "No mercado de fintechs, muitas vezes assume-se que 'menos telas' significa uma experiência melhor. Este case provou o contrário: em produtos de crédito, a confiança é a métrica que destrava a conversão. Priorizar a clareza radical nas taxas, regras e prazos, mesmo que isso exigisse um fluxo com mais etapas explicativas, foi a decisão de design que gerou leads de maior qualidade, reduziu o custo operacional de suporte e fidelizou o cliente na base.",
     cardTitle: "Konsi App: UX para Fintech de Crédito",
     cardLine: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
     cardTags: ["UX Research", "Mobile Fintech", "Acessibilidade"],
@@ -143,7 +143,7 @@ export const konsiApp: Project = {
       },
     ],
     highlight:
-      "In a credit product, trust is the primary metric. My strategic decision was to prioritize radical clarity in rates and deadlines, even if that required slightly longer flows. The result was higher-quality conversion, fewer support tickets, and greater end-user satisfaction.",
+      "In the fintech market, it's often assumed that 'fewer screens' means a better experience. This case proved the opposite: in credit products, trust is the metric that unlocks conversion. Prioritizing radical clarity around rates, rules, and deadlines — even when that required a flow with more explanatory steps — was the design decision that generated higher-quality leads, reduced operational support costs, and retained customers in the base.",
     cardTitle: "Konsi App: UX for Credit Fintech",
     cardLine: "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
     cardTags: ["UX Research", "Mobile Fintech", "Accessibility"],
