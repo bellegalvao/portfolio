@@ -91,7 +91,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
                     antes: {m.before}
                   </span>
                 )}
-                <span className="text-[16px] text-[var(--muted)] mt-1 max-w-[140px] leading-snug">
+                <span className="text-[16px] text-[var(--muted)] mt-1 max-w-[200px] leading-snug">
                   {m.label}
                 </span>
               </div>

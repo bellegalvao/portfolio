@@ -2,7 +2,7 @@ import type { Project } from "../types";
 
 export const konsiApp: Project = {
   slug: "konsi-app",
-  tags: ["Product Design", "Mobile", "Fintech"],
+  tags: ["UX Research", "Mobile Fintech", "Acessibilidade WCAG"],
   images: [
     "/images/konsi-app-1.webp",
   ],
@@ -59,12 +59,12 @@ export const konsiApp: Project = {
     ],
     metrics: [
       {
-        label: "Conversão no Funil de Crédito",
+        label: "Conversão no funil de crédito",
         value: "+24%",
         description: "A eliminação dos pontos de atrito psicológico e a clareza na simulação garantiram que mais usuários chegassem até a proposta final de forma qualificada.",
       },
       {
-        label: "Tickets de Dúvidas no Suporte",
+        label: "Tickets de dúvidas no suporte",
         value: "−40%",
         description: "Ao desenhar uma linha do tempo clara e transparente do status da proposta dentro do app, demos autonomia ao cliente. Isso gerou um alívio massivo na operação de atendimento, permitindo que a equipe focasse em casos de alta complexidade.",
       },
@@ -74,7 +74,7 @@ export const konsiApp: Project = {
         description: "A maturidade do processo de handoff e o uso rigoroso de componentes globais do Design System conectaram perfeitamente Design e Engenharia. O tempo gasto desenhando e codificando telas do zero caiu drasticamente, permitindo testar novos produtos de crédito em tempo recorde.",
       },
       {
-        label: "NPS (Zona de Excelência)",
+        label: "NPS (zona de excelência)",
         value: "+75",
         description: "A nota reflete o acerto da estratégia de transparência. Mesmo lidando com um produto financeiro sensível, a clareza sobre taxas, prazos e andamento gerou blindagem de marca e recomendação orgânica.",
       },
