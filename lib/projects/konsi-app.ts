@@ -27,7 +27,7 @@ export const konsiApp: Project = {
       "O paradoxo da retenção: Crédito costuma ser uma jornada transacional (o usuário contrata e some). O objetivo era transformar o app em um hub de gestão financeira e de margem, estimulando o engajamento contínuo.",
     ],
     solution:
-      "Desenhei a jornada completa do zero: Onboarding → Cadastro → Login → Simulação → Contratação → Confirmação → Follow-Up, com foco em reduzir atrito em cada etapa.",
+      "A resposta para o desafio foi redesenhar de ponta a ponta a jornada mobile da Konsi, cobrindo desde o onboarding e captação inicial até os fluxos críticos de simulação, contratação e acompanhamento pós-contratação. A estratégia central consistiu em criar uma camada de interface simples e unificada que absorvesse as fricções regulatórias e as regras assíncronas de múltiplos convênios. Ao transformar dados brutos de backend em componentes visuais claros e focar em uma arquitetura de revelação progressiva, o produto passou de um formulário burocrático para um ecossistema de alta conversão, focado em transparência e autonomia do usuário.",
     processTitle: "Decisões estratégicas de design",
     processIntro:
       "Para mover os ponteiros de negócio sem comprometer a segurança jurídica e técnica, adotei quatro frentes de atuação:",
@@ -94,7 +94,7 @@ export const konsiApp: Project = {
       "The retention paradox: Credit tends to be a transactional journey (the user contracts and disappears). The goal was to turn the app into a financial and margin management hub, encouraging continuous engagement.",
     ],
     solution:
-      "I designed the full journey from scratch: Onboarding → Registration → Login → Simulation → Contracting → Confirmation → Follow-Up, focused on reducing friction at every step.",
+      "The answer to the challenge was to redesign Konsi's mobile journey end-to-end, covering everything from onboarding and initial acquisition to the critical flows of simulation, contracting, and post-contracting follow-up. The core strategy was to build a simple, unified interface layer that absorbed regulatory friction and the asynchronous rules of multiple agreements. By translating raw backend data into clear visual components and focusing on a progressive disclosure architecture, the product evolved from a bureaucratic form into a high-conversion ecosystem centered on transparency and user autonomy.",
     processTitle: "Strategic design decisions",
     processIntro:
       "To move the business metrics without compromising legal and technical security, I adopted four fronts of action:",
