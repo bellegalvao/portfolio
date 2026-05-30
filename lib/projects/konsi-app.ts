@@ -3,14 +3,13 @@ import type { Project } from "../types";
 export const konsiApp: Project = {
   slug: "konsi-app",
   tags: ["Product Design", "Mobile", "Fintech"],
-  // Images fixed: actual files are .png (not .webp); only 3 exist
   images: [
     "/images/konsi-app-1.png",
     "/images/konsi-app-2.png",
     "/images/konsi-app-3.png",
   ],
+  imageLayout: "stacked",
   cover: "/images/konsi-app-cover.webp",
-  // banner removed: /images/konsi-banner-top.webp does not exist in public/images
   links: {
     android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",
   },
