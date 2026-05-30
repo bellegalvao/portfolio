@@ -34,8 +34,8 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
     return <VisualOnlyCase project={project} content={content} slug={slug} lang={lang} t={t} />;
   }
 
-  /* Métricas para o lede bar: pega até 4 */
-  const ledeMetrics = content.metrics.slice(0, 4);
+  /* Métricas para o lede bar: usa ledeMetrics se definido, senão os 4 primeiros de metrics */
+  const ledeMetrics = (content.ledeMetrics ?? content.metrics).slice(0, 4);
 
   return (
     <div className="max-w-5xl mx-auto px-6 pt-0 pb-6">
@@ -105,15 +105,24 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
 
       {/* Contexto / Desafio */}
       <Section label={t.challenge}>
-        <p className="text-lg text-[var(--muted)] leading-relaxed">{content.challenge}</p>
+        {content.challenge.split("\n\n").map((para, i) => (
+          <p key={i} className="text-lg text-[var(--muted)] leading-relaxed mb-4 last:mb-0">{para}</p>
+        ))}
         {content.challengePoints && content.challengePoints.length > 0 && (
           <ul className="mt-5 space-y-3">
-            {content.challengePoints.map((point, i) => (
-              <li key={i} className="flex gap-3 text-base text-[var(--muted)] leading-relaxed">
-                <span className="text-[var(--accent)] mt-0.5 shrink-0">→</span>
-                <span>{point}</span>
-              </li>
-            ))}
+            {content.challengePoints.map((point, i) => {
+              const [label, ...rest] = point.split(": ");
+              const hasLabel = rest.length > 0;
+              return (
+                <li key={i} className="flex gap-3 text-base text-[var(--muted)] leading-relaxed">
+                  <span className="text-[var(--accent)] mt-0.5 shrink-0">→</span>
+                  <span>
+                    {hasLabel && <strong className="text-[var(--foreground)]">{label}:</strong>}
+                    {hasLabel ? " " : ""}{hasLabel ? rest.join(": ") : point}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         )}
       </Section>
@@ -171,7 +180,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       )}
 
       {/* Decisões de Design / Processo */}
-      <Section label={t.process}>
+      <Section label={content.processLabel ?? t.process}>
         {content.processTitle && (
           <h2 className="text-lg font-semibold mb-2">{content.processTitle}</h2>
         )}
@@ -214,7 +223,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
       {/* Impacto / Métricas */}
       <Section label={t.metrics}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {content.metrics.map((m: MetricItem, i: number) => (
+          {content.metrics.filter((m: MetricItem) => !m.highlighted).map((m: MetricItem, i: number) => (
             <div
               key={i}
               className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col gap-3"
@@ -238,6 +247,17 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
             </div>
           ))}
         </div>
+        {content.metrics.filter((m: MetricItem) => m.highlighted).map((m: MetricItem, i: number) => (
+          <div
+            key={i}
+            className="mt-3 rounded-xl border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-6 flex flex-col gap-3"
+          >
+            <p className="text-xs font-mono text-[var(--accent)] uppercase tracking-widest">{m.label}</p>
+            <p className="text-lg font-semibold leading-snug text-[var(--foreground)]">
+              {m.description}
+            </p>
+          </div>
+        ))}
       </Section>
 
       {/* O que fez diferença */}

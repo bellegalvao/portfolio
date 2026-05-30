@@ -12,6 +12,8 @@ export interface Metric {
   after?: string;
   /** Texto descritivo exibido apenas no card de impacto detalhado (seção inferior). */
   description?: string;
+  /** Exibe como highlight de destaque em largura total, fora do grid. */
+  highlighted?: boolean;
 }
 
 export interface ProjectContent {
@@ -22,6 +24,8 @@ export interface ProjectContent {
   challenge: string;
   challengePoints?: string[];
   solution: string;
+  ledeMetrics?: Metric[];
+  processLabel?: string;
   processTitle?: string;
   processIntro?: string;
   process: ProcessStep[];
