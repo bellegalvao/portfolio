@@ -48,6 +48,7 @@ export interface Project {
   images: string[];
   imageLayout?: "stacked" | "landscape";
   midImages?: string[];
+  outroImages?: string[];
   cover: string;
   banner?: string;
   links: ProjectLinks;

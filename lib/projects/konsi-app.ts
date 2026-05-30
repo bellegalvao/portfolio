@@ -11,6 +11,9 @@ export const konsiApp: Project = {
     "/images/konsi-app-2.png",
     "/images/konsi-app-3.png",
   ],
+  outroImages: [
+    "/images/konsi-app-4.png",
+  ],
   cover: "/images/konsi-app-cover.webp",
   links: {
     android: "https://play.google.com/store/search?q=konsi&c=apps&hl=pt_BR",

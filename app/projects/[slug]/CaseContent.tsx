@@ -249,6 +249,20 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         </blockquote>
       </Section>
 
+      {/* Outro Images (após highlight) */}
+      {(() => {
+        if (!("outroImages" in project)) return null;
+        const imgs: string[] = Array.isArray(project.outroImages) ? project.outroImages as string[] : [];
+        if (imgs.length === 0) return null;
+        return (
+          <div className="mb-12 flex flex-col" style={{ gap: "8px" }}>
+            {imgs.map((img, i) => (
+              <ScrollFadeImage key={i} src={img} alt={`${content.title} detail ${i + 1}`} index={i} />
+            ))}
+          </div>
+        );
+      })()}
+
       {/* Links */}
       {"internalNote" in project && project.internalNote && (
         <Section label={t.links}>
