@@ -97,7 +97,7 @@ export const minhaSorte: Project = {
     highlight:
       "Gerenciar o Minha Sorte como fundadora e designer me deu uma visão holística que vai muito além das telas. Aprendi que o design de interface de sucesso é aquele que resolve uma dor real de forma sustentável para o negócio. Descobrir como traduzir backend complexo em telas simples, enquanto gerencio taxas de conversão e viabilidade técnica, moldou minha abordagem como uma Product Designer orientada a resultados e focada em gerar valor real para o ecossistema de negócios.",
     cardTitle: "Minha Sorte: Concepção & Product Design",
-    cardLine: "O case de um aplicativo mobile de apostas inteligente projetado e gerenciado por mim. Em produção com mais de 10 mil downloads, 4.6★ nas lojas e uma proposta de valor validada com usuário premiado.",
+    cardLine: "O case de um aplicativo mobile de palpites inteligentes projetado e gerenciado por mim. Em produção com mais de 10 mil downloads, 4.6★ nas lojas e uma proposta de valor validada com usuário premiado.",
     cardTags: ["UX Research", "Data Viz", "Mobile Design"],
   },
   en: {

@@ -17,6 +17,7 @@ interface MetricItem {
   before?: string;
   after?: string;
   description?: string;
+  highlighted?: boolean;
 }
 
 export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
