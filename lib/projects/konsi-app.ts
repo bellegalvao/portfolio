@@ -16,9 +16,9 @@ export const konsiApp: Project = {
   },
   pt: {
     title: "Konsi App",
-    headline: "Otimizando a jornada de crédito: Como redesenhei o fluxo de contratação da Konsi equilibrando regras de negócio complexas e experiência do usuário.",
+    headline: "Konsi App: Equilibrando Conversão e Complexidade Regulatória no Crédito Consignado",
     summary:
-      "Liderando a evolução do produto mobile para aumentar a conversão de propostas e simplificar a gestão de crédito consignado para milhares de usuários.",
+      "Como liderei a evolução da experiência mobile, traduzindo regras de negócio complexas (INSS, SIAPE, Governos) em uma jornada de alta conversão, transparência e retenção.",
     challenge:
       "A Konsi opera em um ecossistema onde o usuário precisa fornecer dados sensíveis e passar por múltiplas camadas de validação. O fluxo original sofria com altas taxas de drop-off devido à carga cognitiva elevada e à falta de clareza nas etapas de simulação de crédito.",
     challengePoints: [
@@ -83,9 +83,9 @@ export const konsiApp: Project = {
   },
   en: {
     title: "Konsi App",
-    headline: "NPS above 80 points and +25% conversion in a financial app designed for users with low digital literacy.",
+    headline: "Konsi App: Balancing Conversion and Regulatory Complexity in Consigned Credit",
     summary:
-      "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
+      "How I led the evolution of the mobile experience, translating complex business rules (INSS, SIAPE, Government) into a high-conversion, transparent, and retention-focused journey.",
     challenge:
       "The challenge wasn't just to create a beautiful app,it was to offer credit in a human way to civil servants, many with low digital familiarity, balancing the user's real need with the product's technical capacity.",
     solution:
