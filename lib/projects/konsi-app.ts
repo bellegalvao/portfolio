@@ -28,29 +28,29 @@ export const konsiApp: Project = {
     ],
     solution:
       "Desenhei a jornada completa do zero: Onboarding → Cadastro → Login → Simulação → Contratação → Confirmação → Follow-Up, com foco em reduzir atrito em cada etapa.",
-    processTitle: "Design Orientado a Dados e Conversão",
+    processTitle: "Decisões estratégicas de design",
     processIntro:
-      "Para escalar o produto, implementei uma estratégia de design focada em redução de fricção e transparência:",
+      "Para mover os ponteiros de negócio sem comprometer a segurança jurídica e técnica, adotei quatro frentes de atuação:",
     process: [
       {
-        step: "Progressive Disclosure (Revelação Progressiva)",
+        step: "Arquitetura baseada em carga cognitiva (Revelação progressiva)",
         description:
-          "Reestruturei o fluxo de simulação para coletar dados em etapas lógicas, reduzindo a ansiedade do usuário e aumentando a taxa de completude do formulário.",
+          "Em vez de encurtar o fluxo artificialmente (o que comprometeria a coleta de dados necessários para a análise de crédito), reestruturei a jornada utilizando Progressive Disclosure. Agrupei os dados em blocos lógicos e contextuais. Ao explicar o porquê de cada dado solicitado no momento exato da fricção, reduzimos a ansiedade e aumentamos drasticamente a taxa de completude do formulário.",
       },
       {
-        step: "Visualização de Dados Financeiros",
+        step: "Dashboard de margem como gancho de retenção",
         description:
-          "Criei dashboards intuitivos para que o usuário visualize suas margens e contratos atuais de forma clara, utilizando os componentes do Design System para garantir rapidez e consistência.",
+          "Para mitigar o comportamento estritamente transacional do app, desenhei uma área logada focada em visualização de dados financeiros. Utilizando os componentes do nosso Design System, criei um cockpit onde o usuário acompanha suas margens consignáveis e contratos atuais em tempo real. O app deixou de ser apenas “um lugar para pegar dinheiro” e virou uma ferramenta de controle.",
       },
       {
-        step: "Integração com Product Analytics",
+        step: "Design orientado a dados (PostHog & Metabase)",
         description:
-          "Utilizei ferramentas como PostHog e Metabase para identificar exatamente em quais etapas do funil os usuários abandonavam a jornada, permitindo iterações rápidas baseadas em comportamento real.",
+          "Não desenhei no escuro. Mapeei todo o funil antigo e novo utilizando ferramentas de Product Analytics. Ao cruzar os dados quantitativos de abandono com as gravações de sessão, identificamos os gargalos exatos da esteira. Isso nos permitiu realizar iterações e melhorias de usabilidade em ciclos semanais, sem adivinhações.",
       },
       {
-        step: "Loop de Feedback Contínuo (Estratégia de NPS)",
+        step: "Mapeamento do “Momento Wow” para mensuração de NPS",
         description:
-          "Desenhei e implementei a jornada de Net Promoter Score dentro do app. Em vez de disparar pesquisas aleatórias, mapeei o momento de maior valor percebido para coletar a nota, transformando um dado qualitativo em uma métrica de saúde do produto rastreável em tempo real.",
+          "Implementar o NPS não foi apenas disparar um pop-up. Desenhei a jornada da pesquisa baseada no comportamento do usuário: o gatilho foi programado para o momento de maior valor percebido (logo após a confirmação do depósito/sucesso da proposta). Capturar o sentimento do usuário nesse ápice transformou um dado qualitativo isolado em uma métrica de saúde do produto altamente confiável e rastreável em tempo real.",
       },
     ],
     metrics: [
@@ -87,43 +87,63 @@ export const konsiApp: Project = {
     summary:
       "How I led the evolution of the mobile experience, translating complex business rules (INSS, SIAPE, Government) into a high-conversion, transparent, and retention-focused journey.",
     challenge:
-      "The challenge wasn't just to create a beautiful app,it was to offer credit in a human way to civil servants, many with low digital familiarity, balancing the user's real need with the product's technical capacity.",
+      "Konsi operates in a highly regulated financial environment with low user trust. The original flow suffered from high drop-off rates because it tried to resolve the ecosystem's complexity by exposing it directly to the customer.\nMy mission as a Product Designer was to navigate three major friction pillars:",
+    challengePoints: [
+      "Information asymmetry (Cognitive Friction): The excess of legal and banking jargon created insecurity when filling in sensitive data. Users didn't understand the value of each step.",
+      "Invisible complexity: Each agreement (SIAPE, INSS, government entities) has completely different business rules, margin limits, and documentation requirements. The challenge was to build a single, linear interface that absorbed this complexity without the user noticing the technical branches behind the screen.",
+      "The retention paradox: Credit tends to be a transactional journey (the user contracts and disappears). The goal was to turn the app into a financial and margin management hub, encouraging continuous engagement.",
+    ],
     solution:
       "I designed the full journey from scratch: Onboarding → Registration → Login → Simulation → Contracting → Confirmation → Follow-Up, focused on reducing friction at every step.",
+    processTitle: "Strategic design decisions",
+    processIntro:
+      "To move the business metrics without compromising legal and technical security, I adopted four fronts of action:",
     process: [
       {
-        step: "Research",
+        step: "Cognitive load architecture (Progressive Disclosure)",
         description:
-          "Conducted user research and usability tests to understand pain points,many elderly users and people with limited access to digital financial services.",
+          "Rather than artificially shortening the flow (which would compromise the data collection required for credit analysis), I restructured the journey using Progressive Disclosure. I grouped data into logical, contextual blocks. By explaining the reason behind each requested field at the exact moment of friction, we reduced anxiety and dramatically increased form completion rates.",
       },
       {
-        step: "Flows",
+        step: "Margin dashboard as a retention hook",
         description:
-          "Mapped all critical flows identifying where friction was highest, especially in contracting (documents, bank data, address).",
+          "To mitigate the app's strictly transactional behavior, I designed a logged-in area focused on financial data visualization. Using our Design System components, I created a cockpit where users track their consignable margins and current contracts in real time. The app stopped being just ‘a place to get money’ and became a control tool.",
       },
       {
-        step: "Design",
+        step: "Data-driven design (PostHog & Metabase)",
         description:
-          "Created screens with large typography, clear hierarchy, and constant visual feedback to reduce anxiety in financial processes.",
+          "I didn't design in the dark. I mapped the entire old and new funnel using Product Analytics tools. By cross-referencing quantitative drop-off data with session recordings, we identified the exact bottlenecks in the pipeline. This allowed us to run usability iterations and improvements in weekly cycles, without guesswork.",
       },
       {
-        step: "Testing",
+        step: "Mapping the 'Wow Moment' for NPS measurement",
         description:
-          "Validated flows with real users, iterating mainly on the contracting flow that looks simple but hides real complexity.",
-      },
-      {
-        step: "NPS",
-        description:
-          "Implemented NPS from scratch as a continuous experience monitoring system, using data to prioritize improvements.",
+          "Implementing NPS was not just triggering a pop-up. I designed the survey journey based on user behavior: the trigger was programmed for the moment of highest perceived value (right after deposit confirmation/proposal success). Capturing user sentiment at this peak transformed an isolated qualitative data point into a highly reliable, real-time trackable product health metric.",
       },
     ],
     metrics: [
-      { label: "NPS implemented from scratch", value: "✓" },
-      { label: "NPS", value: "Above 80 pts" },
-      { label: "Conversion", value: "+25%" },
+      {
+        label: "Credit Funnel Conversion",
+        value: "+24%",
+        description: "Significant improvement in the rate of users who completed the simulation and advanced to a proposal request. Reducing cognitive load in the flow eliminated critical drop-off bottlenecks.",
+      },
+      {
+        label: "Support Inquiry Tickets",
+        value: "−40%",
+        description: "Drastic reduction in the volume of support tickets related to proposal status and progress. Creating a clear and transparent journey visualization gave users autonomy and relieved the support team.",
+      },
+      {
+        label: "Go-To-Market Speed",
+        value: "3x",
+        description: "Multiplied agility in launching new credit features. With 100% reuse of Konsi Design System components, the time to design and develop new interfaces was drastically reduced.",
+      },
+      {
+        label: "NPS (Excellence Zone)",
+        value: "+75",
+        description: "Maintenance and consolidation of a highly healthy satisfaction metric. The post-deposit survey implementation proved that transparency in rates and deadlines shielded the user experience, even in a highly sensitive financial flow.",
+      },
     ],
     highlight:
-      "The contracting flow looks simple,just address and bank account,but hides real complexity: attaching multiple documents, async validations, and error states. That was the flow I iterated on the most and I'm most proud of.",
+      "In a credit product, trust is the primary metric. My strategic decision was to prioritize radical clarity in rates and deadlines, even if that required slightly longer flows. The result was higher-quality conversion, fewer support tickets, and greater end-user satisfaction.",
     cardTitle: "Konsi App: UX for Credit Fintech",
     cardLine: "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
     cardTags: ["UX Research", "Mobile Fintech", "Accessibility"],
