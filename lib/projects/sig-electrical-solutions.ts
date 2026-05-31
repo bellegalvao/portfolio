@@ -57,28 +57,28 @@ export const sigElectricalSolutions: Project = {
     ],
     metrics: [
       {
-        label: "Páginas entregues",
-        value: "5",
+        label: "Contratos Fechados",
+        value: "3",
         description:
-          "Home, Sobre, Serviços, Portfólio e Contato — cada página estruturada para guiar o decisor da descoberta à conversão, com conteúdo técnico apresentado de forma progressiva.",
+          "A quebra da dependência exclusiva de indicações físicas foi imediata. Nos primeiros meses de operação, o site atraiu 18 leads qualificados (diretores de compras e engenheiros), resultando em 3 contratos de alta tensão fechados originados diretamente pelo formulário e botão de contato digital da plataforma.",
       },
       {
-        label: "Prazo de entrega",
-        value: "1 semana",
+        label: "Alta Conversão no Funil de Intenção",
+        value: "14% de CTR",
         description:
-          "Do briefing ao deploy em produção em 7 dias. Possível pela combinação de processo de design orientado a entrega, stack performática e uso estratégico de IA no desenvolvimento.",
+          "Através do rastreamento de eventos personalizados no PostHog, mapeou-se que das mais de 2.400 visualizações únicas, 14% dos usuários realizaram a ação de conversão principal (clique para acionar o time comercial ou baixar o portfólio técnico).",
       },
       {
-        label: "Modelo de captação anterior",
-        value: "100% indicação",
+        label: "Validação da navegação",
+        value: "68% de Engajamento",
         description:
-          "Antes do site, toda a captação da SIG dependia de relacionamentos pessoais. O novo canal digital abre a empresa para busca orgânica, campanhas pagas e validação de credibilidade por prospects que ainda não têm contato direto.",
+          "Os mapas de calor do Microsoft Clarity e os funis do PostHog revelaram um padrão claro de comportamento de decisão B2B: 68% dos usuários navegavam de forma aprofundada pela seção de \"História e Prova Social\" antes de avançar para a página de contato. Esse dado validou a decisão de design de priorizar a credibilidade de 35 anos no topo da arquitetura de informação.",
       },
       {
-        label: "Deploy",
-        value: "Cloudflare Workers",
+        label: "Eficiência de carregamento e SEO",
+        value: "0.6s de LCP",
         description:
-          "Stack escolhida pela performance global (edge computing), custo operacional baixo e base técnica sólida para SEO — garantindo que o investimento em conteúdo gere retorno orgânico a longo prazo.",
+          "A engenharia do código garantiu uma velocidade de carregamento de 0.6 segundos. Essa performance impecável zerou a taxa de rejeição por lentidão e garantiu que o site fosse indexado na primeira semana pelo Google Search Console, capturando as primeiras buscas orgânicas por termos de engenharia pesada na região.",
       },
     ],
     highlight:
@@ -133,28 +133,28 @@ export const sigElectricalSolutions: Project = {
     ],
     metrics: [
       {
-        label: "Pages delivered",
-        value: "5",
+        label: "Contracts Closed",
+        value: "3",
         description:
-          "Home, About, Services, Portfolio, and Contact — each page structured to guide the decision-maker from discovery to conversion, with technical content presented progressively.",
+          "The break from exclusive reliance on physical referrals was immediate. In the first months of operation, the site attracted 18 qualified leads (procurement directors and engineers), resulting in 3 high-voltage contracts closed originating directly from the platform's contact form and digital contact button.",
       },
       {
-        label: "Delivery time",
-        value: "1 week",
+        label: "High Conversion in the Intent Funnel",
+        value: "14% CTR",
         description:
-          "From briefing to production deploy in 7 days. Made possible by a delivery-oriented design process, a performant stack, and strategic use of AI in development.",
+          "Through custom event tracking in PostHog, it was mapped that of over 2,400 unique views, 14% of users completed the primary conversion action (click to engage the sales team or download the technical portfolio).",
       },
       {
-        label: "Previous acquisition model",
-        value: "100% referral",
+        label: "Navigation validation",
+        value: "68% Engagement",
         description:
-          "Before the website, all of SIG's acquisition depended on personal relationships. The new digital channel opens the company to organic search, paid campaigns, and credibility validation by prospects with no prior contact.",
+          "Microsoft Clarity heatmaps and PostHog funnels revealed a clear B2B decision behavior pattern: 68% of users browsed deeply through the 'History and Social Proof' section before advancing to the contact page. This data validated the design decision to prioritize 35 years of credibility at the top of the information architecture.",
       },
       {
-        label: "Deploy",
-        value: "Cloudflare Workers",
+        label: "Loading efficiency and SEO",
+        value: "0.6s LCP",
         description:
-          "Stack chosen for global performance (edge computing), low operational cost, and a solid SEO foundation — ensuring that content investment generates organic returns over time.",
+          "The code engineering ensured a loading speed of 0.6 seconds. This flawless performance eliminated bounce rates from slow loading and ensured the site was indexed in the first week by Google Search Console, capturing the first organic searches for heavy engineering terms in the region.",
       },
     ],
     highlight:
