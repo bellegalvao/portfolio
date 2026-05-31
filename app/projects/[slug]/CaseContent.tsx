@@ -532,7 +532,7 @@ function ScrollFadeImage({ src, alt, index }: { src: string; alt: string; index:
       initial={{ opacity: 0, y: 32 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: Math.min(index * 0.08, 0.3), ease: [0.22, 1, 0.36, 1] }}
-      className="rounded-xl overflow-hidden border border-[var(--border)] w-full"
+      className="rounded-2xl overflow-hidden border border-[var(--border)] w-full"
     >
       <Image
         src={src}
