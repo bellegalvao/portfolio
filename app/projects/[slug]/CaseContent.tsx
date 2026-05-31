@@ -221,6 +221,87 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
         );
       })()}
 
+      {/* SIG — Diferenciais */}
+      {slug === "sig-electrical-solutions" && (
+        <div className="mb-12 rounded-2xl bg-[#060d1f] overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 py-16">
+            <div className="grid items-center gap-16 md:grid-cols-2">
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
+                  <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full p-10">
+                    <defs>
+                      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="480" height="360" fill="url(#grid)" />
+                    <path d="M 80 180 L 160 180 L 160 120 L 240 120 L 240 180 L 320 180 L 320 240 L 400 240" stroke="rgba(255,255,255,0.15)" strokeWidth="1.5" fill="none" />
+                    <path d="M 80 240 L 160 240 L 160 180 M 240 180 L 240 240 L 320 240" stroke="rgba(255,255,255,0.08)" strokeWidth="1" fill="none" />
+                    <circle cx="160" cy="180" r="4" fill="white" opacity="0.4" />
+                    <circle cx="240" cy="120" r="4" fill="white" opacity="0.4" />
+                    <circle cx="320" cy="180" r="4" fill="white" opacity="0.4" />
+                    <circle cx="240" cy="240" r="4" fill="white" opacity="0.4" />
+                    <polygon points="255,140 235,175 248,175 232,210 258,170 244,170" fill="white" opacity="0.7" />
+                    <circle cx="244" cy="175" r="52" stroke="rgba(255,255,255,0.08)" strokeWidth="1" fill="none" strokeDasharray="4 6" />
+                    <circle cx="244" cy="175" r="70" stroke="rgba(255,255,255,0.04)" strokeWidth="1" fill="none" />
+                    <rect x="20" y="20" width="30" height="30" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+                    <rect x="430" y="310" width="30" height="30" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+                  </svg>
+                </div>
+                <div className="absolute -bottom-4 -right-4 flex flex-col items-center justify-center rounded-2xl bg-[#1d4ed8] px-6 py-4 shadow-lg">
+                  <span className="text-2xl font-bold text-white">NR-10</span>
+                  <span className="text-xs font-medium text-white/80">Certificado</span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-widest text-[#60a5fa]">Por que nos escolher</span>
+                  <h2 className="mt-3 text-4xl font-bold text-white md:text-5xl">Diferenciais que <em className="not-italic text-[#60a5fa]">fazem a diferença</em></h2>
+                </div>
+                <ul className="mt-10 space-y-8">
+                  <li className="flex gap-5">
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/20">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white">Segurança em Primeiro Lugar</h3>
+                      <p className="mt-1.5 text-sm leading-relaxed text-white/70">Todos os projetos seguem rigorosamente as normas ABNT, NR-10, NR-35 e demais regulamentações técnicas. Equipe certificada e constantemente treinada.</p>
+                    </div>
+                  </li>
+                  <li className="flex gap-5">
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/20">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white">Agilidade e Prazo Garantido</h3>
+                      <p className="mt-1.5 text-sm leading-relaxed text-white/70">Cronogramas rigorosos e equipe dedicada garantem a entrega nos prazos acordados, sem surpresas para sua operação ou obra.</p>
+                    </div>
+                  </li>
+                  <li className="flex gap-5">
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/20">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <line x1="12" x2="12" y1="2" y2="22" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white">Custo-Benefício Real</h3>
+                      <p className="mt-1.5 text-sm leading-relaxed text-white/70">Orçamentos transparentes, materiais de alta qualidade e equipe própria qualificada resultam em projetos eficientes e econômicos a longo prazo.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Impacto / Métricas */}
       <Section label={t.metrics}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
