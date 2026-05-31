@@ -14,7 +14,7 @@ export const sigElectricalSolutions: Project = {
   pt: {
     title: "SIG Engenharia Elétrica",
     headline:
-      "Construí o site institucional que transformou 35 anos de expertise técnica em presença digital — do conceito ao deploy em 1 semana.",
+      "SIG Engenharia: Transformando 35 anos de autoridade em canal digital de aquisição",
     summary:
       "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação.",
     challenge:
@@ -97,7 +97,7 @@ export const sigElectricalSolutions: Project = {
   en: {
     title: "SIG Electrical Engineering",
     headline:
-      "Built the institutional website that turned 35 years of technical expertise into a digital presence — from concept to deploy in 1 week.",
+      "SIG Engineering: Turning 35 Years of Authority into a Digital Acquisition Channel",
     summary:
       "Modern institutional website for a family-owned electrical engineering firm that ran 100% on referrals.",
     challenge:
