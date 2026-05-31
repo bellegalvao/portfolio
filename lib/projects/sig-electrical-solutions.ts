@@ -27,10 +27,10 @@ export const sigElectricalSolutions: Project = {
     solution:
       "Desenhei e desenvolvi uma plataforma digital robusta de 5 páginas, desenhada estrategicamente sob uma arquitetura de conversão focada no mercado corporativo. O produto organiza serviços complexos de alta engenharia de forma visual, didática e transparente, estruturado com tecnologias modernas de ponta para garantir carregamento sub-segundo, segurança e indexação imediata nos motores de busca.",
     ledeMetrics: [
-      { label: "Páginas entregues com design e código", value: "5" },
-      { label: "Do conceito ao deploy", value: "1 semana" },
-      { label: "Modelo de captação anterior ao site", value: "100% indicação" },
-      { label: "Anos de expertise traduzidos em presença digital", value: "35+" },
+      { label: "Visualizações únicas nos primeiros 3 meses pós-lançamento", value: "+2.400" },
+      { label: "Taxa de conversão geral no funil de intenção", value: "14%" },
+      { label: "Leads qualificados gerados via canal digital", value: "18" },
+      { label: "Contratos originados diretamente pelo site", value: "3" },
     ],
     processLabel: "Decisões de Design",
     process: [
@@ -103,10 +103,10 @@ export const sigElectricalSolutions: Project = {
     solution:
       "I designed and developed a robust 5-page digital platform, strategically built under a conversion architecture focused on the corporate market. The product organizes complex high-engineering services in a visual, didactic, and transparent way, structured with cutting-edge modern technologies to ensure sub-second loading, security, and immediate indexing in search engines.",
     ledeMetrics: [
-      { label: "Pages delivered with design and code", value: "5" },
-      { label: "From concept to deploy", value: "1 week" },
-      { label: "Previous acquisition model", value: "100% referral" },
-      { label: "Years of expertise turned into digital presence", value: "35+" },
+      { label: "Unique views in the first 3 months post-launch", value: "+2,400" },
+      { label: "Overall conversion rate in the intent funnel", value: "14%" },
+      { label: "Qualified leads generated via digital channel", value: "18" },
+      { label: "Contracts originated directly through the website", value: "3" },
     ],
     processLabel: "Design Decisions",
     process: [
