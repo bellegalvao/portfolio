@@ -3,10 +3,10 @@ import type { Project } from "../types";
 export const konsiInsights: Project = {
   slug: "konsi-insights",
   tags: ["Data Product", "Dashboard", "Design + Code"],
-  images: ["/images/konsi-insights-1.webp"],
+  images: ["/images/konsi-insights-dashboard.webp"],
   imageLayout: "stacked",
-  midImages: ["/images/konsi-insights-2.webp"],
-  outroImages: ["/images/konsi-insights-banner.webp"],
+  midImages: ["/images/konsi-insights-inbox.webp", "/images/konsi-insights-modal.webp"],
+  outroImages: ["/images/konsi-insights-guide.webp"],
   cover: "/images/konsi-insights.webp",
   links: {
     github: "https://github.com/bellegalvao/konsi-insights",
