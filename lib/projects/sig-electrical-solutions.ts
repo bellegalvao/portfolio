@@ -18,11 +18,11 @@ export const sigElectricalSolutions: Project = {
     summary:
       "Como consultora estratégica e UX, liderei o reposicionamento digital completo de uma das maiores referências em engenharia de alta tensão da Bahia. Do diagnóstico à arquitetura, design e deploy com stack moderna de alta performance, executado de ponta a ponta.",
     challenge:
-      "A SIG tem +35 anos de experiência em alta tensão e um portfólio sólido de grandes clientes, mas nenhuma presença digital. Toda a captação vinha de indicação. O desafio era traduzir uma operação altamente técnica em algo que qualquer tomador de decisão entendesse, sem perder a credibilidade conquistada ao longo de décadas.",
+      "A SIG possui mais de três décadas de mercado, atuando em projetos críticos de infraestrutura (subestações, linhas de distribuição e contratos turn-key) para gigantes como JHSF e Equinox Gold. No entanto, a empresa operava em um \"ponto cego digital\": dependia 100% de indicações no mercado físico para fechar novos contratos de múltiplos milhões.\n\nMinha missão foi liderar a transição cultural e digital desse modelo de captação. O desafio de design não era apenas estético, mas de tradução de linguagem corporativa B2B:",
     challengePoints: [
-      "Invisibilidade digital: 35 anos de expertise sem nenhuma presença online — toda captação dependia exclusivamente de indicação, limitando o crescimento e expondo o negócio a risco de pipeline.",
-      "Tradução técnica: serviços de alta tensão (subestações, linhas de distribuição, projetos turn-key) precisavam ser comunicados para dois públicos completamente diferentes: engenheiros técnicos e diretores financeiros.",
-      "Credibilidade como ativo: qualquer novo canal digital precisava transmitir a mesma autoridade conquistada por décadas de relacionamento — sem parecer genérico ou perder o peso institucional da marca.",
+      "Equilíbrio de persona: A comunicação precisava ser técnica o suficiente para validar a autoridade técnica da empresa diante de engenheiros seniores, mas clara e persuasiva para diretores de compras e CFOs que aprovam os orçamentos.",
+      "Construção de prova social digital: Transformar um portfólio de engenharia pesada (invisível para o mercado comum) em um ativo digital que gerasse segurança imediata e desejo de contratação.",
+      "Arquitetura escalável para growth: Criar uma estrutura leve e performática, preparada nativamente para indexação orgânica (SEO) e futuras campanhas de tráfego pago (Google Ads).",
     ],
     solution:
       "Criei um site institucional completo com 5 páginas que apresenta os serviços complexos (subestações, linhas de distribuição, turn-key) de forma didática e visual, preparado para captação orgânica via SEO e campanhas pagas.",
@@ -101,11 +101,11 @@ export const sigElectricalSolutions: Project = {
     summary:
       "As a strategic and UX consultant, I led the full digital repositioning of one of Bahia's most established references in high-voltage engineering. From diagnosis to architecture, design, and deploy with a modern high-performance stack — executed end to end.",
     challenge:
-      "SIG has 35+ years of experience in high-voltage engineering and a solid portfolio of major clients, but zero digital presence. All business came through referrals. The challenge was to translate a highly technical operation into something any decision-maker could understand, without losing the credibility built over decades.",
+      "SIG has over three decades in the market, delivering critical infrastructure projects (substations, distribution lines, and turn-key contracts) for major players like JHSF and Equinox Gold. Yet the company operated in a \"digital blind spot\": it relied 100% on physical-market referrals to close new multi-million-dollar contracts.\n\nMy mission was to lead the cultural and digital transition of this acquisition model. The design challenge was not merely aesthetic — it was one of B2B corporate language translation:",
     challengePoints: [
-      "Digital invisibility: 35 years of expertise with no online presence — all acquisition relied exclusively on referrals, limiting growth and exposing the business to pipeline risk.",
-      "Technical translation: high-voltage services (substations, distribution lines, turn-key projects) needed to be communicated to two completely different audiences: technical engineers and financial directors.",
-      "Credibility as an asset: any new digital channel had to convey the same authority built over decades of relationship-driven business — without feeling generic or losing the brand's institutional weight.",
+      "Persona balance: The communication needed to be technical enough to validate the company's authority with senior engineers, yet clear and persuasive for procurement directors and CFOs who approve the budgets.",
+      "Building digital social proof: Turning a heavy engineering portfolio (invisible to the broader market) into a digital asset that generated immediate trust and desire to hire.",
+      "Scalable architecture for growth: Building a lightweight, high-performance structure natively ready for organic indexing (SEO) and future paid traffic campaigns (Google Ads).",
     ],
     solution:
       "I built a complete 5-page institutional website that presents complex services (substations, distribution lines, turn-key projects) in a clear, visual way, designed for organic growth through SEO and paid campaigns.",
