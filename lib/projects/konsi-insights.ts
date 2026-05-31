@@ -147,7 +147,7 @@ export const konsiInsights: Project = {
     ],
     highlight:
       "This project validated that user-centered design methodologies work identically for the internal customer. It also proved that the role of the Product Designer in modern technology settings is shifting: by using Artificial Intelligence as an extension of our technical capacity, we can close the gap between Figma and production code — generating tangible value and execution speed for the organization, fully autonomously.",
-    cardTitle: "Konsi Insights: From Figma to Deploy",
+    cardTitle: "Insights Hub: Scaling a Data-Driven Culture",
     cardLine: "Dashboard that centralizes feedback from multiple platforms to generate data-driven product backlogs.",
     cardTags: ["Data Product", "Design + Code", "Full-cycle"],
   },
