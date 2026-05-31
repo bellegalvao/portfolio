@@ -3,7 +3,7 @@ import type { Project } from "../types";
 export const sigElectricalSolutions: Project = {
   slug: "sig-electrical-solutions",
   tags: ["Web Design", "Design + Code", "Institucional"],
-  images: ["/images/sig-1.webp"],
+  images: ["/images/primeira.webp"],
   imageLayout: "stacked",
   midImages: ["/images/sig-2.webp"],
   outroImages: ["/images/sig-3.webp"],
