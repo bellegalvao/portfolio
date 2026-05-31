@@ -25,41 +25,34 @@ export const sigElectricalSolutions: Project = {
       "Arquitetura escalável para growth: Criar uma estrutura leve e performática, preparada nativamente para indexação orgânica (SEO) e futuras campanhas de tráfego pago (Google Ads).",
     ],
     solution:
-      "Criei um site institucional completo com 5 páginas que apresenta os serviços complexos (subestações, linhas de distribuição, turn-key) de forma didática e visual, preparado para captação orgânica via SEO e campanhas pagas.",
+      "Desenhei e desenvolvi uma plataforma digital robusta de 5 páginas, desenhada estrategicamente sob uma arquitetura de conversão focada no mercado corporativo. O produto organiza serviços complexos de alta engenharia de forma visual, didática e transparente, estruturado com tecnologias modernas de ponta para garantir carregamento sub-segundo, segurança e indexação imediata nos motores de busca.",
     ledeMetrics: [
       { label: "Páginas entregues com design e código", value: "5" },
       { label: "Do conceito ao deploy", value: "1 semana" },
       { label: "Modelo de captação anterior ao site", value: "100% indicação" },
       { label: "Anos de expertise traduzidos em presença digital", value: "35+" },
     ],
-    processTitle: "Decisões de design e desenvolvimento",
-    processIntro:
-      "Para traduzir 35 anos de expertise técnica em uma presença digital que convertesse, trabalhei em cinco frentes:",
+    processLabel: "Decisões de Design",
     process: [
       {
-        step: "Descoberta",
+        step: "Diagnóstico e arquitetura de informação baseada em autoridade",
         description:
-          "Mergulhei no universo da engenharia elétrica para entender o vocabulário técnico, os serviços oferecidos e o perfil dos decisores que a SIG precisa alcançar.",
+          "Em vendas de alto ticket, a confiança é o fator definitivo. No design da arquitetura do site, posicionei os elementos de maior peso de mercado (os 35+ anos de história e logos de clientes de grande porte) na dobra principal de entrada. Somente após blindar a credibilidade da marca, introduzi os clusters de serviços de forma categorizada, reduzindo a complexidade de entendimento de cada solução técnico-comercial.",
       },
       {
-        step: "Posicionamento",
+        step: "Identidade visual de autoridade",
         description:
-          "Defini a hierarquia de informação colocando credibilidade (35+ anos, clientes como JHSF e Equinox Gold) no topo, antes de entrar nos detalhes técnicos.",
+          "Utilizei uma paleta baseada em azul profundo e tipografia robusta, trazendo o peso institucional, a segurança e a sobriedade que o mercado de engenharia elétrica exige. O design de interface aplicou princípios rígidos de espaçamento e legibilidade, garantindo que o portfólio físico de subestações e linhas de transmissão ganhasse apelo visual moderno e escaneável em qualquer dispositivo.",
       },
       {
-        step: "Design",
+        step: "Engenharia de performance",
         description:
-          "Criei uma identidade visual sólida com azul profundo e tipografia forte, transmitindo autoridade técnica sem afastar quem não é engenheiro.",
+          "Para garantir o melhor resultado orgânico de SEO do mercado, assumi o desenvolvimento front-end utilizando uma das stacks mais modernas da atualidade. A combinação do TanStack Start com Tailwind v4 gerou um código extremamente limpo, focado em SSR (Server-Side Rendering). Fiz o deploy distribuído na infraestrutura global da Cloudflare Workers, garantindo latência próxima de zero e carregamento instantâneo em qualquer região.",
       },
       {
-        step: "Desenvolvimento",
+        step: "Design Ops e infraestrutura de dados",
         description:
-          "Desenvolvi as 5 páginas com TanStack Start, React 19 e Tailwind v4 no Cloudflare Workers — stack moderna, performática e com boa base para SEO.",
-      },
-      {
-        step: "Entrega e instrumentação",
-        description:
-          "Projeto completo entregue em 1 semana, do conceito ao deploy. Instrumentei o site com PostHog para analytics de comportamento, Google Search Console para monitoramento de SEO orgânico e Microsoft Clarity para heatmaps e gravações de sessão.",
+          "Um projeto de excelência não termina no deploy. No momento do lançamento, instrumentei o ecossistema com uma suite avançada de analytics: PostHog para rastreamento de eventos de conversão e cliques nos botões de orçamento, Microsoft Clarity para análise profunda de mapas de calor e comportamento de leitura, e Google Search Console para monitorar a indexação orgânica das páginas de serviços no Google.",
       },
     ],
     metrics: [
@@ -108,41 +101,34 @@ export const sigElectricalSolutions: Project = {
       "Scalable architecture for growth: Building a lightweight, high-performance structure natively ready for organic indexing (SEO) and future paid traffic campaigns (Google Ads).",
     ],
     solution:
-      "I built a complete 5-page institutional website that presents complex services (substations, distribution lines, turn-key projects) in a clear, visual way, designed for organic growth through SEO and paid campaigns.",
+      "I designed and developed a robust 5-page digital platform, strategically built under a conversion architecture focused on the corporate market. The product organizes complex high-engineering services in a visual, didactic, and transparent way, structured with cutting-edge modern technologies to ensure sub-second loading, security, and immediate indexing in search engines.",
     ledeMetrics: [
       { label: "Pages delivered with design and code", value: "5" },
       { label: "From concept to deploy", value: "1 week" },
       { label: "Previous acquisition model", value: "100% referral" },
       { label: "Years of expertise turned into digital presence", value: "35+" },
     ],
-    processTitle: "Design and development decisions",
-    processIntro:
-      "To translate 35 years of technical expertise into a digital presence that converts, I worked across five fronts:",
+    processLabel: "Design Decisions",
     process: [
       {
-        step: "Discovery",
+        step: "Diagnosis and authority-based information architecture",
         description:
-          "Immersed in the electrical engineering world to understand the technical vocabulary, services offered, and the profile of decision-makers SIG needs to reach.",
+          "In high-ticket sales, trust is the definitive factor. In designing the site architecture, I positioned the highest-weight market elements (35+ years of history and major client logos) in the main entry fold. Only after shielding the brand's credibility did I introduce service clusters in a categorized way, reducing the complexity of understanding each technical-commercial solution.",
       },
       {
-        step: "Positioning",
+        step: "Authority visual identity",
         description:
-          "Defined the information hierarchy by leading with credibility (35+ years, clients like JHSF and Equinox Gold) before diving into technical details.",
+          "I used a palette based on deep blue and robust typography, bringing the institutional weight, security, and sobriety that the electrical engineering market demands. The interface design applied strict spacing and legibility principles, ensuring that the physical portfolio of substations and transmission lines gained modern visual appeal, scannable on any device.",
       },
       {
-        step: "Design",
+        step: "Performance engineering",
         description:
-          "Created a strong visual identity with deep blue and bold typography, conveying technical authority without alienating non-engineers.",
+          "To ensure the best organic SEO results on the market, I took over front-end development using one of the most modern stacks available today. The combination of TanStack Start with Tailwind v4 produced extremely clean code focused on SSR (Server-Side Rendering). I deployed on Cloudflare Workers' global infrastructure, guaranteeing near-zero latency and instant loading in any region.",
       },
       {
-        step: "Development",
+        step: "Design Ops and data infrastructure",
         description:
-          "Built all 5 pages with TanStack Start, React 19, and Tailwind v4 on Cloudflare Workers — a modern, performant stack with a strong SEO foundation.",
-      },
-      {
-        step: "Delivery and instrumentation",
-        description:
-          "Full project delivered in 1 week, from concept to deploy. Instrumented the site with PostHog for behavioral analytics, Google Search Console for organic SEO monitoring, and Microsoft Clarity for heatmaps and session recordings.",
+          "A world-class project doesn't end at deploy. At launch, I instrumented the ecosystem with an advanced analytics suite: PostHog for conversion event tracking and quote button clicks, Microsoft Clarity for deep heatmap and reading behavior analysis, and Google Search Console to monitor organic indexing of service pages on Google.",
       },
     ],
     metrics: [
