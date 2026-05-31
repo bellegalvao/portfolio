@@ -5,7 +5,7 @@ export const sigElectricalSolutions: Project = {
   tags: ["Web Design", "Design + Code", "Institucional"],
   images: ["/images/sig-1.webp"],
   imageLayout: "stacked",
-  midImages: ["/images/sig-2.webp"],
+  midImages: ["/images/sig-2.webp", "/images/sig-3.webp"],
   cover: "/images/sig.webp",
   banner: "/images/sig-banner.webp",
   links: {
