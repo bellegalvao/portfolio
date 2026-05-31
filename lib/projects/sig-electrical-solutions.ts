@@ -16,7 +16,7 @@ export const sigElectricalSolutions: Project = {
     headline:
       "SIG Engenharia: Transformando 35 anos de autoridade em canal digital de aquisição",
     summary:
-      "Site institucional moderno para empresa familiar de engenharia elétrica que operava 100% por indicação.",
+      "Como consultora estratégica e UX, liderei o reposicionamento digital completo de uma das maiores referências em engenharia de alta tensão da Bahia. Do diagnóstico à arquitetura, design e deploy com stack moderna de alta performance, executado de ponta a ponta.",
     challenge:
       "A SIG tem +35 anos de experiência em alta tensão e um portfólio sólido de grandes clientes, mas nenhuma presença digital. Toda a captação vinha de indicação. O desafio era traduzir uma operação altamente técnica em algo que qualquer tomador de decisão entendesse, sem perder a credibilidade conquistada ao longo de décadas.",
     challengePoints: [
@@ -99,7 +99,7 @@ export const sigElectricalSolutions: Project = {
     headline:
       "SIG Engineering: Turning 35 Years of Authority into a Digital Acquisition Channel",
     summary:
-      "Modern institutional website for a family-owned electrical engineering firm that ran 100% on referrals.",
+      "As a strategic and UX consultant, I led the full digital repositioning of one of Bahia's most established references in high-voltage engineering. From diagnosis to architecture, design, and deploy with a modern high-performance stack — executed end to end.",
     challenge:
       "SIG has 35+ years of experience in high-voltage engineering and a solid portfolio of major clients, but zero digital presence. All business came through referrals. The challenge was to translate a highly technical operation into something any decision-maker could understand, without losing the credibility built over decades.",
     challengePoints: [
