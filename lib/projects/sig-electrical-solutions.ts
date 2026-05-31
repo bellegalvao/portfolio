@@ -82,7 +82,7 @@ export const sigElectricalSolutions: Project = {
       },
     ],
     highlight:
-      "O maior desafio foi tornar o invisível visível: alta tensão, subestações e linhas de distribuição são serviços que as pessoas usam sem saber. Criar uma linguagem técnica o suficiente para engenheiros e clara o suficiente para diretores financeiros foi a decisão de design mais importante do projeto.",
+      "Este case me provou que a agilidade e a excelência técnica podem andar de mãos dadas quando o designer domina o fluxo de ponta a ponta. No mercado B2B tradicional, o design não serve apenas para \"embelezar\", ele funciona como um tradutor de valor de mercado. Conseguir transformar décadas de história física em uma interface limpa, rápida e metrificada em 1 semana consolidou a importância de uma abordagem de design focada em resultados ágeis, autonomia e impacto direto na estratégia de crescimento do negócio.",
     cardTitle: "SIG Engenharia: Transformando 35 anos de autoridade em canal digital de aquisição",
     cardLine: "Site institucional para empresa com 35+ anos de expertise que operava 100% por indicação — do conceito ao deploy em 1 semana.",
     cardTags: ["Web Design", "Design + Code", "Institucional"],
@@ -158,7 +158,7 @@ export const sigElectricalSolutions: Project = {
       },
     ],
     highlight:
-      "The biggest challenge was making the invisible visible: high-voltage substations and distribution lines are services people rely on without ever thinking about. Creating a language technical enough for engineers but clear enough for CFOs was the most important design decision in the project.",
+      "This case proved to me that agility and technical excellence can go hand in hand when the designer masters the end-to-end flow. In the traditional B2B market, design doesn't just 'beautify' — it acts as a market value translator. Being able to transform decades of physical history into a clean, fast, and metrified interface in 1 week reinforced the importance of a design approach focused on agile results, autonomy, and direct impact on business growth strategy.",
     cardTitle: "SIG Engineering: Turning 35 Years of Authority into a Digital Acquisition Channel",
     cardLine: "Institutional website for a 35+ year firm that ran 100% on referrals — from concept to deploy in 1 week.",
     cardTags: ["Web Design", "Design + Code", "Institutional"],
