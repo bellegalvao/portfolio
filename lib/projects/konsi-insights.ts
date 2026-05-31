@@ -10,7 +10,6 @@ export const konsiInsights: Project = {
   cover: "/images/konsi-insights.webp",
   links: {
     github: "https://github.com/bellegalvao/konsi-insights",
-    live: "https://konsi-insights.vercel.app/",
   },
   pt: {
     title: "Konsi Insights",
