@@ -35,7 +35,6 @@ export function HomeContent() {
         {/* Hero */}
         <section className="py-4 md:py-10">
           <motion.div variants={stagger} initial="hidden" animate="show">
-            {/* Foto circular + saudação + título */}
             <div className="flex items-center gap-4 mb-6">
               <motion.div
                 className="relative w-20 h-20 rounded-full overflow-hidden shrink-0"
@@ -63,7 +62,6 @@ export function HomeContent() {
               </div>
             </div>
 
-            {/* Descrição — largura total */}
             <motion.p variants={fadeUp} className="text-lg text-[var(--muted)] leading-relaxed mb-10">
               {t.hero.description}
             </motion.p>
@@ -116,32 +114,27 @@ export function HomeContent() {
             {t.projects.title}
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects.map((project, i) => {
-              const isWide = i === 0 || i === projects.length - 1;
-              return (
-                <motion.div
-                  key={project.slug}
-                  className={isWide ? "md:col-span-2" : ""}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.5, delay: (i % 2) * 0.1 }}
-                >
-                  <ProjectCard
-                    slug={project.slug}
-                    title={project[lang].title}
-                    tags={project.tags}
-                    cover={project.cover}
-                    featured={"featured" in project && project.featured}
-                    cardTitle={project[lang].cardTitle}
-                    cardLine={project[lang].cardLine}
-                    cardTags={project[lang].cardTags}
-                    wide={isWide}
-                  />
-                </motion.div>
-              );
-            })}
+            {projects.map((project, i) => (
+              <motion.div
+                key={project.slug}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: (i % 2) * 0.1 }}
+              >
+                <ProjectCard
+                  slug={project.slug}
+                  title={project[lang].title}
+                  tags={project.tags}
+                  cover={project.cover}
+                  featured={"featured" in project && project.featured}
+                  cardTitle={project[lang].cardTitle}
+                  cardLine={project[lang].cardLine}
+                  cardTags={project[lang].cardTags}
+                />
+              </motion.div>
+            ))}
           </div>
         </section>
 

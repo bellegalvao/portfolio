@@ -51,7 +51,7 @@ export function ProjectCard({ slug, title, tags, cover, featured, cardTitle, car
       className="will-change-transform h-full"
     >
       <Link href={`/projects/${slug}`} className="group block h-full">
-        <article className="border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)] hover:border-[var(--muted)] transition-all duration-200 h-full">
+        <article className="border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] hover:border-[var(--muted)] transition-all duration-200 h-full">
           {cover && (
             <div className={`relative w-full overflow-hidden bg-[var(--surface-2)] ${wide ? "h-56 md:h-64" : "h-64"}`}>
               <Image
