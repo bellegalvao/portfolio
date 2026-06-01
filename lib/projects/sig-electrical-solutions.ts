@@ -7,7 +7,6 @@ export const sigElectricalSolutions: Project = {
   imageLayout: "stacked",
   midImages: ["/images/segunda.webp", "/images/terceira.webp"],
   cover: "/images/sig.webp",
-  banner: "/images/sig-banner.webp",
   links: {
     live: "https://www.sigengenharia.com/",
   },
