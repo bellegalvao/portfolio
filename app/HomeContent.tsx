@@ -116,28 +116,32 @@ export function HomeContent() {
             {t.projects.title}
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects.map((project, i) => (
-              <motion.div
-                key={project.slug}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <ProjectCard
-                  slug={project.slug}
-                  title={project[lang].title}
-                  tags={project.tags}
-
-                  cover={project.cover}
-                  featured={"featured" in project && project.featured}
-                  cardTitle={project[lang].cardTitle}
-                  cardLine={project[lang].cardLine}
-                  cardTags={project[lang].cardTags}
-                />
-              </motion.div>
-            ))}
+            {projects.map((project, i) => {
+              const isWide = i === 0 || i === projects.length - 1;
+              return (
+                <motion.div
+                  key={project.slug}
+                  className={isWide ? "md:col-span-2" : ""}
+                  variants={fadeUp}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, delay: (i % 2) * 0.1 }}
+                >
+                  <ProjectCard
+                    slug={project.slug}
+                    title={project[lang].title}
+                    tags={project.tags}
+                    cover={project.cover}
+                    featured={"featured" in project && project.featured}
+                    cardTitle={project[lang].cardTitle}
+                    cardLine={project[lang].cardLine}
+                    cardTags={project[lang].cardTags}
+                    wide={isWide}
+                  />
+                </motion.div>
+              );
+            })}
           </div>
         </section>
 
