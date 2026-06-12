@@ -76,7 +76,12 @@ export default function RootLayout({
           <main className="flex-1 pt-14">{children}</main>
           <Footer />
         </LangProvider>
-        <Analytics />
+        <Analytics beforeSend={(event) => {
+          if (typeof window !== "undefined" && localStorage.getItem("is_owner") === "true") {
+            return null;
+          }
+          return event;
+        }} />
       </body>
     </html>
   );
