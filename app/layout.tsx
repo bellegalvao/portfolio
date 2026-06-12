@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
 import { Navbar } from "@/components/Navbar";
@@ -76,6 +77,7 @@ export default function RootLayout({
           <main className="flex-1 pt-14">{children}</main>
           <Footer />
         </LangProvider>
+        <SpeedInsights />
         <Analytics beforeSend={(event) => {
           if (typeof window !== "undefined" && localStorage.getItem("is_owner") === "true") {
             return null;
