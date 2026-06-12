@@ -218,5 +218,5 @@ export const contact = {
   github: "https://github.com/bellegalvao",
   email: "isabellecgalvao@gmail.com",
   resume:
-    "https://drive.google.com/file/d/111T8AXCy_Q0axH4Jr2tPIWwTAcKoTUmp/view?usp=sharing",
+    "https://drive.google.com/file/d/1Pn7XHqJ0ISQhGL-5KvAhe7zPlyJBrD_1/view?usp=sharing",
 };
