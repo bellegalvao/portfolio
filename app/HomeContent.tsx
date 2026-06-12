@@ -43,7 +43,7 @@ export function HomeContent() {
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
               >
                 <Image
-                  src="/images/perfil-home.png"
+                  src="/images/perfil-home.webp"
                   alt="Isabelle Galvão"
                   fill
                   sizes="80px"
