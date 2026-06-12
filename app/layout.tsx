@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { PortfolioAnalytics } from "@/components/Analytics";
 import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
@@ -77,7 +76,6 @@ export default function RootLayout({
           <main className="flex-1 pt-14">{children}</main>
           <Footer />
         </LangProvider>
-        <SpeedInsights />
         <PortfolioAnalytics />
       </body>
     </html>
