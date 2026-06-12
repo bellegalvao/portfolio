@@ -70,7 +70,7 @@ export const konsiDesignSystem: Project = {
     seoDescription: "Design System que reduziu o lead time de entrega de 10 para 3 dias úteis, com 100% de paridade Figma–Flutter e 90% menos retrabalho em QA.",
     cardTitle: "Konsi Design System: Escala & Design Ops",
     cardLine:
-      "Construção de uma fonte única de verdade sincronizada em Flutter que reduziu o Lead Time de desenvolvimento de 2 semanas para 4 dias.",
+      "Construção de uma fonte única de verdade sincronizada em Flutter que reduziu o Lead Time de desenvolvimento de 10 para 3 dias úteis.",
     cardTags: ["Design Ops", "Sistemas Complexos", "Acessibilidade WCAG"],
   },
   en: {
