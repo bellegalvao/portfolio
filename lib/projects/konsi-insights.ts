@@ -77,6 +77,7 @@ export const konsiInsights: Project = {
     ],
     highlight:
       "Este projeto validou que as metodologias de design centradas no usuário funcionam de forma idêntica para o cliente interno. Além disso, provou que o papel do Product Designer em cenários modernos de tecnologia está mudando: ao utilizarmos Inteligência Artificial como uma extensão da nossa capacidade técnica, conseguimos estreitar a barreira entre o Figma e o código de produção, gerando valor tangível e velocidade de execução para a organização de forma totalmente autônoma.",
+    seoDescription: "Plataforma interna B2B que centralizou feedbacks de múltiplos canais, gerou 24 iniciativas data-driven e economizou 40h de engenharia.",
     cardTitle: "Central de Insights: Escalando a Cultura Data-Driven",
     cardLine: "Dashboard que centraliza feedbacks de múltiplas plataformas para gerar backlog de produto com dados reais.",
     cardTags: ["Data Product", "Design + Code", "Full-cycle"],
@@ -147,6 +148,7 @@ export const konsiInsights: Project = {
     ],
     highlight:
       "This project validated that user-centered design methodologies work identically for the internal customer. It also proved that the role of the Product Designer in modern technology settings is shifting: by using Artificial Intelligence as an extension of our technical capacity, we can close the gap between Figma and production code — generating tangible value and execution speed for the organization, fully autonomously.",
+    seoDescription: "Internal B2B platform that centralized multi-channel feedback, generated 24 data-driven initiatives, and saved 40 engineering hours.",
     cardTitle: "Insights Hub: Scaling a Data-Driven Culture",
     cardLine: "Dashboard that centralizes feedback from multiple platforms to generate data-driven product backlogs.",
     cardTags: ["Data Product", "Design + Code", "Full-cycle"],

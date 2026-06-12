@@ -71,6 +71,28 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${monaSans.variable} ${geistSans.variable} ${geistMono.variable}`}>
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Isabelle Galvão",
+              jobTitle: "Product Designer",
+              url: baseUrl,
+              sameAs: [
+                "https://www.linkedin.com/in/isabelle-galvao/",
+                "https://github.com/bellegalvao",
+              ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Salvador",
+                addressRegion: "Bahia",
+                addressCountry: "BR",
+              },
+            }),
+          }}
+        />
         <LangProvider>
           <Navbar />
           <main className="flex-1 pt-14">{children}</main>

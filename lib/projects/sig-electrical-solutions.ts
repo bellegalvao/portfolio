@@ -82,6 +82,7 @@ export const sigElectricalSolutions: Project = {
     ],
     highlight:
       "Este case me provou que a agilidade e a excelência técnica podem andar de mãos dadas quando o designer domina o fluxo de ponta a ponta. No mercado B2B tradicional, o design não serve apenas para \"embelezar\", ele funciona como um tradutor de valor de mercado. Conseguir transformar décadas de história física em uma interface limpa, rápida e metrificada em 1 semana consolidou a importância de uma abordagem de design focada em resultados ágeis, autonomia e impacto direto na estratégia de crescimento do negócio.",
+    seoDescription: "Site B2B que gerou 18 leads qualificados e 3 contratos nos primeiros 3 meses, com 14% de CTR e LCP de 0.6s. Do conceito ao deploy em 1 semana.",
     cardTitle: "SIG Engenharia: Transformando 35 anos de autoridade em canal digital de aquisição",
     cardLine: "Site institucional para empresa com 35+ anos de expertise que operava 100% por indicação — do conceito ao deploy em 1 semana.",
     cardTags: ["Web Design", "Design + Code", "Institucional"],
@@ -158,6 +159,7 @@ export const sigElectricalSolutions: Project = {
     ],
     highlight:
       "This case proved to me that agility and technical excellence can go hand in hand when the designer masters the end-to-end flow. In the traditional B2B market, design doesn't just 'beautify' — it acts as a market value translator. Being able to transform decades of physical history into a clean, fast, and metrified interface in 1 week reinforced the importance of a design approach focused on agile results, autonomy, and direct impact on business growth strategy.",
+    seoDescription: "B2B website that generated 18 qualified leads and 3 contracts in 3 months, with 14% CTR and 0.6s LCP. From concept to deploy in 1 week.",
     cardTitle: "SIG Engineering: Turning 35 Years of Authority into a Digital Acquisition Channel",
     cardLine: "Institutional website for a 35+ year firm that ran 100% on referrals — from concept to deploy in 1 week.",
     cardTags: ["Web Design", "Design + Code", "Institutional"],

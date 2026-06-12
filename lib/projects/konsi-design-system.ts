@@ -67,6 +67,7 @@ export const konsiDesignSystem: Project = {
     ],
     highlight:
       "Um Design System morre sem adoção. Dediquei 70% do esforço em alinhar a implementação com Engenharia e criar documentação técnica robusta, e 30% no refinamento visual. O objetivo não foi criar o sistema mais bonito, mas o mais adotável e funcional para o ecossistema da Konsi.",
+    seoDescription: "Design System que reduziu o lead time de entrega de 10 para 3 dias úteis, com 100% de paridade Figma–Flutter e 90% menos retrabalho em QA.",
     cardTitle: "Konsi Design System: Escala & Design Ops",
     cardLine:
       "Construção de uma fonte única de verdade sincronizada em Flutter que reduziu o Lead Time de desenvolvimento de 2 semanas para 4 dias.",
@@ -130,6 +131,7 @@ export const konsiDesignSystem: Project = {
     ],
     highlight:
       "A Design System dies without adoption. I dedicated 70% of the effort to aligning implementation with Engineering and creating robust technical documentation, and 30% to visual refinement. The goal was not the most beautiful system, but the most adoptable and functional one for Konsi's ecosystem.",
+    seoDescription: "Design System reducing delivery lead time from 10 to 3 business days, with 100% Figma–Flutter parity and 90% less QA rework.",
     cardTitle: "Konsi Design System: Scale & Design Ops",
     cardLine:
       "Building a single source of truth synced in Flutter that reduced module delivery lead time from 10 to 3 business days.",

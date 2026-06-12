@@ -96,6 +96,7 @@ export const minhaSorte: Project = {
     ],
     highlight:
       "Gerenciar o Minha Sorte como fundadora e designer me deu uma visão holística que vai muito além das telas. Aprendi que o design de interface de sucesso é aquele que resolve uma dor real de forma sustentável para o negócio. Descobrir como traduzir backend complexo em telas simples, enquanto gerencio taxas de conversão e viabilidade técnica, moldou minha abordagem como uma Product Designer orientada a resultados e focada em gerar valor real para o ecossistema de negócios.",
+    seoDescription: "App de palpites inteligentes para loteria com 10k+ downloads orgânicos, 4.6★ nas lojas e ROI positivo desde o 6º mês. Concebido e gerenciado por mim.",
     cardTitle: "Minha Sorte: Concepção & Product Design",
     cardLine: "O case de um aplicativo mobile de palpites inteligentes projetado e gerenciado por mim. Em produção com mais de 10 mil downloads, 4.6★ nas lojas e uma proposta de valor validada com usuário premiado.",
     cardTags: ["UX Research", "Data Viz", "Mobile Design"],
@@ -177,6 +178,7 @@ export const minhaSorte: Project = {
     ],
     highlight:
       "Managing Minha Sorte as founder and designer gave me a holistic vision that goes far beyond screens. I learned that successful interface design is the kind that solves a real pain point in a way that's sustainable for the business. Discovering how to translate complex backend into simple screens, while managing conversion rates and technical viability, shaped my approach as a results-oriented Product Designer focused on generating real value for the business ecosystem.",
+    seoDescription: "Smart lottery betting app with 10k+ organic downloads, 4.6★ store rating, and positive ROI since month 6. Conceived and managed by me.",
     cardTitle: "Minha Sorte: Conception & Product Design",
     cardLine: "A mobile smart-betting app designed and managed by me. In production with over 10k downloads, 4.6★ on the stores, and a value proposition validated with an awarded user.",
     cardTags: ["UX Research", "Data Viz", "Mobile Design"],

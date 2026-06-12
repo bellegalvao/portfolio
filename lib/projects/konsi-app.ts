@@ -81,6 +81,7 @@ export const konsiApp: Project = {
     ],
     highlight:
       "No mercado de fintechs, muitas vezes assume-se que 'menos telas' significa uma experiência melhor. Este case provou o contrário: em produtos de crédito, a confiança é a métrica que destrava a conversão. Priorizar a clareza radical nas taxas, regras e prazos, mesmo que isso exigisse um fluxo com mais etapas explicativas, foi a decisão de design que gerou leads de maior qualidade, reduziu o custo operacional de suporte e fidelizou o cliente na base.",
+    seoDescription: "UX de fintech mobile que aumentou conversão em +24%, reduziu tickets de suporte em 40% e alcançou NPS +75 no crédito consignado.",
     cardTitle: "Konsi App: UX para Fintech de Crédito",
     cardLine: "App de crédito consignado criado do zero com foco em simplicidade para um público com baixa familiaridade digital.",
     cardTags: ["UX Research", "Mobile Fintech", "Acessibilidade"],
@@ -148,6 +149,7 @@ export const konsiApp: Project = {
     ],
     highlight:
       "In the fintech market, it's often assumed that 'fewer screens' means a better experience. This case proved the opposite: in credit products, trust is the metric that unlocks conversion. Prioritizing radical clarity around rates, rules, and deadlines — even when that required a flow with more explanatory steps — was the design decision that generated higher-quality leads, reduced operational support costs, and retained customers in the base.",
+    seoDescription: "Mobile fintech UX that increased conversion by +24%, reduced support tickets by 40%, and achieved NPS +75 in consigned credit.",
     cardTitle: "Konsi App: UX for Credit Fintech",
     cardLine: "Consigned credit app built from scratch focused on simplicity for users with low digital literacy.",
     cardTags: ["UX Research", "Mobile Fintech", "Accessibility"],

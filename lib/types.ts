@@ -32,6 +32,8 @@ export interface ProjectContent {
   metrics: Metric[];
   highlight: string;
   /** Título alternativo exibido no card (home + mais trabalhos). */
+  /** Descrição curta para SEO (máx ~155 chars). Se ausente, usa summary. */
+  seoDescription?: string;
   cardTitle?: string;
   /** Linha de apoio exibida no card, abaixo do título. */
   cardLine?: string;
