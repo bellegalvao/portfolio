@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { PortfolioAnalytics } from "@/components/Analytics";
 import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
 import { Navbar } from "@/components/Navbar";
@@ -78,12 +78,7 @@ export default function RootLayout({
           <Footer />
         </LangProvider>
         <SpeedInsights />
-        <Analytics beforeSend={(event) => {
-          if (typeof window !== "undefined" && localStorage.getItem("is_owner") === "true") {
-            return null;
-          }
-          return event;
-        }} />
+        <PortfolioAnalytics />
       </body>
     </html>
   );
