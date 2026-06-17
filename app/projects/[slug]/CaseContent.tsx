@@ -57,7 +57,7 @@ export function CaseContent({ params }: { params: Promise<{ slug: string }> }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-0.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-[var(--foreground)]"
+              className="text-xs px-2 py-0.5 rounded-full bg-[var(--foreground)]/5 backdrop-blur-sm border border-[var(--foreground)]/10 text-[var(--foreground)]"
             >
               {tag}
             </span>
@@ -580,15 +580,15 @@ function ContactCTA({ lang }: { lang: "pt" | "en" }) {
             rel="noopener noreferrer"
             className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-            <span className="relative z-10 group-hover:text-black transition-colors duration-500">LinkedIn</span>
+            <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-[var(--background)] transition-colors duration-500">LinkedIn</span>
           </a>
           <a
             href={`mailto:${contact.email}`}
             className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+            <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-[var(--background)] transition-colors duration-500">
               {lang === "pt" ? "E-mail" : "Email"}
             </span>
           </a>
@@ -634,8 +634,8 @@ function ExternalLink({ href, label }: { href: string; label: string }) {
       rel="noopener noreferrer"
       className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
     >
-      <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-      <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+      <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+      <span className="relative z-10 group-hover:text-[var(--background)] transition-colors duration-500">
         {label} ↗
       </span>
     </a>

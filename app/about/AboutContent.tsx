@@ -98,8 +98,8 @@ export function AboutContent() {
             rel="noopener noreferrer"
             className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+            <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-[var(--background)] transition-colors duration-500">
               {t.contact.linkedin} ↗
             </span>
           </a>
@@ -107,8 +107,8 @@ export function AboutContent() {
             href={`mailto:${contact.email}`}
             className="group relative inline-flex items-center text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
           >
-            <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-            <span className="relative z-10 group-hover:text-black transition-colors duration-500">
+            <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+            <span className="relative z-10 group-hover:text-[var(--background)] transition-colors duration-500">
               {t.contact.email} ↗
             </span>
           </a>

@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { PortfolioAnalytics } from "@/components/Analytics";
 import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
+import { ThemeProvider } from "@/lib/theme-context";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -29,7 +30,7 @@ const baseUrl = "https://isabellegalvao.com.br";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0a0a0a",
+  themeColor: "#ffffff",
 };
 
 export const metadata: Metadata = {
@@ -70,6 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${monaSans.variable} ${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.classList.add('dark');else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.classList.add('dark');})();` }} />
+      </head>
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <script
           type="application/ld+json"
@@ -93,11 +97,13 @@ export default function RootLayout({
             }),
           }}
         />
-        <LangProvider>
-          <Navbar />
-          <main className="flex-1 pt-14">{children}</main>
-          <Footer />
-        </LangProvider>
+        <ThemeProvider>
+          <LangProvider>
+            <Navbar />
+            <main className="flex-1 pt-14">{children}</main>
+            <Footer />
+          </LangProvider>
+        </ThemeProvider>
         <PortfolioAnalytics />
       </body>
     </html>

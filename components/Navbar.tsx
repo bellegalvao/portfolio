@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useLang } from "@/lib/lang-context";
+import { useTheme } from "@/lib/theme-context";
 import { siteContent, contact } from "@/lib/site-content";
 import { projects } from "@/lib/projects/index";
 
@@ -21,6 +22,7 @@ const chevron = (open: boolean) => (
 
 export function Navbar() {
   const { lang, toggle } = useLang();
+  const { theme, toggle: toggleTheme } = useTheme();
   const t = siteContent[lang].nav;
   const availableForWork = siteContent[lang].hero.availableForWork;
   const [open, setOpen] = useState(false);
@@ -127,6 +129,22 @@ export function Navbar() {
             >
               {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
             </button>
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
+              className="flex items-center justify-center w-7 h-7 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
+            >
+              {theme === "dark" ? (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+              ) : (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              )}
+            </button>
           </div>
 
           {/* Hamburger — mobile */}
@@ -199,12 +217,30 @@ export function Navbar() {
           >
             E-mail <span className="text-xs">↗</span>
           </a>
-          <button
-            onClick={() => { toggle(); setOpen(false); }}
-            className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors self-start mt-3"
-          >
-            {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
-          </button>
+          <div className="flex items-center gap-2 mt-3">
+            <button
+              onClick={() => { toggle(); setOpen(false); }}
+              className="text-xs font-mono px-2 py-1 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
+            >
+              {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
+            </button>
+            <button
+              onClick={() => { toggleTheme(); setOpen(false); }}
+              aria-label={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
+              className="flex items-center justify-center w-7 h-7 border border-[var(--border)] rounded text-[var(--muted)] hover:text-[var(--foreground)] hover:border-[var(--muted)] transition-colors"
+            >
+              {theme === "dark" ? (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+              ) : (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              )}
+            </button>
+          </div>
         </nav>
       </div>
 

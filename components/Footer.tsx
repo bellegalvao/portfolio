@@ -19,7 +19,7 @@ export function Footer() {
         </h2>
         <a
           href={`mailto:${contact.email}`}
-          className="group shrink-0 relative inline-flex items-center justify-center w-24 h-24 md:w-36 md:h-36 rounded-full bg-white text-black font-medium text-base md:text-lg overflow-hidden"
+          className="group shrink-0 relative inline-flex items-center justify-center w-24 h-24 md:w-36 md:h-36 rounded-full bg-[var(--foreground)] text-[var(--background)] font-medium text-base md:text-lg overflow-hidden"
         >
           <span className="absolute inset-0 bg-[var(--accent)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
           <span className="relative z-10 group-hover:text-white transition-colors duration-500">

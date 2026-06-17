@@ -73,8 +73,8 @@ export function HomeContent() {
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 text-sm border border-[var(--border)] px-4 py-2 rounded-lg overflow-hidden"
               >
-                <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-                <span className="relative z-10 inline-flex items-center gap-2 group-hover:text-black transition-colors duration-500">
+                <span className="absolute inset-0 bg-[var(--foreground)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
+                <span className="relative z-10 inline-flex items-center gap-2 group-hover:text-[var(--background)] transition-colors duration-500">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                     <polyline points="14 2 14 8 20 8"/>
@@ -87,7 +87,7 @@ export function HomeContent() {
               </a>
               <a
                 href={`mailto:${contact.email}`}
-                className="group relative inline-flex items-center gap-2 text-sm bg-white text-black px-4 py-2 rounded-lg font-medium overflow-hidden"
+                className="group relative inline-flex items-center gap-2 text-sm bg-[var(--foreground)] text-[var(--background)] px-4 py-2 rounded-lg font-medium overflow-hidden"
               >
                 <span className="absolute inset-0 bg-[var(--accent)] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
                 <span className="relative z-10 inline-flex items-center gap-2 group-hover:text-white transition-colors duration-500">
