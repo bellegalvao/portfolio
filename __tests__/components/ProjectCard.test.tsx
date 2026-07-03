@@ -30,7 +30,6 @@ const defaultProps = {
   title: "Konsi App",
   summary: "Resumo do projeto",
   tags: ["Product Design", "Mobile"],
-  year: "2023",
   index: 0,
 } as const;
 
@@ -40,11 +39,6 @@ describe("ProjectCard", () => {
   it("renderiza o título do projeto", () => {
     render(<ProjectCard {...defaultProps} />, { wrapper });
     expect(screen.getByText("Konsi App")).toBeInTheDocument();
-  });
-
-  it("renderiza o ano", () => {
-    render(<ProjectCard {...defaultProps} />, { wrapper });
-    expect(screen.getByText("2023")).toBeInTheDocument();
   });
 
   it("link aponta para a rota correta do projeto", () => {

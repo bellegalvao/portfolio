@@ -11,7 +11,6 @@ describe("projects", () => {
   it("cada projeto tem campos obrigatórios preenchidos", () => {
     for (const p of projects) {
       expect(p.slug, `${p.slug}: slug ausente`).toBeTruthy();
-      expect(p.year, `${p.slug}: year ausente`).toBeTruthy();
       expect(p.tags.length, `${p.slug}: sem tags`).toBeGreaterThan(0);
       expect(p.cover, `${p.slug}: cover ausente`).toBeTruthy();
     }
@@ -25,13 +24,18 @@ describe("projects", () => {
   it("cada projeto tem conteúdo em pt e en", () => {
     for (const p of projects) {
       expect(p.pt.title, `${p.slug}: pt.title ausente`).toBeTruthy();
+      expect(p.en.title, `${p.slug}: en.title ausente`).toBeTruthy();
+
+      // Projetos "visualOnly" são só galeria — não têm case study, então
+      // headline/challenge/solution/process/metrics ficam vazios de propósito.
+      if (p.visualOnly) continue;
+
       expect(p.pt.headline, `${p.slug}: pt.headline ausente`).toBeTruthy();
       expect(p.pt.challenge, `${p.slug}: pt.challenge ausente`).toBeTruthy();
       expect(p.pt.solution, `${p.slug}: pt.solution ausente`).toBeTruthy();
       expect(p.pt.process.length, `${p.slug}: pt.process vazio`).toBeGreaterThan(0);
       expect(p.pt.metrics.length, `${p.slug}: pt.metrics vazio`).toBeGreaterThan(0);
 
-      expect(p.en.title, `${p.slug}: en.title ausente`).toBeTruthy();
       expect(p.en.headline, `${p.slug}: en.headline ausente`).toBeTruthy();
       expect(p.en.challenge, `${p.slug}: en.challenge ausente`).toBeTruthy();
       expect(p.en.solution, `${p.slug}: en.solution ausente`).toBeTruthy();
